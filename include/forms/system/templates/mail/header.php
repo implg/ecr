@@ -6,7 +6,7 @@
 						<table cellspacing="0">
 							<tr>
 								<td style="width: 170px; padding: 0 20px;">
-									<a href="%DOMAIN%" target="_blank"><img src="%DOMAIN%/img/logo.png" alt="" ></a>
+									<a href="%DOMAIN%" target="_blank"><img src="%DOMAIN%/images/ECR-Logo-forum.png" alt="" ></a>
 								</td>
 								<td>
 									<h2 style="font-size: 22pt; font-weight: normal; color: #333"><a href="%DOMAIN%" target="_blank" style="color: #333"></h2>

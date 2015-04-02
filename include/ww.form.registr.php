@@ -2,6 +2,7 @@
 error_reporting(E_ERROR); 
 ini_set("display_errors", 1); 
 				require_once($_SERVER["DOCUMENT_ROOT"] . "/include/forms/forms.php"); 
+				require_once($_SERVER["DOCUMENT_ROOT"] . "/include/companies.php"); 
 				$form = new Forms();
 				$params_form =  array(
 					'form_id' => 'registr_form_',
@@ -23,8 +24,11 @@ ini_set("display_errors", 1);
 								),
 
 							),
-						'company' => array('type' => 'text', 'attrs'=>array('placeholder' => 'Компания') ),
-						'site_company' => array('type' => 'text', 'attrs'=>array('placeholder' => 'Сайт компании') ),
+						'company_in_forum' => array('type' => 'checkbox', 'title' => 'Ваша компания является членом ECR Russia?', 'required' => false),
+						'member' => array('type' => 'select', 'title' => 'Выберите компанию', 'values' => $companies),
+						'language' => array('type' => 'hidden', 'value' => 'Русский'),
+						'company' => array('type' => 'text', 'required' => true, 'attrs'=>array('placeholder' => 'Компания') ),
+						'site_company' => array('type' => 'text', 'required' => true,  'attrs'=>array('placeholder' => 'Сайт компании') ),
 						'last_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Фамилия') ),
 						'first_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Имя')),
 						'second_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Отчество')),
@@ -51,13 +55,21 @@ ini_set("display_errors", 1);
 					
 			
 					'email' => array(
-							'to' => array('deliz@deliz.ru'), // or string or fieldKey 
+							'extends' => true,
+							'to' => array('wikedwolf@yandex.ru'), // or string or fieldKey 
 							'from' => 'no-reply@'.$_SERVER['SERVER_NAME'],
 							//'message' => 'text %NAME%',
-							'message_template' => 'edit_profile_mail',
-							'subject' => '«Deliz» - Заявка на изменения данных об организации',
+							'message_template' => 'admin_mail',
+							'subject' => 'ECR ФОРУМ 2015 - Регистрация',
 						),
-			
+					'email_client' => array(
+							'extends' => true,
+							'to' => 'email', // or string or fieldKey 
+							'from' => 'no-reply@'.$_SERVER['SERVER_NAME'],
+							//'message' => 'text %NAME%',
+							'message_template' => 'client_mail',
+							'subject' => 'ECR ФОРУМ 2015 - Вы заполнили форму регистрации',
+						),
 					// 'sms' => array(
 					// 		'to' => array('89236388381'), // or fieldKey 
 					// 		'source' => 'site.ru',

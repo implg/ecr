@@ -1,6 +1,16 @@
+      <div class="form">
         <form action="#action_url#" method="post" class="on_ajax">
         	#hiddens#
+        <div class="price">
+        	<span class="dopinfo">
+		        <div>
+		          <p class="amount">#company_in_forum#</p>
+		          <label><h4>#company_in_forum_title#</h4></label>
+		        </div>
+	        </span>
+        </div>  
           #company#
+          #member#
           #site_company#
           #last_name#
           #first_name#
@@ -12,10 +22,8 @@
 
           
 
-      </div>
-      <!-- register form ends! -->
       
-      <!-- prices -->
+	</div>
       <div class="price">
 <h3>Какие сессии вы планируете посетить?</h3>
 		#sess_iter#

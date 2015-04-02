@@ -1,6 +1,6 @@
 <?php
-//error_reporting(E_ERROR); 
-//ini_set("display_errors", 1);
+error_reporting(E_ERROR); 
+ini_set("display_errors", 1);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -299,7 +299,7 @@
 По вопросам Делегатского участия обращайтесь к Елене Ткаченко - tel: +7-903-964-91-84, E-mail: elena.tkachenko@ecr-rus.ru 
       <h2>Регистрация</h2>
       <!-- register form -->
-      <div class="form">
+      
 
       <?php include($_SERVER['DOCUMENT_ROOT'].'/include/ww.form.registr.php'); ?>
   </div>
