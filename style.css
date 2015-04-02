@@ -224,7 +224,7 @@ a {
 			padding-top: 10px;
 } }
   .header .subtitle {
-    margin-bottom: 30px; }
+    margin-bottom: 50px; }
   .header a {
     text-decoration: none;
     color: white; }
@@ -252,7 +252,7 @@ a {
 .when div, .where div {
   float: left;
   font-family: "Roboto Condensed", sans-serif;
-  margin-top: 5px; }
+  margin-top: 7px; }
 .when .icon-holder, .where .icon-holder {
   background-color: #59cbe3;
   width: 64px;
@@ -272,7 +272,7 @@ a {
 .register-now  {
 	position:relative;
 	right:20px;
-	top:-10px;
+	top:-77px;
   bottom: 90px;
   right: 0;
   text-align: right; }
@@ -358,6 +358,9 @@ a {
 .speakers h2, .speakers .subtitle, .schedule h2, .schedule .subtitle {
   padding: 0 60px;
   margin-bottom: 0; }
+.schedule h2 {
+  margin-top: 60px;
+}
 .speakers .subtitle, .schedule .subtitle {
   margin-bottom: 50px; }
 
@@ -392,7 +395,7 @@ a {
   .featured div {
     float: left;
     width: 50%;
-    padding: 20px 40px;
+    padding: 28px 40px;
     color: white;
     font-weight: 300; }
     @media all and (max-width: 980px) {
@@ -696,8 +699,12 @@ a {
 /* 10. Registration & Sponsors */
 .registration .container, .sponsors .container {
   padding: 0 60px; }
-.registration h2, .sponsors h2 {
+.sponsors h2 {
   margin-bottom: 0; }
+.registration h2 {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
 
 .registration .desc {
   font-size: 1.21429em;
@@ -836,6 +843,7 @@ a {
 	width:100%; 
 	text-align:center; 
 	margin-top:20px;
+  padding-top: 50px;
 }
 
 .sponsors .container {
@@ -885,7 +893,7 @@ a {
   padding: 0 60px; }
 
 .location {
-  padding-top: 124px;
+  padding-top: 70px;
   position: relative;
   background: black url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
@@ -913,7 +921,7 @@ a {
 .info {
   background-color: white;
   padding: 60px;
-  margin-top: 80px;
+  margin-top: 50px;
   z-index: 2; }
   .info p:last-child {
     margin-bottom: 0; }
@@ -1164,7 +1172,7 @@ a {
 
 .logoforum, .logo {
 	position:absolute;
-	top:0px;
+	top:20px;
 }
 @media all and (max-width: 840px) {
         .logoforum, .logo {
@@ -1190,10 +1198,10 @@ a {
 	 width:95%;
 	 display:block;
 	 clear:both;
-	 text-align:center;
-	 border-top:1px solid #112948;
+	 /*text-align:center;
+	 border-top:1px solid #112948;*/
 	 padding-top:10px;
-	 margin-top:10px;
+	 margin-top:30px;
  }
   .verh p {
 	 color:#112948;
