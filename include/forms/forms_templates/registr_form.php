@@ -4,7 +4,7 @@
         	#hiddens#
          
       <div class="form"> 
-      	<div class="price">
+      	<div class="price nopadding">
         	<span class="dopinfo">
 		        <div>
 		          <p class="amount">#company_in_forum#</p>
@@ -22,8 +22,13 @@
           #email#
           #phone#
           #cupon#
-
-          
+          #count#
+          <h3>Реквизиты для выставления счета</h3>
+          #bik#
+          #bankname#
+          #ks#
+          #rs#
+          #urname#
 
       
 		</div>
@@ -35,8 +40,21 @@
           <label><h4>#sess_title#</h4></label>
         </div>
         #sess_enditer#
+
+
        
+
+
  <span class="dopinfo">
+
+ <h3>Потребуется ли вам перевод c английского на русский?</h3>
+		#translate_iter#
+        <div>
+          <p class="amount">#translate#</p>
+          <label><h4>#translate_title#</h4></label>
+        </div>
+        #translate_enditer#
+
  <h3>Дополнительная информация:</h3>
  		#who_iter#
         <div>

@@ -8,46 +8,64 @@ ini_set("display_errors", 1);
 					'form_id' => 'registr_form_',
 					'form_title' => 'Разместить свою компанию',
 					'template' => 'registr_form',
-					'post_submit_message' => '<p class="align_center">Спасибо! Ваша заявка отправлена! С Вами свяжутся для изменения данных.</p>',
+					'post_submit_message' => '<p class="align_center">Мы получили Вашу заявку на регистрацию на 11 Ежегодный ECR Форум.<br>
+Заявка будет обработана в течение пяти рабочих дней</p>',
 					'fields' => array(
-				
+						'translate' => array('type' => 'radio',  'value' => 0, 'values' => 
+							array(
+								1 => array('value' => 1, 'title' => 'Да'),
+								0 => array('value' => 0, 'title' => 'Нет'),
+								),
+							),
 
 						'sess' => array('type' => 'checkbox', 'required' => false, 'values' => 
 							array(
-								1 => array('value' => 1, 'title' => '<span>ECR</span>  Форум'),
-								2 => array('value' => 2, 'title' => 'Конференция <span>Retail Vision</span>'),
-								3 => array('value' => 3, 'title' => 'Выставка <span>Retail World</span>'),
-								4 => array('value' => 4, 'title' => 'Спортивный праздник'),
-								5 => array('value' => 5, 'title' => '<span>VIP</span> – lounge'),
-								6 => array('value' => 6, 'title' => 'Вечерний прием'),
-								7 => array('value' => 7, 'title' => 'Инновационные ритейл-туры')
+								1 => array('value' => 1, 'title' => 'Пленарная сессия <span>ECR</span>'),
+								2 => array('value' => 2, 'title' => 'Лучшие практики <span>Supply Chain</span>'),
+								3 => array('value' => 3, 'title' => 'Борьба с потерями'),
+								4 => array('value' => 4, 'title' => 'Присутствие товара на полке'),
+								5 => array('value' => 5, 'title' => 'Категорийный менеджмент'),
+								6 => array('value' => 6, 'title' => 'Изучение потребителя'),
+								7 => array('value' => 7, 'title' => '<span>Omni Channel</span>'),
+								8 => array('value' => 8, 'title' => 'Электронный обмен данными (<span>EDI</span>)'),
+								9 => array('value' => 9, 'title' => 'Электронные бухгалтерские документы'),
+								10 => array('value' => 10, 'title' => 'Синхронизация мастер-данных'),
+								11 => array('value' => 11, 'title' => 'Лучшие практики <span>ECR</span>'),
 								),
 
 							),
-						'company_in_forum' => array('type' => 'checkbox', 'title' => 'Ваша компания является членом ECR Russia?', 'required' => false),
-						'member' => array('type' => 'select', 'title' => 'Выберите компанию', 'values' => $companies),
+						
+						'company_in_forum' => array('type' => 'checkbox', 'title' => 'Ваша компания является членом ECR Russia?',  'required' => false),
+						'member' => array('type' => 'select', 'title' => 'Выберите компанию', 'values' => $companies, 'attrs' => array('style' => 'display:none;'),),
 						'language' => array('type' => 'hidden', 'value' => 'Русский'),
-						'company' => array('type' => 'text', 'required' => true, 'attrs'=>array('placeholder' => 'Компания') ),
-						'site_company' => array('type' => 'text', 'required' => true,  'attrs'=>array('placeholder' => 'Сайт компании') ),
-						'last_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Фамилия') ),
-						'first_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Имя')),
+						'company' => array('type' => 'text', 'required' => false, 'attrs'=>array('placeholder' => 'Компания', 'class' => 'latine') ),
+						'site_company' => array('type' => 'text', 'required' => false,  'attrs'=>array('placeholder' => 'Сайт компании') ),
+						'last_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Фамилия (латинскими буквами)', 'class' => 'latine') ),
+						'first_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Имя (латинскими буквами)', 'class' => 'latine')),
 						'second_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Отчество')),
-						'position' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Должность')),
+						'position' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Должность', 'class' => 'latine')),
 						'phone' => array('extends' => 'phone', 'attrs'=>array('placeholder' => 'Мобильный телефон (необходим для получения смс с кодом регистрации)')),
 						'email' => array('extends' => 'email', 'attrs'=>array('placeholder' => 'Email (для членов ECR - только корпоративный e-mail)')),
 						'cupon' => array('extends' => 'name', 'required' => false,'attrs'=>array('placeholder' => 'Купон (введите кодовое слово для получения скидки)')),
-						
+						'count' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Какое количество человек от вашей компании планирует принять участие в Форуме?')),
+						'bik' => array('extends' => 'name', 'attrs' => array('placeholder' => 'БИК')),
+						'bankname' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Наименование банка')),
+						'ks' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Корреспондентский счёт')),
+						'rs' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Расчетный счет')),
+						'urname' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Юридическое название')),
+
+
 						'who' => array('type' => 'checkbox', 'required' => false, 'values' => 
 							array(
 								'1' => array('value' => 1, 'title' => 'Я являюсь докладчиком Форума'),
 								'2' => array('value' => 2, 'title' => 'Я представитель информационного партнера Форума'),
 								'3' => array('value' => 3, 'title' => 'Я представитель компании-спонсора Форума'),
 								'4' => array('value' => 4, 'title' => 'Моя компания — участник выставки'),
-								'5' => array('value' => 5, 'title' => 'Мне требуется перевод c английского на русский'),
+								
 								),
 
 							),
-		
+						
 
 
 		

@@ -730,7 +730,16 @@ a {
   @media all and (max-width: 1180px) {
     .form, .price {
       width: 100%; } }
-
+.price.nopadding{
+  width:100%;
+  padding-left:0px;
+  margin-bottom:8px; 
+}
+.price.nopadding input{
+  width:auto;
+  height:auto;
+  display: inline;
+}
 .form {
   padding-right: 15px; }
   @media all and (max-width: 1180px) {

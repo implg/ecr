@@ -130,11 +130,13 @@ class Forms extends FormsSettings{
 			$exp = '%\#'.$id.'_iter\#(.*)\#'.$id.'_enditer\#%';
 			
 			preg_match($exp, $template_as_string, $regres);
-			$res = '';
+			
 			if (!empty($regres)){
-					
+				$res = '';		
 				
 				$iter = 0;
+				$type = $field['type'];
+				$value = $field['value'];
 				foreach($field['values'] as $key=>$val){
 					
 					$itertpl = $regres[1];
@@ -149,9 +151,13 @@ class Forms extends FormsSettings{
 			
 						//preprint($field);
 						$error = isset($this->errors[$id]) ? $this->GetErrorMessage($field, $this->errors[$id]) : '';
-			
-			
-						$itertpl = str_replace('#'.$id.'#', $this->GetFieldHtml($nid, $field), $itertpl);
+						if ($value == $val['value']){
+							if(!$field['attrs']) $field['attrs'] = array();
+							$field['attrs']['checked'] = 'checked';
+						}
+						$field['value'] = $val['value']; 
+						$field['type'] = $type;
+						$itertpl = str_replace('#'.$id.'#', $this->GetFieldHtml($id, $field), $itertpl);
 						
 						$itertpl = str_replace('#'.$id.'_value#', $val['value'], $itertpl);
 						$itertpl = str_replace('#'.$id.'_title#', $val['title'], $itertpl);
@@ -176,6 +182,7 @@ class Forms extends FormsSettings{
 			
 						$itertpl = str_replace('#'.$nid.'_helptext#', $field['help_text'], $itertpl);
 						if (isset($field['required']) && $field['required']){$field['title'] = '<span class="required">*</span> '.$field['title'];}
+						if ($field['required'] && isset($field['attrs']['placeholder'])){$field['attrs']['placeholder'] = '* '.$field['attrs']['placeholder'];}
 						$itertpl = str_replace('#'.$nid.'_title#', $field['title'], $itertpl);
 						if($field['type'] == 'input_array' && isset($field['values'])){
 							$value = $field['values'][$iter];
@@ -237,6 +244,7 @@ class Forms extends FormsSettings{
 
 			$template = str_replace('#'.$id.'_helptext#', $field['help_text'], $template);
 			if (isset($field['required']) && $field['required']){$field['title'] = '<span class="required">*</span> '.$field['title'];}
+			if ($field['required'] && isset($field['attrs']['placeholder'])){$field['attrs']['placeholder'] = '* '.$field['attrs']['placeholder'];}
 			$template = str_replace('#'.$id.'_title#', $field['title'], $template);
 			$template = str_replace('#'.$id.'_value#', $field['value'], $template);
 			$template = str_replace('#'.$id.'_hide#', $field['hide'], $template);
@@ -698,7 +706,7 @@ class Forms extends FormsSettings{
 				$res .= '</select>';
 				break;
                 
-            case 'radio':
+            case 'radio_in_label':
 				$res = '';
 			
 				

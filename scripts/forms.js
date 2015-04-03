@@ -234,8 +234,20 @@ $(document).ready(
 		
 		
 	
+		$('input[name=company_in_forum]').on('change', function(){
+			if($(this).is(':checked')){
+				$('input[name=company]').hide();
+				$('select[name=member]').show();
+			}else{
+				$('input[name=company]').show();
+				$('select[name=member]').hide();				
+			}
+		})
 
-
+		$('input.latine').on('keyup', function(){
+			val = $(this).val();
+			$(this).val(val.replace(/[А-Яа-я]/, ''))
+		})
 
 
 		function NumberSplit (number) {
