@@ -13,46 +13,7 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="jquery.countdown.css">
 
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script>
-  function initialize() {
-    var myLatlng = new google.maps.LatLng(55.755828,37.554992);
-    var map_options = {
-      zoom: 16,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      center: myLatlng,
-      scrollwheel: false,
-      disableDefaultUI: true
-    }
 
-    var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
-    var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
-
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      icon: myIcon
-    });
-
-    /* Remove if you dont want B/W Google Map */
-    /*
-    var styles = [
-      {
-        featureType: "all",
-        stylers: [
-          { saturation: -100 }
-        ]
-      }
-    ];
-
-    map.setOptions({styles: styles});
-    */
-  }
-
-  google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-<!-- Google Map Ends! -->
 
 </head>
 
