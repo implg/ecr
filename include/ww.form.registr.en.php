@@ -7,7 +7,7 @@ ini_set("display_errors", 1);
 				$params_form =  array(
 					'form_id' => 'registr_form_',
 					'form_title' => 'Разместить свою компанию',
-					'template' => 'registr_form',
+					'template' => 'reg_form_en',
 					'post_submit_message' => '<p class="align_center">Мы получили Вашу заявку на регистрацию на 11 Ежегодный ECR Форум.<br>
 Заявка будет обработана в течение пяти рабочих дней</p>',
 					'fields' => array(
