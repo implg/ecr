@@ -12,6 +12,7 @@
 <link href="../animate.min.css" rel="stylesheet" />
 <link href="../style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="../jquery.countdown.css">
+<link href="/forms.css" rel="stylesheet" type="text/css" />
 
 
 
