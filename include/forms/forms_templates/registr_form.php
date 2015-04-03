@@ -69,7 +69,7 @@
       </div>
       <!-- prices ends! -->
 
-    </div>
+    
     
 <div class="butsub">
  <button name="submit" type="submit" class="button">Зарегистрироваться</button>
