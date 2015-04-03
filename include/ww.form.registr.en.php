@@ -8,6 +8,7 @@
 					'form_title' => 'Разместить свою компанию',
 					'template' => 'reg_form_en',
 					'db_table' => 'members',
+					'action_before' => 'send_email',
 					'action' => 'write_db',
 					'post_submit_message' => "<p class=\"align_center\">We've received your request for registration for the 11th Annual ECR Forum.<br>
 The request will be processed during the next 5 working days.</p>",
