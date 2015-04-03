@@ -7,7 +7,7 @@ ini_set("display_errors", 1);
     {
     	private $mysqli;
     	public function __construct(){
-    		$this->mysqli = new mysqli('localhost', 'root', '1', 'forum');
+    		$this->mysqli = new mysqli('mysql.ecr-forum.com', 'ecrforum', 'RR56dkF89', 'ecrforum');
     		$this->mysqli->set_charset("utf8");
     	}
         public $parms = array();
