@@ -12,6 +12,7 @@
 		        </div>
 	        </span>
         </div>
+          #language#
           #company#
           #member#
           #site_company#

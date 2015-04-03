@@ -14,7 +14,7 @@
 		}
 	}
 	$this->fields['who']['mail_value'] = $who;
-
+	$this->fields['translate']['mail_value'] = $this->fields['translate']['values'][$$this->fields['translate']['value']]['title'];
 	$company = '';
 	if ($this->fields['company']['value']){
 		$company = $this->fields['company']['value'];
