@@ -1,17 +1,23 @@
 <?php
+error_reporting(E_ALL); 
+ini_set("display_errors", 1); 
     /* if you use 1 DB in your project, u can connect in here */
-    $mysqli = new mysqli('localhost', 'root', '1', 'forum');
-    $mysqli->set_charset("utf8");
+    
     class simple_query_builder
     {
+    	private $mysqli;
+    	public function __construct(){
+    		$this->mysqli = new mysqli('localhost', 'root', '1', 'forum');
+    		$this->mysqli->set_charset("utf8");
+    	}
         public $parms = array();
         /* Developer Mode */
         public $devMode = 0;
         /* Protect from SQL Injections */
         public function sqlProt($str)
         {
-            global $mysqli;
-            return "'" . $mysqli->real_escape_string($str) . "'";
+            
+            return "'" . $this->mysqli->real_escape_string($str) . "'";
         }
         /* Add field name and protected value */
         public function add($name, $value)
@@ -26,7 +32,7 @@
         /* Build INSERT query */
         public function insert($tableName)
         {
-            global $mysqli;
+            
             $queryCol = '';
             $queryVal = '';
             foreach ($this->parms as $key => $val) {
@@ -42,7 +48,7 @@
                 }
             }
             $query = "INSERT INTO $tableName ($queryCol) VALUES ($queryVal)";
-            $res   = $mysqli->query($query);
+            $res   = $this->mysqli->query($query);
             if (!$res) {
                 if ($this->devMode == 1) {
                     echo "Error: <b>Wrong MySQL INSERT syntax.</b> <br>" . " \r\n";
@@ -51,7 +57,7 @@
                 $this->parms = array(); //Reset params
                 return false;
             } else {
-                $ret = $mysqli->insert_id;
+                $ret = $this->mysqli->insert_id;
                 if ($ret == 0) $ret = true;
                 $this->parms = array(); //Reset params
                 return $ret;
@@ -60,7 +66,7 @@
         # Build UPDATE Query
         public function update($tableName, $where = null)
         {
-            global $mysqli;
+            
             $querySET = '';
             foreach ($this->parms as $key => $val) {
                 if ($querySET == '') {
@@ -74,7 +80,7 @@
             } else {
                 $query = "UPDATE $tableName SET $querySET";
             }
-            $res = $mysqli->query($query);
+            $res = $this->mysqli->query($query);
             if (!$res) {
                 if ($this->devMode == 1) {
                     echo "Error: <b>Wrong MySQL UPDATE syntax.</b> <br>" . " \r\n";
@@ -84,16 +90,16 @@
                 return false;
             } else {
                 $this->parms = array(); //Reset params
-                return $mysqli->affected_rows; //Return number of affected rows
+                return $this->mysqli->affected_rows; //Return number of affected rows
             }
         }
         # Build SELECT Query with default LIMIT
         public function select($query, $offset = 0, $limit = 50)
         {
-            global $mysqli;
+            
             $this->parms = array(); //Reset Params
             $result = null;
-            $res    = $mysqli->query($query . " LIMIT $offset, $limit");
+            $res    = $this->mysqli->query($query . " LIMIT $offset, $limit");
             if (!$res) {
                 if ($this->devMode == 1) {
                     echo "Error: <b>Wrong MySQL SELECT syntax.</b> <br>" . " \r\n";

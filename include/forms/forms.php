@@ -63,6 +63,7 @@ class Forms extends FormsSettings{
 		$this->before = $params['action_before'];
 		$this->after = $params['action_after'];
 		$this->email = $params['email'];
+		$this->db_table = $params['db_table'];
 		if($params['email_client']){
 			$this->email_client = $params['email_client'];
 		}
@@ -405,6 +406,9 @@ class Forms extends FormsSettings{
 					case 'login':
 						$this->login();
 
+						break;
+					case 'write_db':
+						$this->writeInDb();
 						break;
 					case 'add_element':
 						$this->AddElement();
@@ -1136,6 +1140,34 @@ class Forms extends FormsSettings{
 	
 		//preprint($arLoadProductArray);
 	}
+
+
+	private function writeInDb(){
+		error_reporting(E_ALL); 
+		ini_set("display_errors", 1); 
+		require_once($_SERVER['DOCUMENT_ROOT']."/include/forms/utils/mysql/query_builder.php");
+		$mysql = new simple_query_builder();
+		$mysql->devMode = 1;
+		$table = $this->db_table;
+
+		foreach ($this->fields as $id=>$field){
+			if ($field['value'] && is_array($field['value'])){
+				$values = array();
+				foreach ($field['value'] as $val){
+					$values[] = $val;
+				}
+				$field['value'] = serialize($values);
+			}
+			
+			$mysql->add($id, $field['value']);
+			
+		}
+		
+		$res = $mysql->insert($table);
+		
+		
+	}
+
 
 	private function Translite($string){
 
