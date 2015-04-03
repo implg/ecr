@@ -139,7 +139,8 @@
 <script src="../scripts/theme.js"></script>
 <script src="../jquery.plugin.js"></script>
 <script src="../jquery.countdown.js"></script>
-
+<script src="/scripts/spin.min.js"></script>
+<script src="/scripts/forms.js"></script>
 <!-- scripts ends! -->
 
 <script>
