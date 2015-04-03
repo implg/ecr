@@ -123,7 +123,7 @@ class PHPMailer
      * Method to send mail: ("mail", "sendmail", or "smtp").
      * @var string
      */
-    var $Mailer            = "mail";
+    var $Mailer            = "smtp";
 
     /**
      * Sets the path of the sendmail program.
@@ -170,7 +170,7 @@ class PHPMailer
      *  Hosts will be tried in order.
      *  @var string
      */
-    var $Host        = "localhost";
+    var $Host        = "mail.ecr-forum.com";
 
     /**
      *  Sets the default SMTP server port.
@@ -188,19 +188,19 @@ class PHPMailer
      *  Sets SMTP authentication. Utilizes the Username and Password variables.
      *  @var bool
      */
-    var $SMTPAuth     = false;
+    var $SMTPAuth     = true;
 
     /**
      *  Sets SMTP username.
      *  @var string
      */
-    var $Username     = "";
+    var $Username     = "info@ecr-forum.com";
 
     /**
      *  Sets SMTP password.
      *  @var string
      */
-    var $Password     = "";
+    var $Password     = "Du78Hg5Y";
 
     /**
      *  Sets the SMTP server timeout in seconds. This function will not 

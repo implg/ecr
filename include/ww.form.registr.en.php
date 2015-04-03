@@ -8,8 +8,8 @@ ini_set("display_errors", 1);
 					'form_id' => 'registr_form_',
 					'form_title' => 'Разместить свою компанию',
 					'template' => 'reg_form_en',
-					'post_submit_message' => '<p class="align_center">Мы получили Вашу заявку на регистрацию на 11 Ежегодный ECR Форум.<br>
-Заявка будет обработана в течение пяти рабочих дней</p>',
+					'post_submit_message' => "<p class=\"align_center\">We've received your request for registration for the 11th Annual ECR Forum.<br>
+The request will be processed during the next 5 working days.</p>",
 					'fields' => array(
 						'translate' => array('type' => 'radio',  'value' => 0, 'values' => 
 							array(
