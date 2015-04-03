@@ -10,8 +10,8 @@
 //   Этот модуль предназначен для построения и работы с формами  //
 //             в 1с-Битрикс и других системах.                   //
 //                                                   WW 2014.    //
-//                                                               //
-//   LAST UPD 27.11.14                                           //
+//   Version 2.0                                                            //
+//   LAST UPD 4.04.15                                           //
 //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
@@ -607,7 +607,7 @@ class Forms extends FormsSettings{
 			foreach ($emails AS $to) {
 				//preprint($to);
 				$mail = new PHPMailer(true);
-				$mail->Subject = $email['subject'];
+				$mail->Subject = encodeSubject($email['subject']);
 				$mail->AddAddress($to);
 				$mail->From = $email['from'];
                 $mail->FromName = isset($email['from_name']) ? mb_convert_encoding($email['from_name'], 'KOI8-R', 'UTF-8') : '';
