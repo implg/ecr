@@ -415,7 +415,7 @@ a {
 	}
 .single {
   width: 20%;
-  border: solid 20px #72d3e7;
+  border: solid 50px #72d3e7;
   float: left;
   position: relative;
   cursor: pointer; }
