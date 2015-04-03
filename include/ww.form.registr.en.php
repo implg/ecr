@@ -5,7 +5,7 @@ ini_set("display_errors", 1);
 				require_once($_SERVER["DOCUMENT_ROOT"] . "/include/companies.php"); 
 				$form = new Forms();
 				$params_form =  array(
-					'form_id' => 'registr_form_',
+					'form_id' => 'registr_form_en',
 					'form_title' => 'Разместить свою компанию',
 					'template' => 'reg_form_en',
 					'post_submit_message' => "<p class=\"align_center\">We've received your request for registration for the 11th Annual ECR Forum.<br>
