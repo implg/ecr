@@ -1,4 +1,5 @@
 <?php
+ini_set("display_errors", 0); 
 /**
  * PHPMailer RFC821 SMTP email transport class.
  * PHP Version 5

@@ -1,5 +1,5 @@
 <?php
-
+ini_set("display_errors", 0); 
 class FormsSettings{
 	protected $settings;
 	protected $default_massages;

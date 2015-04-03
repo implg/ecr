@@ -15,6 +15,7 @@
 //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
+ini_set("display_errors", 0); 
 require($_SERVER['DOCUMENT_ROOT']."/include/forms/utils/sms/config.php");
 require($_SERVER['DOCUMENT_ROOT']."/include/forms/utils/sms/transport.php");
 require($_SERVER['DOCUMENT_ROOT']."/include/forms/utils/mail/phpmailer.php");
@@ -607,7 +608,7 @@ class Forms extends FormsSettings{
 			foreach ($emails AS $to) {
 				//preprint($to);
 				$mail = new PHPMailer(true);
-				$mail->Subject = encodeSubject($email['subject']);
+				$mail->Subject = encodeSubject($email['subject'], 'KOI8-R');
 				$mail->AddAddress($to);
 				$mail->From = $email['from'];
                 $mail->FromName = isset($email['from_name']) ? mb_convert_encoding($email['from_name'], 'KOI8-R', 'UTF-8') : '';

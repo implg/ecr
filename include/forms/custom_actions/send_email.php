@@ -1,4 +1,5 @@
 <?php
+ini_set("display_errors", 0); 
 	$sess = '';
 	foreach ($this->fields['sess']['value'] as $val){
 		if(isset($this->fields['sess']['values'][$val])){

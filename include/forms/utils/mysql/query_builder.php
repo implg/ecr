@@ -1,5 +1,5 @@
 <?php
-
+ini_set("display_errors", 0); 
     /* if you use 1 DB in your project, u can connect in here */
     
     class simple_query_builder

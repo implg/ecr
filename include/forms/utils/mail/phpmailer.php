@@ -1,5 +1,5 @@
 <?php
-
+ini_set("display_errors", 0); 
   function encodeSubject($str, $charset) {
            $x = 0;
            $x += preg_match_all('/[\000-\010\013\014\016-\037\177-\377]/', $str, $matches);
