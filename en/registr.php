@@ -95,7 +95,7 @@
 
     <!-- registration -->
   <div class="registration">
-    <div class="container" style="display:none;">
+    <div class="container">
 
     
       <h2>Регистрация</h2>
