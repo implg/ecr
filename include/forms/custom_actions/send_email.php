@@ -1,14 +1,24 @@
-<? 
-	$windows_value = '';
-	foreach($this->fields['window_width']['values'] as $key=>$val){
-		$iter = $key+1;
-		$width = $val;
-		$height = $this->fields['window_height']['values'][$key];
-		$price = $this->fields['window_price']['values'][$key];
-		$windows_value .= "<p>$iter. Размеры: $width x $height<br> Цена: $price р.</p>";
+<?php
+	$sess = '';
+	foreach ($this->fields['sess']['value'] as $val){
+		if(isset($this->fields['sess']['values'][$val])){
+			$sess .= $this->fields['sess']['values'][$val]['title'].'<br>';
+		}
 	}
-	$this->fields['window_width']['mail_value'] = $windows_value;
-	
+	$this->fields['sess']['mail_value'] = $sess;
 
-?>
+	$who = '';
+	foreach ($this->fields['who']['value'] as $val){
+		if(isset($this->fields['who']['values'][$val])){
+			$who .= $this->fields['who']['values'][$val]['title'].'<br>';
+		}
+	}
+	$this->fields['who']['mail_value'] = $who;
 
+	$company = '';
+	if ($this->fields['company']['value']){
+		$company = $this->fields['company']['value'];
+	}else{
+		$company = $this->fields['member']['values'][$this->fields['member']['value']]['title'];
+	}
+	$this->fields['company']['value'] = $company;

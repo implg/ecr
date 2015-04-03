@@ -5,11 +5,12 @@ ini_set("display_errors", 1);
 				require_once($_SERVER["DOCUMENT_ROOT"] . "/include/companies.php"); 
 				$form = new Forms();
 				$params_form =  array(
-					'form_id' => 'registr_form_',
+					'form_id' => 'registr_form_ru',
 					'form_title' => 'Разместить свою компанию',
 					'template' => 'registr_form',
 					'post_submit_message' => '<p class="align_center">Мы получили Вашу заявку на регистрацию на 11 Ежегодный ECR Форум.<br>
 Заявка будет обработана в течение пяти рабочих дней</p>',
+					'action_before' => 'send_email',
 					'fields' => array(
 						'translate' => array('type' => 'radio',  'value' => 0, 'values' => 
 							array(

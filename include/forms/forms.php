@@ -157,7 +157,8 @@ class Forms extends FormsSettings{
 						}
 						$field['value'] = $val['value']; 
 						$field['type'] = $type;
-						$itertpl = str_replace('#'.$id.'#', $this->GetFieldHtml($id, $field), $itertpl);
+						$field['name'] = $id.'[]';
+						$itertpl = str_replace('#'.$id.'#', $this->GetFieldHtml($id.'[]', $field), $itertpl);
 						
 						$itertpl = str_replace('#'.$id.'_value#', $val['value'], $itertpl);
 						$itertpl = str_replace('#'.$id.'_title#', $val['title'], $itertpl);
@@ -383,7 +384,9 @@ class Forms extends FormsSettings{
 	*/
 
 	private function Action(){
+		
 		if ($this->before) {
+			
 		 	require($this->settings['custom_actoions_dir'].$this->before.'.php');
 		}
 		if (!isset($this->errors)){
@@ -1061,6 +1064,7 @@ class Forms extends FormsSettings{
 		}else{
 			$data = $_REQUEST;
 		}
+		
 
 		foreach ($this->fields as $key => $value) {
 			if($value['type'] == 'input_array'){
