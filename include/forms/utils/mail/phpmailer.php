@@ -136,7 +136,7 @@ class PHPMailer
      * is in a different directory than the PHP include path.  
      * @var string
      */
-    var $PluginDir         = $_SERVER['DOCUMENT_ROOT']."/include/utils/mail/";
+    var $PluginDir         = "/include/forms/utils/mail/";
 
     /**
      *  Holds PHPMailer version.
@@ -475,7 +475,7 @@ class PHPMailer
      * @return bool
      */
     function SmtpSend($header, $body) {
-        include_once($this->PluginDir . "class.smtp.php");
+        include_once($_SERVER['DOCUMENT_ROOT'].$this->PluginDir . "class.smtp.php");
         $error = "";
         $bad_rcpt = array();
 
