@@ -137,7 +137,7 @@ ini_set("display_errors", 1);
         
 
         
-        <a href="registr.html" class="button">Регистрация</a>
+        <a href="registr.php" class="button">Регистрация</a>
       </div>
       <!-- register ends! -->
 

@@ -14,7 +14,8 @@
 <link href="animate.min.css" rel="stylesheet" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="jquery.countdown.css">
-
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <!-- Google Map -->
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script>
@@ -75,7 +76,7 @@
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="price.html">цены</a></li>
-        <li><a href="registr.html">участие</a></li>
+        <li><a href="registr.php">участие</a></li>
         <li><a href="index.html#location">контакты</a></li>
         <li class="langru"><a href="/"><img src="images/ru.png"></a></li>
         <li class="langen"><a href="en/"><img src="images/en.png"></a></li>
@@ -95,7 +96,7 @@
       <!-- logo or main heading ends! -->
 
       <!-- subtitle -->
-      <p class="subtitle">50+ лучших экспертов, <strong><a href="registr.html">1200+ участников</a></strong></p>
+      <p class="subtitle">50+ лучших экспертов, <strong><a href="registr.php">1200+ участников</a></strong></p>
       <!-- subtitle ends! -->
 
       <!-- when -->
@@ -135,7 +136,7 @@
         
 
         
-        <a href="registr.html" class="button">Регистрация</a>
+        <a href="registr.php" class="button">Регистрация</a>
       </div>
       <!-- register ends! -->
 
@@ -211,7 +212,7 @@
   <a id="sponsors" class="anchor"></a>
 
  <!-- why -->
-  <div class="why" style="display:none;">
+  <div class="why spons">
     <div class="container">
 
       <!-- testimonials -->
@@ -221,29 +222,12 @@
 
           <div class="slides">
 
-            <blockquote>
-              <a href="http://www.metro-cc.ru/"><img src="images/metro.jpg" /></a><br clear="all">
-               
-               <p><strong>METRO Cash & Carry</strong> представлена в 29 странах более 700 центрами мелкооптовой торговли. В 2012 году объем продаж компании достиг около 32 миллиарда евро. Численность сотрудников превысила 120 000 человек по всему миру. METRO Cash & Carry – торговое подразделение METRO GROUP, одной из крупнейших и наиболее интернациональных торговых компаний мира. </p>
-               <p>В 2012 году объем продаж <strong>METRO GROUP</strong> составил около 67 миллиардов евро. Численность сотрудников на данный момент – более 280 000 человек. </p>
-               <p><strong>METRO GROUP</strong> представлена около 2 200 торговыми центрами в 32 странах мира.</p>
-<cite><span>Более подробная информация: www.metro-cc.ru, www.metrogroup.de</span></cite>
-.
-            </blockquote>
-
-            <blockquote>
-              <a href="http://www.diageo.com/"><img src="images/giageo.png" /></a>
-            </blockquote>
-            
-            <blockquote>
-              <a href="http://pepsico.ru/"><img src="images/pepsico.jpg" /></a><br clear="all">
-<p><strong>Компания PepsiCo</strong> – один из мировых лидеров на рынке продуктов питания и напитков с годовым объемом продаж более 65 млрд. долларов США. Компания выпускает широкий ассортимент продукции, включая 22 бренда, ежегодные розничные продажи каждого из которых превышают 1 млрд. долларов.</p>
-
-<p><strong>PepsiCo</strong> – крупнейший в России производитель продуктов питания и напитков. Инвестиции PepsiCo в экономику России составляют более 9 млрд. долларов. В России компания представлена более чем 30 предприятиями и 25 тыс. сотрудников. В 2011 году в «семью» PepsiCo вошла основанная в 1992 году компания «Вимм-Билль-Данн», занимавшая лидирующие позиции на рынке молочных продуктов и напитков в России и СНГ.</p>
-
-<p><strong>PepsiCo</strong> – крупнейший в России промышленный переработчик картофеля и один из крупнейших переработчиков сырого молока. Компания инвестирует значительные средства в реализацию программ по повышению эффективности деятельности поставщиков картофеля и молока, а также по улучшению качества и обеспечению роста поставок сырья.</p>
-
-            </blockquote>
+  <div><a href="#"><img src="images/metro.jpg" /></a></div>
+  <div><a href="#"><img src="images/pepsico.jpg" /></a></div>
+  <div><a href="#"><img src="images/giageo.png" /></a></div>
+  <div><a href="#"><img src="images/informatica.png" /></a></div>
+  <div><a href="#"><img src="images/deloitte.jpg" /></a></div>
+  <div><a href="#"><img src="images/ferrero.png" /></a></div>
 
 
           </div>
@@ -381,6 +365,8 @@ E-mail: <a>office.ecr@gmail.com</a><br>
 <script src="jquery.plugin.js"></script>
 <script src="jquery.countdown.js"></script>
 <script src="jquery.countdown-ru.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <!-- scripts ends! -->
 
 <script>
@@ -390,5 +376,15 @@ $(function () {
 	$('#defaultCountdown').countdown({until: austDay, format: 'dHM'});
 });
 </script>
+ <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slides').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
+      });
+    });
+  </script>
 </body>
 </html>

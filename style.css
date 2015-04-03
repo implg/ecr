@@ -361,11 +361,13 @@ a {
 
 .speakers, .schedule, .why, .registration, .sponsors {
   margin-bottom: 60px; }
+.why.spons {
+  margin-bottom: 0; }
 
 .speakers h2, .speakers .subtitle, .schedule h2, .schedule .subtitle {
   padding: 0 60px;
   margin-bottom: 0; }
-.schedule h2 {
+.schedule h2, .speakers h2 {
   margin-top: 60px;
 }
 .speakers .subtitle, .schedule .subtitle {
@@ -623,7 +625,7 @@ a {
   color: #888888;
   padding: 70px 110px;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 0;
   position: relative; }
   .testimonials h4 {
     font-size: 1.85714em;
@@ -710,7 +712,7 @@ a {
   margin-bottom: 0; }
 .registration h2 {
   margin-top: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .registration .desc {

@@ -71,6 +71,6 @@
     </div>
     
 <div class="butsub">
- <button name="submit" type="submit" class="button">Registr</button>
+ <button name="submit" type="submit" class="button">REGISTER NOW</button>
 </div>
         </form>

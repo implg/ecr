@@ -73,10 +73,10 @@
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="price.html">цены</a></li>
-        <li><a href="registr.html">участие</a></li>
+        <li><a href="registr.php">участие</a></li>
         <li><a href="index.html#location">контакты</a></li>
-        <li class="langru"><a href="/registr.html"><img src="images/ru.png"></a></li>
-        <li class="langen"><a href="en/registr.html"><img src="images/en.png"></a></li>
+        <li class="langru"><a href="/registr.php"><img src="images/ru.png"></a></li>
+        <li class="langen"><a href="en/registr.php"><img src="images/en.png"></a></li>
       </ul>
     </div>
     <!-- menu ends! -->
@@ -98,7 +98,7 @@
     <div class="container">
 
     
-      <h2>Регистрация</h2>
+      <h2 style="margin-bottom: 50px">Регистрация</h2>
       <!-- register form -->
       <?php require_once($_SERVER['DOCUMENT_ROOT'].'/include/ww.form.registr.php'); ?>
   </div>
