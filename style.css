@@ -181,6 +181,13 @@ a {
   background-size: cover;
   padding-top:50px;
   }
+  .header.second{
+    height:260px;
+  }
+  
+  .header.second .container{
+    min-height:100px;
+  }
   @media all and (max-width: 940px) {
     .header {
       height: auto; } }
