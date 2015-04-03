@@ -77,7 +77,7 @@ ini_set("display_errors", 1);
 			
 					'email' => array(
 							'extends' => true,
-							'to' => array('wikedwolf@yandex.ru'), // or string or fieldKey 
+							'to' => array('wikedwolf@yandex.ru', 'abrunov@loyaltylabs.ru'), // or string or fieldKey 
 							'from' => 'no-reply@'.$_SERVER['SERVER_NAME'],
 							//'message' => 'text %NAME%',
 							'message_template' => 'admin_mail',
