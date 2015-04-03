@@ -20,6 +20,7 @@
 								),
 							),
 
+
 						'sess' => array('type' => 'checkbox', 'required' => false, 'values' => 
 							array(
 								1 => array('value' => 1, 'title' => 'Пленарная сессия <span>ECR</span>'),
