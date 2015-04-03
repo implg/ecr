@@ -11,3 +11,4 @@ The request will be processed during the next 5 working days.<br>
 If you are a paying delegate you will receive a bill, if not &mdash; a confirmation of your registration for the event.<br>
 Before the event you will receive an SMS with a unique four-digit code to be called at the reception along with his name to get the badge.<br>
 Best regards, ECR&mdash;Rus Team +7 (495) 735&mdash;43&mdash;78 <a href="mailto: office.ecr@gmail.com"> office.ecr@gmail.com</a></p>
+
