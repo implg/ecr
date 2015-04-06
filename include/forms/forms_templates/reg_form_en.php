@@ -22,7 +22,7 @@
         	<span class="dopinfo">
 		        <div>
 		          <p class="amount">#company_in_forum#</p>
-		          <label><h4>#company_in_forum_title#</h4></label>
+		          <label for="company_in_forum"><h4>#company_in_forum_title#</h4></label>
 		        </div>
 	        </span>
         </div>
