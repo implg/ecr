@@ -587,7 +587,7 @@ class Forms extends FormsSettings{
 			
 			
 			if(is_string($email['to'])){
-				if (preg_match('#^(\d|[a-zA-Z0-9_-])+@(\d|[a-zA-Z0-9_-].+)\.([a-zA-Z]){2,4}$#', $email['to'])){
+				if (preg_match('#^(\d|[a-zA-Z0-9_\-]|\.)+@(\d|[a-zA-Z0-9_\-\.].+)\.([a-zA-Z_\-]){2,4}$#', $email['to'])){
 					$emails = array($email['to']);
 				}else{
 					$emails = array($this->fields[$email['to']]['value']);
@@ -595,7 +595,7 @@ class Forms extends FormsSettings{
 			}else{
 				$emails = array();
 				foreach($email['to'] as $to){
-					if (preg_match('#^(\d|[a-zA-Z0-9_-])+@(\d|[a-zA-Z0-9_-].+)\.([a-zA-Z]){2,4}$#', $to)){
+					if (preg_match('#^(\d|[a-zA-Z0-9_\-]|\.)+@(\d|[a-zA-Z0-9_\-\.].+)\.([a-zA-Z_\-]){2,4}$#', $to)){
 						array_push($emails, $to);
 					}else{
 						$to = $this->fields[$to]['value'];
