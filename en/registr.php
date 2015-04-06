@@ -35,7 +35,7 @@
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="registr.php">registration</a></li>
-        <li><a href="index.html#location">cantacts</a></li>
+        <li><a href="index.html#location">contacts</a></li>
         <li class="langru"><a href="/registr.php"><img src="../images/ru.png"></a></li>
         <li class="langen"><a href="/en/registr.php"><img src="../images/en.png"></a></li>
       </ul>
@@ -72,7 +72,7 @@
 		Prices do not include VAT. <br>
 		Participation of 2 and more delegates gives a 5% discount. 
 		<br>
-		To register please contact Elena Tkachenko - tel: +7-903-964-91-84, E-mail: <a href="mailto:elena.tkachenko@ecr-rus.ru">elena.tkachenko@ecr-rus.ru </a><br>
+		To register please contact Dina Aliamova - tel: +7(916) 145-99-82, , E-mail: <a href="mailto:dina.aliamova@ecr-rus.ru">dina.aliamova@ecr-rus.ru</a><br>
 <br>
       
       <!-- register form -->
