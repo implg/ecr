@@ -1,6 +1,6 @@
       
       <form action="#action_url#" method="post" class="on_ajax">
- <h2>Register</h2>
+ 
       <p class="subtitle"><a href="http://www.ecr-all.org/russia/members/Members.php" target="_blank">ECR MEMBERS</a> PARTICIPATE FOR FREE</p>
     <div class="counter">THE FORUM STARTS IN:<br>
     <div id="defaultCountdown" class="myhome"></div></div>
@@ -52,7 +52,7 @@
 		#sess_iter#
         <div>
           <p class="amount">#sess#</p>
-          <label><h4>#sess_title#</h4></label>
+          <label for="sess#sess_value#"><h4>#sess_title#</h4></label>
         </div>
         #sess_enditer#
 
@@ -66,7 +66,7 @@
 		#translate_iter#
         <div>
           <p class="amount">#translate#</p>
-          <label><h4>#translate_title#</h4></label>
+          <label  for="translate#translate_value#"><h4>#translate_title#</h4></label>
         </div>
         #translate_enditer#
 
@@ -74,7 +74,7 @@
  		#who_iter#
         <div>
           <p class="amount">#who#</p>
-          <label><h4>#who_title#</h4></label>
+          <label for="who#who_value#"><h4>#who_title#</h4></label>
         </div>
         #who_enditer#
            

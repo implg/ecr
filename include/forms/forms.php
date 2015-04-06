@@ -821,6 +821,7 @@ class Forms extends FormsSettings{
 							$res .= $attr.'="'.$value.'" ';
 						}
 					}
+					
 	
 					if ($field['required']){
 						$res .= ' required ';
@@ -880,6 +881,12 @@ class Forms extends FormsSettings{
 						$res .= $attr.'="'.$value.'" ';
 					}
 				}
+				if (empty($field['id']) && empty($field['attrs']['id'])){
+						$val = $field['value'];
+						$fieldid = str_replace('[]', '', $name);
+						$fieldid .= $val;
+						$res .= " id=$fieldid ";
+					}
 
 				if ($field['required']){
 					$res .= ' required ';

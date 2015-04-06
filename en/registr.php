@@ -59,7 +59,7 @@
     <div class="container">
 
     
-     
+     <h2>Register</h2>
       
       <!-- register form -->
       <?php require_once($_SERVER['DOCUMENT_ROOT'].'/include/ww.form.registr.en.php'); ?>
