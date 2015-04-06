@@ -34,7 +34,7 @@
 	<tr valign="top">
 	<td>
 	
-	
+		<a href="/admin/index.php"><< Назад таблицу</a>
 		<!--  start step-holder -->
 		
 		<!--  end step-holder -->
@@ -174,7 +174,7 @@
 	</table>
 	</form>
 	<!-- end id-form  -->
-
+	<a href="/admin/index.php"><< Назад таблицу</a>
 	</td>
 	<td>
 
