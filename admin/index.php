@@ -33,7 +33,7 @@
 			<!--  start table-content  -->
 			<div id="table-content">
 			
-		
+				<a style="display:block; text-align:right;font-size:12px;" href="/admin/excel.php">Экспорт в Excel</a>
 		 
 				<!--  start product-table ..................................................................................... -->
 				<?php

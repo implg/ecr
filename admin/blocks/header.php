@@ -184,8 +184,31 @@ $(document).pngFix( );
 	</div>
 	<!-- end logo -->
 	
-	<!--  start top-search -->
 	<div id="top-search">
+
+		<form action="/admin/index.php" method="get">
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+		<td><input placeholder="Фамилия" name="search_last_name" type="text" value="<?php echo $_REQUEST['search_last_name'];?>"  class="top-search-inp" /></td>
+		<td><input placeholder="Компания" name="search_company" type="text" value="<?php echo $_REQUEST['search_company'];?>"  class="top-search-inp" /></td>
+		<td>
+		 	<label style="color:#fff; font-size:12px;"><input <?php if ($_REQUEST['search_company_in_forum']):?>checked<?php endif;?>  type="checkbox" name="search_company_in_forum"> Участник форума</label>
+		</td>
+		<td>
+			<select name="search_status">
+				<option value="">Статус</option>
+				<option <?php if ($_REQUEST['search_status'] == 'Registered'):?>selected<?php endif;?> value="Registered">Registered</option>
+				<option <?php if ($_REQUEST['search_status'] == 'Participant'):?>selected<?php endif;?> value="Participant">Participant</option>
+				<option <?php if ($_REQUEST['search_status'] == 'Ticket'):?>selected<?php endif;?> value="Ticket">Ticket</option>
+			</select>
+		</td>
+		<td>
+		<input type="image" src="images/shared/top_search_btn.gif"  />
+		</td>
+		</tr>
+		</table>
+		</form>
+
 		
 	</div>
  	<!--  end top-search -->
