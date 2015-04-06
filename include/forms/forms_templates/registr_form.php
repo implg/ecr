@@ -46,7 +46,7 @@
       
 		</div>
       <div class="price">
-<h3>Какие сессии вы планируете посетить?</h3>
+<h3 id="sess">Какие сессии вы планируете посетить?</h3>
 		#sess_iter#
         <div>
           <p class="amount">#sess#</p>

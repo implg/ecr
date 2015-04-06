@@ -15,10 +15,16 @@ foreach ($_POST as $key => $value) {
 	if($key == 'sess' || $key == 'who'){
 		$value = serialize($value);
 	}
+
 	$mysql->add($key, $value);
 
 }
-
+if(empty($_POST['translate'])){
+	$mysql->add('translate', 0);	
+}
+if(empty($_POST['company_in_forum'])){
+	$mysql->add('company_in_forum', 0);	
+}
 
 if ($ticket['status'] != 'Participant' && $_POST['status'] == 'Participant'){
 	$change_status = true;

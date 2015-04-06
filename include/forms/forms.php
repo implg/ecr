@@ -864,7 +864,7 @@ class Forms extends FormsSettings{
 						}
 					}
 	
-					if ($field['required']){
+					if ($field['required'] && $field['type'] != 'checkbox' && $field['type'] != 'radio'){
 						$res .= ' required ';
 					}
 					if (isset($field['value'])){
@@ -888,7 +888,7 @@ class Forms extends FormsSettings{
 						$res .= " id=$fieldid ";
 					}
 
-				if ($field['required']){
+				if ($field['required'] && $field['type'] != 'checkbox' && $field['type'] != 'radio'){
 					$res .= ' required ';
 				}
 				if (isset($field['value'])){

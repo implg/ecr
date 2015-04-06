@@ -48,7 +48,7 @@
       
 		</div>
       <div class="price">
-<h3>I’m going to attend the following sessions</h3>
+<h3 id="sess">I’m going to attend the following sessions</h3>
 		#sess_iter#
         <div>
           <p class="amount">#sess#</p>
@@ -62,7 +62,7 @@
 
  <span class="dopinfo">
 
- <h3>Do you need Russian-English translation during the Forum?</h3>
+ <h3 >Do you need Russian-English translation during the Forum?</h3>
 		#translate_iter#
         <div>
           <p class="amount">#translate#</p>

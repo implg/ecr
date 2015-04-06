@@ -169,6 +169,9 @@ $(document).ready(
 			          	} else {
 			          		$.each(reply.errors, function(key, val) {
 			          			obj = $("[name=" + key + "]", obj_form);
+			          			if(!obj.offset()){
+			          				obj = $("#" + key  , obj_form);
+			          			}
 			          			var hint_obj = $("<div class='hint animated fadeInUp'><div class='icon warning'></div><div>" + val + "</div></div>");
 			          			$("body").append(hint_obj);
 				          		hint_obj.css({"left": obj.offset().left, "top": obj.offset().top + obj.outerHeight(), "max-width": obj.outerWidth()});
