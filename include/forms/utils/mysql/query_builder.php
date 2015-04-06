@@ -7,6 +7,7 @@ ini_set("display_errors", 0);
     	private $mysqli;
     	public function __construct(){
     		$this->mysqli = new mysqli('mysql.ecr-forum.com', 'ecrforum', 'RR56dkF89', 'ecrforum');
+    		#$this->mysqli = new mysqli('localhost', 'root', '1', 'forum');
     		$this->mysqli->set_charset("utf8");
     	}
         public $parms = array();
@@ -98,11 +99,12 @@ ini_set("display_errors", 0);
             
             $this->parms = array(); //Reset Params
             $result = null;
-            $res    = $this->mysqli->query($query . " LIMIT $offset, $limit");
+            $res    = $this->mysqli->query($query);
             if (!$res) {
                 if ($this->devMode == 1) {
                     echo "Error: <b>Wrong MySQL SELECT syntax.</b> <br>" . " \r\n";
                     echo $query . "<br>" . " \r\n";
+                    print_r($this->mysqli->error);
                 }
                 return false;
             }
