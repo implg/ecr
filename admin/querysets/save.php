@@ -4,7 +4,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/include/forms/utils/mysql/query_builder
 $mysql = new simple_query_builder();
 $mysql->devMode = 1;
 
-foreach ($_REQUEST as $key => $value) {
+foreach ($_POST as $key => $value) {
 	if($key == 'sess' || $key == 'who'){
 		$value = serialize($value);
 	}
