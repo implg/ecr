@@ -62,7 +62,7 @@
 
  <span class="dopinfo">
 
- <h3 >Do you need Russian-English translation during the Forum?</h3>
+ <h3 id="translate">Do you need Russian-English translation during the Forum?</h3>
 		#translate_iter#
         <div>
           <p class="amount">#translate#</p>

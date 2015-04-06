@@ -14,7 +14,7 @@
 The request will be processed during the next 5 working days.</p>",
 
 					'fields' => array(
-						'translate' => array('type' => 'radio', 'required' => true, 'value' => 0, 'values' => 
+						'translate' => array('type' => 'radio', 'required' => true, 'value'=>'', 'values' => 
 							array(
 								1 => array('value' => 1, 'title' => 'Yes'),
 								0 => array('value' => 0, 'title' => 'No'),

@@ -13,7 +13,7 @@
 					'action_before' => 'send_email',
 					'action' => 'write_db',
 					'fields' => array(
-						'translate' => array('type' => 'radio', 'required' => true, 'value' => 0, 'values' => 
+						'translate' => array('type' => 'radio', 'required' => true, 'value'=>'', 'values' => 
 							array(
 								1 => array('value' => 1, 'title' => 'Да'),
 								0 => array('value' => 0, 'title' => 'Нет'),

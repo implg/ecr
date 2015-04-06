@@ -153,7 +153,7 @@ class Forms extends FormsSettings{
 			
 						//preprint($field);
 						$error = isset($this->errors[$id]) ? $this->GetErrorMessage($field, $this->errors[$id]) : '';
-						if ($value == $val['value']){
+						if ($value === $val['value']){
 							if(!$field['attrs']) $field['attrs'] = array();
 							$field['attrs']['checked'] = 'checked';
 						}

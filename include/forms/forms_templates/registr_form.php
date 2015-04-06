@@ -60,7 +60,7 @@
 
  <span class="dopinfo">
 
- <h3>Потребуется ли вам перевод c английского на русский?</h3>
+ <h3 id="translate">Потребуется ли вам перевод c английского на русский?</h3>
 		#translate_iter#
         <div>
           <p class="amount">#translate#</p>
