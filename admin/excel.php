@@ -95,7 +95,7 @@ $value = '<Cell ss:StyleID="1"><Data ss:Type="String"></Data></Cell>\t';
 	}
 
 $value = str_replace('"', '', $value);
-$value = '<Cell ss:StyleID="1"><Data ss:Type="$type">' . $value . '</Data></Cell>\t';
+$value = '<Cell ss:StyleID="1"><Data ss:Type="String">' . $value . '</Data></Cell>\t';
 }
 $line .= $value;
 }
