@@ -60,7 +60,29 @@ $array = array(
 	);
 $link = mysql_connect ($host, $user, $password) or die('Could not connect: ' . mysql_error());
 mysql_select_db($db_name) or die('Could not select database');
-$select = "SELECT * FROM `".$tbl_name."`";
+$select = "SELECT * FROM `".$tbl_name."` WHERE 1=1";
+if ($_REQUEST['search_company_in_forum']){
+	$select .= " AND company_in_forum<>''";
+}
+if ($_REQUEST['search_last_name']){
+	$select .= " AND last_name LIKE '%".$_REQUEST['search_last_name']."%'";
+}
+if ($_REQUEST['search_company']){
+	$select .= " AND company LIKE '%".$_REQUEST['company']."%'";
+}
+
+if ($_REQUEST['search_status']){
+	$select .= " AND status='".$_REQUEST['search_status']."'";
+}
+
+
+if ($_REQUEST['sort']){
+	$select .= " ORDER BY ".$_REQUEST['sort'];
+}
+
+if ($_REQUEST['order']){
+	$select .= " ".$_REQUEST['order'];
+}
 mysql_query('SET NAMES utf8;');
 $export = mysql_query($select);
 //$fields = mysql_num_rows($export); // thanks to Eric

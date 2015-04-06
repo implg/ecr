@@ -13,7 +13,7 @@
 					'action_before' => 'send_email',
 					'action' => 'write_db',
 					'fields' => array(
-						'translate' => array('type' => 'radio',  'value' => 0, 'values' => 
+						'translate' => array('type' => 'radio', 'required' => true, 'value' => 0, 'values' => 
 							array(
 								1 => array('value' => 1, 'title' => 'Да'),
 								0 => array('value' => 0, 'title' => 'Нет'),
@@ -21,7 +21,7 @@
 							),
 
 
-						'sess' => array('type' => 'checkbox', 'required' => false, 'values' => 
+						'sess' => array('type' => 'checkbox', 'required' => true, 'values' => 
 							array(
 								1 => array('value' => 1, 'title' => 'Пленарная сессия <span>ECR</span>'),
 								2 => array('value' => 2, 'title' => 'Лучшие практики <span>Supply Chain</span>'),

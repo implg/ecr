@@ -33,27 +33,37 @@
 			<!--  start table-content  -->
 			<div id="table-content">
 			
-				<a style="display:block; text-align:right;font-size:12px;" href="/admin/excel.php">Экспорт в Excel</a>
+				
 		 
 				<!--  start product-table ..................................................................................... -->
 				<?php
 					$order = $_REQUEST['order'];
 					$sort = $_REQUEST['sort'];
+					$get = "";
+					$get_with_sort = "";
+					foreach ($_GET as $key=>$val){
+						if($key != 'sort' || $key != 'order'){
+							$get .= "&$key=$val";	
+						}
+						$get_with_sort .= "&$key=$val";	
+						
+					}
 				?>
+				<a style="display:block; text-align:right;font-size:12px;" href="/admin/excel.php?<?php echo $get_with_sort;?>">Экспорт в Excel</a>
 				<form id="mainform" action="">
 				<table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table">
 				<tr>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=id&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=id<?php echo $get; ?>&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
 					
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Имя</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=last_name&order=<?php if($sort == 'last_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Фамилия</a></th>
-					<th class="table-header-repeat line-left"><a href="?sort=email&order=<?php if($sort == 'email'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">E-mail</a></th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Имя</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=last_name<?php echo $get; ?>&order=<?php if($sort == 'last_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Фамилия</a></th>
+					<th class="table-header-repeat line-left"><a href="?sort=email<?php echo $get; ?>&order=<?php if($sort == 'email'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">E-mail</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow">Телефон</a></th>
-					<th class="table-header-repeat line-left"><a href="?sort=company&order=<?php if($sort == 'company'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Компания</a></th>
-					<th class="table-header-repeat line-left"><a href="?sort=company_in_forum&order=<?php if($sort == 'company_in_forum'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Члены ECR</a></th>
+					<th class="table-header-repeat line-left"><a href="?sort=company<?php echo $get; ?>&order=<?php if($sort == 'company'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Компания</a></th>
+					<th class="table-header-repeat line-left"><a href="?sort=company_in_forum<?php echo $get; ?>&order=<?php if($sort == 'company_in_forum'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Члены ECR</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Сайт компании</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Должность</a></th>
-					<th class="table-header-repeat line-left"><a href="?sort=status&order=<?php if($sort == 'status'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>" >Статус</a></th>
+					<th class="table-header-repeat line-left"><a href="?sort=status<?php echo $get; ?>&order=<?php if($sort == 'status'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>" >Статус</a></th>
 					<th class="table-header-repeat"></th>
 					<th class="table-header-repeat"></th>
 				</tr>

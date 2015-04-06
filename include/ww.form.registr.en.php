@@ -14,14 +14,14 @@
 The request will be processed during the next 5 working days.</p>",
 
 					'fields' => array(
-						'translate' => array('type' => 'radio',  'value' => 0, 'values' => 
+						'translate' => array('type' => 'radio', 'required' => true, 'value' => 0, 'values' => 
 							array(
 								1 => array('value' => 1, 'title' => 'Yes'),
 								0 => array('value' => 0, 'title' => 'No'),
 								),
 							),
 
-						'sess' => array('type' => 'checkbox', 'required' => false, 'values' => 
+						'sess' => array('type' => 'checkbox', 'required' => true, 'values' => 
 							array(
 								1 => array('value' => 1, 'title' => '<span>ECR</span> Plenary Session'),
 								2 => array('value' => 2, 'title' => '<span>Supply Chain</span> best practices'),

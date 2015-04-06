@@ -306,7 +306,7 @@ class Forms extends FormsSettings{
 					switch ($field['rule']) {
 						case 'email':
 							
-							$res = preg_match('#^(\d|[a-zA-Z0-9_-])+@(\d|[a-zA-Z0-9_-].+)\.([a-zA-Z_-]){2,4}$#', $field['value']);
+							$res = preg_match('#^(\d|[a-zA-Z0-9_\-]|\.)+@(\d|[a-zA-Z0-9_\-\.].+)\.([a-zA-Z_\-]){2,4}$#', $field['value']);
 							$res = $res == 1 ? true : false;
 							if(!$field['required'] && empty($field['value'])){
 								$res = true;
