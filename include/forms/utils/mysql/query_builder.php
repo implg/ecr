@@ -7,7 +7,7 @@ ini_set("display_errors", 0);
     	private $mysqli;
     	public function __construct(){
     		$this->mysqli = new mysqli('mysql.ecr-forum.com', 'ecrforum', 'RR56dkF89', 'ecrforum');
-    		#$this->mysqli = new mysqli('localhost', 'root', '1', 'forum');
+    		//$this->mysqli = new mysqli('localhost', 'root', '1', 'forum');
     		$this->mysqli->set_charset("utf8");
     	}
         public $parms = array();
@@ -80,6 +80,21 @@ ini_set("display_errors", 0);
             } else {
                 $query = "UPDATE $tableName SET $querySET";
             }
+            $res = $this->mysqli->query($query);
+            if (!$res) {
+                if ($this->devMode == 1) {
+                    echo "Error: <b>Wrong MySQL UPDATE syntax.</b> <br>" . " \r\n";
+                    echo $query . "<br>" . " \r\n";
+                }
+                $this->parms = array(); //Reset params
+                return false;
+            } else {
+                $this->parms = array(); //Reset params
+                return $this->mysqli->affected_rows; //Return number of affected rows
+            }
+        }
+        public function delete($tableName, $where){
+			$query = "DELETE FROM ".$tableName." WHERE id=".$where;
             $res = $this->mysqli->query($query);
             if (!$res) {
                 if ($this->devMode == 1) {

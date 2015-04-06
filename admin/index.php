@@ -43,6 +43,7 @@
 				<form id="mainform" action="">
 				<table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table">
 				<tr>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=id&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
 					
 					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Имя</a>	</th>
 					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=last_name&order=<?php if($sort == 'last_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Фамилия</a></th>
@@ -64,6 +65,7 @@
 				<?php foreach ($tickets as $ticket){ ?>
 					<tr>
 						
+						<td><?php echo $ticket['id'];?></td>
 						<td><?php echo $ticket['first_name'];?></td>
 						<td><?php echo $ticket['last_name'];?></td>
 						<td><a href="mailto:<?php echo $ticket['email'];?>"><?php echo $ticket['email'];?></a></td>
@@ -75,7 +77,7 @@
 						<td><?php echo $ticket['status'];?></td>
 						<td>
 						<a href="/admin/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
-						<a href="/admin/delete.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-2 info-tooltip"></a>
+						<a href="/admin/querysets/delete.php?id=<?php echo $ticket['id'];?>" title="delete" class="icon-2 info-tooltip"></a>
 						</td>
 					</tr>
 				<?php } ?>
