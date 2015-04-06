@@ -1,4 +1,4 @@
-
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/login_required.php');?>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/blocks/header.php'); ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/querysets/byid.php'); ?>
@@ -120,7 +120,46 @@
 			</td>
 			<td></td>
 		</tr>
-		
+		<tr>
+			<th valign="top">БИК:</th>
+			<td><input type="text" name="bik" value="<?php echo $ticket['bik'];?>" class="inp-form" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th valign="top">Название банка:</th>
+			<td><input type="text" name="bankname" value="<?php echo $ticket['bankname'];?>" class="inp-form" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th valign="top">КС:</th>
+			<td><input type="text" name="ks" value="<?php echo $ticket['ks'];?>" class="inp-form" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th valign="top">РС:</th>
+			<td><input type="text" name="rs" value="<?php echo $ticket['rs'];?>" class="inp-form" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th valign="top">Юридическое название:</th>
+			<td><input type="text" name="urname" value="<?php echo $ticket['urname'];?>" class="inp-form" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th valign="top">Статус:</th>
+			<td>
+				<select name="status">
+					<option <?php if ($ticket['status'] == 'Registered'):?>selected<?php endif; ?> value="Registered">Registered</option>
+					<option <?php if ($ticket['status'] == 'Participant'):?>selected<?php endif; ?> value="Participant">Participant</option>
+					<option <?php if ($ticket['status'] == 'Ticket'):?>selected<?php endif; ?> value="Ticket">Ticket</option>
+				</select>
+				
+				
+				
+				
+			</td>
+			<td></td>
+		</tr>
 		
 	
 	

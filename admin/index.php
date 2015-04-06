@@ -1,3 +1,4 @@
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/login_required.php');?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/blocks/header.php'); ?>
 	<?php if ($_REQUEST['message']): ?>
 				<div id="message-green">
@@ -51,6 +52,7 @@
 					<th class="table-header-repeat line-left"><a href="?sort=company_in_forum&order=<?php if($sort == 'company_in_forum'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Члены ECR</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Сайт компании</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Должность</a></th>
+					<th class="table-header-repeat line-left"><a href="?sort=status&order=<?php if($sort == 'status'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>" >Статус</a></th>
 					<th class="table-header-repeat"></th>
 				</tr>
 				<?php
@@ -70,6 +72,7 @@
 						<td><?php echo $ticket['company_in_forum'] ? '<a href="" title="Edit" class="icon-5 info-tooltip"></a>' : '' ;?></td>
 						<td><a href=""><?php echo $ticket['site_company'];?></a></td>
 						<td><?php echo $ticket['position'];?></td>
+						<td><?php echo $ticket['status'];?></td>
 						<td>
 						<a href="/admin/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
 						<a href="/admin/delete.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-2 info-tooltip"></a>
