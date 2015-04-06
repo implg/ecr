@@ -59,21 +59,7 @@
     <div class="container">
 
     
-      <h2>Register</h2>
-      <p class="subtitle"><a href="http://www.ecr-all.org/russia/members/Members.php" target="_blank">ECR MEMBERS</a> PARTICIPATE FOR FREE</p>
-		<div class="counter">THE FORUM STARTS IN:<br>
-		<div id="defaultCountdown" class="myhome"></div></div>
-        <strong>Participation fee:</strong> 
-		      <p class="desc">
-		      <strong>45 000 rub</strong> - Before May 1, 2015.<br>
-		      <strong>50 000 rub</strong> - Before June 1, 2015.<br>
-		      <strong>55 000 rub</strong> - After June 1, 2015 (with guarantee letter provided).
-		      </p>
-		Prices do not include VAT. <br>
-		Participation of 2 and more delegates gives a 5% discount. 
-		<br>
-		To register please contact Dina Aliamova - tel: +7(916) 145-99-82, , E-mail: <a href="mailto:dina.aliamova@ecr-rus.ru">dina.aliamova@ecr-rus.ru</a><br>
-<br>
+     
       
       <!-- register form -->
       <?php require_once($_SERVER['DOCUMENT_ROOT'].'/include/ww.form.registr.en.php'); ?>
