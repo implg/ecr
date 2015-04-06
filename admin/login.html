@@ -1,8 +1,9 @@
 <?php
+ini_set("display_errors", 0); 
 	require_once($_SERVER['DOCUMENT_ROOT'].'/admin/config.php');
 	session_start();
 	if($_COOKIE['loggined'] == $admin_password){
-		header('Location /admin/');
+		header('Location /admin/inde');
 	}elseif($_REQUEST['login']){
 		$login = $_REQUEST['login'];
 		$password = $_REQUEST['password'];
