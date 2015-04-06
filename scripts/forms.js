@@ -243,6 +243,7 @@ $(document).ready(
 				$('input[name=ks]').hide();
 				$('input[name=rs]').hide();
 				$('input[name=urname]').hide();
+				$('h3.requisit').hide();
 			}else{
 				$('input[name=company]').show();
 				$('select[name=member]').hide();				
@@ -251,6 +252,7 @@ $(document).ready(
 				$('input[name=ks]').show();
 				$('input[name=rs]').show();
 				$('input[name=urname]').show();
+				$('h3.requisit').show();
 			}
 		})
 

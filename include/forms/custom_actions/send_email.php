@@ -17,6 +17,7 @@ ini_set("display_errors", 0);
 	$this->fields['who']['mail_value'] = $who;
 	
 	$this->fields['translate']['mail_value'] = $this->fields['translate']['values'][$this->fields['translate']['value'][0]]['title'];
+	$this->fields['translate']['value'] = $this->fields['translate']['values'][$this->fields['translate']['value'][0]]['value'];
 	
 	$company = '';
 	if ($this->fields['company']['value']){

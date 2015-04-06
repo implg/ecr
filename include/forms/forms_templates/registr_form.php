@@ -36,7 +36,7 @@
           #phone#
           #cupon#
           #count#
-          <h3>Реквизиты для выставления счета</h3>
+          <h3 class="requisit">Реквизиты для выставления счета</h3>
           #bik#
           #bankname#
           #ks#

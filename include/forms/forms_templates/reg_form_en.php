@@ -38,7 +38,7 @@
           #phone#
           #cupon#
           #count#
-          <h3>Bill-to information</h3>
+          <h3 class="requisit">Bill-to information</h3>
           #bik#
           #bankname#
           #ks#

@@ -49,6 +49,11 @@
 			<td></td>
 		</tr>
 		<tr>
+			<th width="50%" valign="top">Требуется перевод</th>
+			<td><input type="checkbox" name="translate" value="1" <?php if ($ticket['translate']): ?>checked<?php endif; ?> class="inp-form" /></td>
+			<td></td>
+		</tr>
+		<tr>
 			<th valign="top">Язык страницы:</th>
 			<td><input type="text" name="language" value="<?php echo $ticket['language'];?>" class="inp-form" /></td>
 			<td></td>

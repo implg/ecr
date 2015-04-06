@@ -61,6 +61,7 @@
 					<th class="table-header-repeat line-left"><a class="no_arrow">Телефон</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=company<?php echo $get; ?>&order=<?php if($sort == 'company'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Компания</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=company_in_forum<?php echo $get; ?>&order=<?php if($sort == 'company_in_forum'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Члены ECR</a></th>
+					<th class="table-header-repeat line-left"><a href="?sort=translate<?php echo $get; ?>&order=<?php if($sort == 'translate'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Перевод</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Сайт компании</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Должность</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=status<?php echo $get; ?>&order=<?php if($sort == 'status'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>" >Статус</a></th>
@@ -83,6 +84,7 @@
 						<td><?php echo $ticket['phone'];?></td>
 						<td><?php echo $ticket['company'];?></td>
 						<td><?php echo $ticket['company_in_forum'] ? '<a href="" title="Edit" class="icon-5 info-tooltip"></a>' : '' ;?></td>
+						<td><?php echo $ticket['translate'] ? '<a href="" title="Edit" class="icon-5 info-tooltip"></a>' : '' ;?></td>
 						<td><a href=""><?php echo $ticket['site_company'];?></a></td>
 						<td><?php echo $ticket['position'];?></td>
 						<td><?php echo $ticket['status'];?></td>
