@@ -72,7 +72,7 @@
 		Внимание! Цены указаны без учета НДС. <br>
 		При участии 2-х и более делегатов от компании действует скидка в размере 5% 
 		<br>
-		По вопросам Делегатского участия обращайтесь к Елене Ткаченко - tel: +7-903-964-91-84, E-mail: <a href="mailto:elena.tkachenko@ecr-rus.ru">elena.tkachenko@ecr-rus.ru </a><br>
+		По вопросам Делегатского участия обращайтесь к Дине Алямовой - tel: +7(916) 145-99-82, , E-mail: <a href="mailto:dina.aliamova@ecr-rus.ru">dina.aliamova@ecr-rus.ru</a><br>
 <br>
 
     
