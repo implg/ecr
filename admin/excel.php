@@ -91,7 +91,7 @@ $value = '<Cell ss:StyleID="1"><Data ss:Type="String"></Data></Cell>\t';
 
 		}
 		$value = $res;
-		$type="Text";
+		
 	}
 
 $value = str_replace('"', '', $value);

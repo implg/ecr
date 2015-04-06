@@ -55,6 +55,7 @@
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Должность</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=status&order=<?php if($sort == 'status'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>" >Статус</a></th>
 					<th class="table-header-repeat"></th>
+					<th class="table-header-repeat"></th>
 				</tr>
 				<?php
 
@@ -77,6 +78,10 @@
 						<td><?php echo $ticket['status'];?></td>
 						<td>
 						<a href="/admin/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
+						
+						</td>
+						<td>
+						
 						<a href="/admin/querysets/delete.php?id=<?php echo $ticket['id'];?>" title="delete" class="icon-2 info-tooltip"></a>
 						</td>
 					</tr>
