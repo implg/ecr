@@ -45,17 +45,17 @@
 						'site_company' => array('type' => 'text', 'required' => false,  'attrs'=>array('placeholder' => 'Сайт компании') ),
 						'last_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Фамилия (латинскими буквами)', 'class' => 'latine') ),
 						'first_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Имя (латинскими буквами)', 'class' => 'latine')),
-						'second_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Отчество')),
-						'position' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Должность', 'class' => 'latine')),
+						
+						'position' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Должность')),
 						'phone' => array('extends' => 'phone', 'attrs'=>array('placeholder' => 'Мобильный телефон (необходим для получения смс с кодом регистрации)')),
 						'email' => array('extends' => 'email', 'attrs'=>array('placeholder' => 'Email (для членов ECR - только корпоративный e-mail)')),
 						'cupon' => array('extends' => 'name', 'required' => false,'attrs'=>array('placeholder' => 'Купон (введите кодовое слово для получения скидки)')),
-						'count' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Какое количество человек от вашей компании планирует принять участие в Форуме?')),
-						'bik' => array('extends' => 'name', 'attrs' => array('placeholder' => 'БИК')),
-						'bankname' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Наименование банка')),
-						'ks' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Корреспондентский счёт')),
-						'rs' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Расчетный счет')),
-						'urname' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Юридическое название')),
+						'count' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'Какое количество человек от вашей компании планирует принять участие в Форуме?')),
+						'bik' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'БИК')),
+						'bankname' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'Наименование банка')),
+						'ks' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'Корреспондентский счёт')),
+						'rs' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'Расчетный счет')),
+						'urname' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'Юридическое название')),
 
 
 						'who' => array('type' => 'checkbox', 'required' => false, 'values' => 

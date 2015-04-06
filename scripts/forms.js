@@ -20,7 +20,7 @@ var spinner_button = {
   hwaccel: false, // Whether to use hardware acceleration
   className: 'spinner', // The CSS class to assign to the spinner
   zIndex: 2e9, // The z-index (defaults to 2000000000)
-	top: 'auto', // Top position relative to parent in px
+	top: '40%', // Top position relative to parent in px
 	left: 'auto' // Left position relative to parent in px
 };
 
@@ -238,9 +238,19 @@ $(document).ready(
 			if($(this).is(':checked')){
 				$('input[name=company]').hide();
 				$('select[name=member]').show();
+				$('input[name=bik]').hide();
+				$('input[name=bankname]').hide();
+				$('input[name=ks]').hide();
+				$('input[name=rs]').hide();
+				$('input[name=urname]').hide();
 			}else{
 				$('input[name=company]').show();
 				$('select[name=member]').hide();				
+				$('input[name=bik]').show();
+				$('input[name=bankname]').show();
+				$('input[name=ks]').show();
+				$('input[name=rs]').show();
+				$('input[name=urname]').show();
 			}
 		})
 

@@ -4,7 +4,60 @@ $host = "mysql.ecr-forum.com"; // your db host (ip/dn)
 $user = "ecrforum"; // your db's privileged user account
 $password = "RR56dkF89"; // and it's password
 $db_name = "ecrforum"; // db name
+// $host = "localhost";
+// $user = "root";
+// $password = "1";
+// $db_name = "forum";
 $tbl_name = "members"; // table name of the selected db
+$array = array(
+	'sess' => array(
+		'English' => array(
+									1 => array('value' => 1, 'title' => '<span>ECR</span> Plenary Session'),
+									2 => array('value' => 2, 'title' => '<span>Supply Chain</span> best practices'),
+									3 => array('value' => 3, 'title' => 'Shrinkage Reduction'),
+									4 => array('value' => 4, 'title' => 'On Shelf Availabillity'),
+									5 => array('value' => 5, 'title' => 'Category Management'),
+									6 => array('value' => 6, 'title' => 'Shopper Insights'),
+									7 => array('value' => 7, 'title' => '<span>Omni Channel Marketing</span>'),
+									8 => array('value' => 8, 'title' => 'Electronic Data Interchange (<span>EDI</span>)'),
+									9 => array('value' => 9, 'title' => 'E-invoices'),
+									10 => array('value' => 10, 'title' => 'Source e-documents'),
+									11 => array('value' => 11, 'title' => 'Master Data Synchronisation'),
+									12 => array('value' => 12, 'title' => 'ECR Best practices'),
+									),
+
+								
+		'Русский' => array(
+									1 => array('value' => 1, 'title' => 'Пленарная сессия <span>ECR</span>'),
+									2 => array('value' => 2, 'title' => 'Лучшие практики <span>Supply Chain</span>'),
+									3 => array('value' => 3, 'title' => 'Борьба с потерями'),
+									4 => array('value' => 4, 'title' => 'Присутствие товара на полке'),
+									5 => array('value' => 5, 'title' => 'Категорийный менеджмент'),
+									6 => array('value' => 6, 'title' => 'Изучение потребителя'),
+									7 => array('value' => 7, 'title' => '<span>Omni Channel</span>'),
+									8 => array('value' => 8, 'title' => 'Электронный обмен данными (<span>EDI</span>)'),
+									9 => array('value' => 9, 'title' => 'Электронные бухгалтерские документы'),
+									10 => array('value' => 10, 'title' => 'Синхронизация мастер-данных'),
+									11 => array('value' => 11, 'title' => 'Лучшие практики <span>ECR</span>'),
+									),
+		),
+	'who' => array(
+		'English' => array(
+									'1' => array('value' => 1, 'title' => 'I am a speaker at the Forum'),
+									'2' => array('value' => 2, 'title' => 'My company is a media partner of the Forum'),
+									'3' => array('value' => 3, 'title' => 'My company is a sponsor of the Forum'),
+									'4' => array('value' => 4, 'title' => 'My company is taking part in the Market-place of the Forum'),
+									
+									),
+		'Русский' => array(
+									'1' => array('value' => 1, 'title' => 'Я являюсь докладчиком Форума'),
+									'2' => array('value' => 2, 'title' => 'Я представитель информационного партнера Форума'),
+									'3' => array('value' => 3, 'title' => 'Я представитель компании-спонсора Форума'),
+									'4' => array('value' => 4, 'title' => 'Моя компания — участник выставки'),
+									
+									),
+		)
+	);
 $link = mysql_connect ($host, $user, $password) or die('Could not connect: ' . mysql_error());
 mysql_select_db($db_name) or die('Could not select database');
 $select = "SELECT * FROM `".$tbl_name."`";
@@ -16,14 +69,33 @@ for ($i = 0; $i < $fields; $i++) {
 $col_title .= '<Cell ss:StyleID="2"><Data ss:Type="String">'.mysql_field_name($export, $i).'</Data></Cell>';
 }
 $col_title = '<Row>'.$col_title.'</Row>';
-while($row = mysql_fetch_row($export)) {
+$lang = "";
+while($row = mysql_fetch_assoc($export)) {
 $line = '';
-foreach($row as $value) {
+
+
+foreach($row as $key=>$value) {
+	$res = '';
+if ($key == 'language' && $language == 'English'){
+	$lang = 'English';
+}else{
+	$lang = 'Русский';
+}
 if ((!isset($value)) OR ($value == "")) {
 $value = '<Cell ss:StyleID="1"><Data ss:Type="String"></Data></Cell>\t';
 } else {
+	$type = 'String';
+	if($key == 'sess' || $key == 'who'){
+		foreach(unserialize($value) as $val){
+			$res .= $array[$key][$lang][$val]['title'].", ";
+
+		}
+		$value = $res;
+		$type="Text";
+	}
+
 $value = str_replace('"', '', $value);
-$value = '<Cell ss:StyleID="1"><Data ss:Type="String">' . $value . '</Data></Cell>\t';
+$value = '<Cell ss:StyleID="1"><Data ss:Type="$type">' . $value . '</Data></Cell>\t';
 }
 $line .= $value;
 }

@@ -47,16 +47,16 @@ The request will be processed during the next 5 working days.</p>",
 						'last_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Last name', 'class' => 'latine') ),
 						'first_name' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'First name', 'class' => 'latine')),
 						
-						'position' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Position', 'class' => 'latine')),
+						'position' => array('extends' => 'name', 'attrs'=>array('placeholder' => 'Position')),
 						'phone' => array('extends' => 'phone', 'attrs'=>array('placeholder' => 'Mobile phone number')),
 						'email' => array('extends' => 'email', 'attrs'=>array('placeholder' => 'E-mail address')),
 						'cupon' => array('extends' => 'name', 'required' => false,'attrs'=>array('placeholder' => 'Coupon (fill in to get the discount)')),
-						'count' => array('extends' => 'name', 'attrs' => array('placeholder' => 'How many delegates from your company are going to take part in the Forum?')),
-						'bik' => array('extends' => 'name', 'attrs' => array('placeholder' => 'IBAN code')),
-						'bankname' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Bank name')),
-						'ks' => array('extends' => 'name', 'attrs' => array('placeholder' => 'SWIFT No')),
-						'rs' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Account No')),
-						'urname' => array('extends' => 'name', 'attrs' => array('placeholder' => 'Organisation full name')),
+						'count' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'How many delegates from your company are going to take part in the Forum?')),
+						'bik' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'IBAN code')),
+						'bankname' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'Bank name')),
+						'ks' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'SWIFT No')),
+						'rs' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'Account No')),
+						'urname' => array('extends' => 'name', 'required' => false, 'attrs' => array('placeholder' => 'Organisation full name')),
 
 
 						'who' => array('type' => 'checkbox', 'required' => false, 'values' => 
