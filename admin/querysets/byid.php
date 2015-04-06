@@ -63,11 +63,11 @@ $whos = array(
 	);
 
 $sess = array();
-foreach ($sessions[$ticket['language'] == 'English' ? $tickets['language'] : 'Русский'] as $session){
+foreach ($sessions[$ticket['language'] == 'English' ? $ticket['language'] : 'Русский'] as $session){
 	$selsess = unserialize($ticket['sess']);
 
 	if (in_array($session['value'], array_values($selsess))){
-		$selected = 'selected';
+		$selected = 'checked';
 	}else{
 		$selected = '';
 	}
@@ -83,11 +83,11 @@ $ticket['sess_array'] = $sess;
 
 
 $sess = array();
-foreach ($whos[$ticket['language'] == 'English' ? $tickets['language'] : 'Русский'] as $session){
+foreach ($whos[$ticket['language'] == 'English' ? $ticket['language'] : 'Русский'] as $session){
 	$selsess = unserialize($ticket['who']);
 
 	if (in_array($session['value'], array_values($selsess))){
-		$selected = 'selected';
+		$selected = 'checked';
 	}else{
 		$selected = '';
 	}

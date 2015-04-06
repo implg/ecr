@@ -106,22 +106,21 @@
 		<tr>
 			<th valign="top">Какие сессии планируете посетить?:</th>
 			<td>
-				<select multiple name="sess[]">
-					<?php foreach ($ticket['sess_array'] as $sess): ?>
-						<option <?php echo $sess['selected'];?>  value="<?php echo $sess['id']; ?>"><?php echo $sess['title']; ?></option>
-					<?php endforeach; ?>
-				</select>
+				
+				<?php foreach ($ticket['sess_array'] as $sess): ?>
+					<label><input name="sess[]" type="checkbox" <?php echo $sess['selected'];?>  value="<?php echo $sess['id']; ?>"><?php echo $sess['title']; ?></label><br>
+				<?php endforeach; ?>
 			</td>
 			<td></td>
 		</tr>
 		<tr>
 			<th valign="top">Дополнительная информация:</th>
 			<td>
-				<select multiple name="who[]">
-					<?php foreach ($ticket['who_array'] as $sess): ?>
-						<option <?php echo $sess['selected'];?>  value="<?php echo $sess['id']; ?>"><?php echo $sess['title']; ?></option>
-					<?php endforeach; ?>
-				</select>
+				
+				<?php foreach ($ticket['who_array'] as $sess): ?>
+					<label><input name="who[]" type="checkbox" <?php echo $sess['selected'];?>  value="<?php echo $sess['id']; ?>"><?php echo $sess['title']; ?></label><br>
+				<?php endforeach; ?>
+				
 			</td>
 			<td></td>
 		</tr>

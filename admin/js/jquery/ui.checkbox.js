@@ -13,7 +13,7 @@
 					if(this.disabledStatus){
 						return false;
 					}
-					that.hover = (e.type == 'focus' || e.type == 'mouseenter');
+					//that.hover = (e.type == 'focus' || e.type == 'mouseenter');
 					that._changeStateClassChain();
 				};
 			if(!this.element.is(':radio,:checkbox')){
