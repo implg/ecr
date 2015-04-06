@@ -202,7 +202,7 @@ a {
 	  top:0;
 	  width:100%;
 	  z-index:100;
-    background: rgba(89, 203, 227, 0.8);
+    background: rgba(89, 203, 227, 1);
 	}
   .header ul {
     list-style-type: none;
@@ -375,7 +375,7 @@ a {
 
 /* 7. Speakers */
 .featured {
-  background: #59cbe3; }
+  background: rgba(89, 203, 227, 0.3);}
   .featured img {
     float: left;
     width: 100%; }
@@ -405,7 +405,7 @@ a {
     float: left;
     width: 50%;
     padding: 28px 40px;
-    color: white;
+    color: #000;
     font-weight: 300; }
     @media all and (max-width: 980px) {
       .featured div {
@@ -483,12 +483,12 @@ a {
   .schedule ul li {
     float: left;
     background-color: #f0f0f0;
-    width: 33.333%;
+    width: 25%;
     max-width: 290px; }
     .schedule ul li a {
       font-weight: bold;
       text-decoration: none;
-      font-size: 1.71429em;
+      font-size: 1.21429em;
       font-family: "Roboto Condensed", sans-serif;
       line-height: 50px;
       display: block;
@@ -524,7 +524,10 @@ a {
       .ui-tabs .ui-tabs-nav li.ui-state-hover {
         background-color: white;
         color: white; }
-
+.schedule .tabs li a {
+	width:100%;
+	text-align:center;
+}
 .event.extend .event-time span, .event.extended .event-time span {
   width: 31px;
   height: 31px;

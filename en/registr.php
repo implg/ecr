@@ -34,7 +34,6 @@
         <li><a href="speakers.html">speakers</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
-        <li><a href="price.html">participation</a></li>
         <li><a href="registr.php">registration</a></li>
         <li><a href="index.html#location">cantacts</a></li>
         <li class="langru"><a href="/registr.php"><img src="../images/ru.png"></a></li>
@@ -60,7 +59,22 @@
     <div class="container">
 
     
-      <h2 style="margin-bottom:50px;">Register</h2>
+      <h2>Register</h2>
+      <p class="subtitle"><a href="http://www.ecr-all.org/russia/members/Members.php" target="_blank">ECR MEMBERS</a> PARTICIPATE FOR FREE</p>
+		<div class="counter">THE FORUM STARTS IN:<br>
+		<div id="defaultCountdown" class="myhome"></div></div>
+        <strong>Participation fee:</strong> 
+		      <p class="desc">
+		      <strong>45 000 rub</strong> - Before May 1, 2015.<br>
+		      <strong>50 000 rub</strong> - Before June 1, 2015.<br>
+		      <strong>55 000 rub</strong> - After June 1, 2015 (with guarantee letter provided).
+		      </p>
+		Prices do not include VAT. <br>
+		Participation of 2 and more delegates gives a 5% discount. 
+		<br>
+		To register please contact Elena Tkachenko - tel: +7-903-964-91-84, E-mail: <a href="mailto:elena.tkachenko@ecr-rus.ru">elena.tkachenko@ecr-rus.ru </a><br>
+<br>
+      
       <!-- register form -->
       <?php require_once($_SERVER['DOCUMENT_ROOT'].'/include/ww.form.registr.en.php'); ?>
   </div>
