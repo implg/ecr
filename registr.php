@@ -35,7 +35,6 @@
         <li><a href="speakers.html">спикеры</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
-        <li><a href="price.html">цены</a></li>
         <li><a href="registr.php">участие</a></li>
         <li><a href="index.html#location">контакты</a></li>
         <li class="langru"><a href="/registr.php"><img src="images/ru.png"></a></li>
@@ -61,7 +60,24 @@
     <div class="container">
 
     
-      <h2 style="margin-bottom: 50px">Регистрация</h2>
+      <h2>Регистрация</h2>
+        <p class="subtitle">Для сотрудников компаний-членов <a href="http://www.ecr-all.org/russia/members/Members.php" target="_blank">ECR Russia</a> участие бесплатное!</p>
+		<div class="counter">До начала форума:<br>
+		<div id="defaultCountdown" class="myhome"></div></div>
+		      <p class="desc">
+		      <strong>45 000 рублей</strong> - при регистрации до 1 мая.<br>
+		      <strong>50 000 рублей</strong> - при регистрации до 1 июня.<br>
+		      <strong>55 000 рублей</strong> - при регистрации после 1 июня (по гарантийному письму).
+		      </p>
+		Внимание! Цены указаны без учета НДС. <br>
+		При участии 2-х и более делегатов от компании действует скидка в размере 5% 
+		<br>
+		По вопросам Делегатского участия обращайтесь к Елене Ткаченко - tel: +7-903-964-91-84, E-mail: <a href="mailto:elena.tkachenko@ecr-rus.ru">elena.tkachenko@ecr-rus.ru </a><br>
+<br>
+
+    
+      
+      
       <!-- register form -->
       <?php require_once($_SERVER['DOCUMENT_ROOT'].'/include/ww.form.registr.php'); ?>
   </div>
