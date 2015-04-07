@@ -53,16 +53,16 @@
 				<form id="mainform" action="">
 				<table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table">
 				<tr>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=id<?php echo $get; ?>&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
+					<th class="table-header-repeat line-left"><a href="?sort=id<?php echo $get; ?>&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
 					
 					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Имя</a>	</th>
 					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=last_name<?php echo $get; ?>&order=<?php if($sort == 'last_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Фамилия</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=email<?php echo $get; ?>&order=<?php if($sort == 'email'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">E-mail</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow">Телефон</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=company<?php echo $get; ?>&order=<?php if($sort == 'company'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Компания</a></th>
-					<th class="table-header-repeat line-left"><a href="?sort=company_in_forum<?php echo $get; ?>&order=<?php if($sort == 'company_in_forum'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Члены ECR</a></th>
+					<th class="table-header-repeat line-left"><a href="?sort=company_in_forum<?php echo $get; ?>&order=<?php if($sort == 'company_in_forum'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">ECR</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=translate<?php echo $get; ?>&order=<?php if($sort == 'translate'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Перевод</a></th>
-					<th class="table-header-repeat line-left"><a class="no_arrow" >Сайт компании</a></th>
+					<th class="table-header-repeat line-left"><a class="no_arrow" >Сайт</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Должность</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=status<?php echo $get; ?>&order=<?php if($sort == 'status'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>" >Статус</a></th>
 					<th class="table-header-repeat"></th>
@@ -83,11 +83,22 @@
 						<td><a href="mailto:<?php echo $ticket['email'];?>"><?php echo $ticket['email'];?></a></td>
 						<td><?php echo $ticket['phone'];?></td>
 						<td><?php echo $ticket['company'];?></td>
-						<td><?php echo $ticket['company_in_forum'] ? '<a href="" title="Edit" class="icon-5 info-tooltip"></a>' : '' ;?></td>
-						<td><?php echo $ticket['translate'] ? '<a href="" title="Edit" class="icon-5 info-tooltip"></a>' : '' ;?></td>
-						<td><a href=""><?php echo $ticket['site_company'];?></a></td>
+						<td><?php echo $ticket['company_in_forum'] ? '<a href="" title="ECR" class="icon-3 info-tooltip"></a>' : '' ;?></td>
+						<td align="center" style="padding:0"><?php echo $ticket['translate'] ? '<a href="" title="Нужен перевод" class="icon-5 info-tooltip" style="float:none;"></a>' : '' ;?></td>
+						<td><?php echo $ticket['site_company'];?></td>
 						<td><?php echo $ticket['position'];?></td>
-						<td><?php echo $ticket['status'];?></td>
+						<td style="text-transform:uppercase; padding-right:5px; text-align:center;">
+						<?php if ($ticket['status'] == "Ticket" ) {
+							echo "<div style=color:red>".$ticket['status']."</div>";
+						}
+						elseif  ($ticket['status'] == "Participant" ) {
+							echo "<div style=color:blue>".$ticket['status']."</div>";
+						}
+						else {
+							echo $ticket['status'];
+						}
+						?>
+                        </td>
 						<td>
 						<a href="/admin/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
 						
