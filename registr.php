@@ -23,13 +23,9 @@
 
 <div class="page">
 
-  <!-- header -->  <div class="header second" >
-
     <!-- menu -->
     <div class="menu">
-
       <ul>
-        
         <li><a href="index.html#top">Главная</a></li>
         <li><a href="programm.html">программа</a></li>
         <li><a href="speakers.html">спикеры</a></li>
@@ -42,6 +38,8 @@
       </ul>
     </div>
     <!-- menu ends! -->
+
+  <!-- header -->  <div class="header second" >
 
     <!-- header container -->
     <div class="container">

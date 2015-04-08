@@ -23,14 +23,14 @@ The request will be processed during the next 5 working days.</p>",
 
 						'sess' => array('type' => 'checkbox', 'required' => true, 'values' => 
 							array(
-								1 => array('value' => 1, 'title' => '<span>ECR</span> Plenary Session'),
-								2 => array('value' => 2, 'title' => '<span>Supply Chain</span> best practices'),
+								1 => array('value' => 1, 'title' => 'ECR Plenary Session'),
+								2 => array('value' => 2, 'title' => 'Supply Chain best practices'),
 								3 => array('value' => 3, 'title' => 'Shrinkage Reduction'),
 								4 => array('value' => 4, 'title' => 'On Shelf Availabillity'),
 								5 => array('value' => 5, 'title' => 'Category Management'),
 								6 => array('value' => 6, 'title' => 'Shopper Insights'),
-								7 => array('value' => 7, 'title' => '<span>Omni Channel Marketing</span>'),
-								8 => array('value' => 8, 'title' => 'Electronic Data Interchange (<span>EDI</span>)'),
+								7 => array('value' => 7, 'title' => 'Omni Channel Marketing'),
+								8 => array('value' => 8, 'title' => 'Electronic Data Interchange (EDI)'),
 								9 => array('value' => 9, 'title' => 'E-invoices'),
 								10 => array('value' => 10, 'title' => 'Source e-documents'),
 								11 => array('value' => 11, 'title' => 'Master Data Synchronisation'),
