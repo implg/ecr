@@ -778,10 +778,10 @@ a {
   .form input:focus, .form input:hover, .form textarea:focus, .form textarea:hover, .form select:focus, .form select:hover {
     background-color: white; }
 
-.form input::-webkit-input-placeholder {font-size: 11px;}
-.form input::-moz-placeholder          {font-size: 11px;}/* Firefox 19+ */
-.form input:-moz-placeholder           {font-size: 11px;}/* Firefox 18- */
-.form input:-ms-input-placeholder      {font-size: 11px;}
+.form input::-webkit-input-placeholder {font-size: 13px;}
+.form input::-moz-placeholder          {font-size: 13px;}/* Firefox 19+ */
+.form input:-moz-placeholder           {font-size: 13px;}/* Firefox 18- */
+.form input:-ms-input-placeholder      {font-size: 13px;}
 
 .form button {
   font-size: 1.71429em;
