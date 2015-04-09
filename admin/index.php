@@ -83,8 +83,8 @@
 						<td><a href="mailto:<?php echo $ticket['email'];?>"><?php echo $ticket['email'];?></a></td>
 						<td><?php echo $ticket['phone'];?></td>
 						<td><?php echo $ticket['company'];?></td>
-						<td><?php echo $ticket['company_in_forum'] ? '<a href="" title="ECR" class="icon-3 info-tooltip"></a>' : '' ;?></td>
-						<td align="center" style="padding:0"><?php echo $ticket['translate'] ? '<a href="" title="Нужен перевод" class="icon-5 info-tooltip" style="float:none;"></a>' : '' ;?></td>
+						<td><?php echo $ticket['company_in_forum'] ? '<div title="ECR" class="icon-3 info-tooltip"></div>' : '' ;?></td>
+						<td align="center" style="padding:0"><?php echo $ticket['translate'] ? '<div title="Нужен перевод" class="icon-5 info-tooltip" style="float:none;"></div>' : '' ;?></td>
 						<td><?php echo $ticket['site_company'];?></td>
 						<td><?php echo $ticket['position'];?></td>
 						<td style="text-transform:uppercase; padding-right:5px; text-align:center;">
