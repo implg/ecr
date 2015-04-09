@@ -1,15 +1,20 @@
       
       <form action="#action_url#" method="post" class="on_ajax">
-         <p class="subtitle">Для сотрудников компаний-членов <a href="http://www.ecr-all.org/russia/members/Members.php" target="_blank">ECR Russia</a> участие бесплатное!</p>
+         <p class="subtitle"></p>
 		<div class="counter">До начала форума:<br>
 		<div id="defaultCountdown" class="myhome"></div></div>
-		      <p class="desc">
-		      <strong>45 000 рублей</strong> - при регистрации до 1 мая.<br>
-		      <strong>50 000 рублей</strong> - при регистрации до 1 июня.<br>
-		      <strong>55 000 рублей</strong> - при регистрации после 1 июня (по гарантийному письму).
+		      
+              <p>Для сотрудников компаний-членов <a href="http://www.ecr-all.org/russia/members/Members.php" target="_blank">ECR Russia</a> участие бесплатное!</p>
+              <p>
+              Стоимость участия для одного делегата:
+              <ul style="list-style:circle; margin-left:30px;">
+		      <li>45 000 рублей  - при регистрации до 1 мая.</li>
+		      <li>50 000 рублей  - при регистрации до 1 июня.</li>
+		      <li>55 000 рублей - при регистрации после 1 июня (по гарантийному письму).</li>
+              </ul>
 		      </p>
 		Внимание! Цены указаны без учета НДС. <br>
-		При участии 2-х и более делегатов от компании действует скидка в размере 5% 
+		При участии 2-х и более делегатов от компании действует скидка в размере 5%.
 		<br>
 		По вопросам Делегатского участия обращайтесь к Дине Алямовой - tel: +7(916) 145-99-82, , E-mail: <a href="mailto:dina.aliamova@ecr-rus.ru">dina.aliamova@ecr-rus.ru</a><br>
 <br>

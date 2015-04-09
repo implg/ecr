@@ -285,7 +285,9 @@ a {
   text-align: right; }
   @media all and (max-width: 1180px) {
     .register-now {
-      text-align: left; } }
+      text-align: left;
+	  position:static; 
+	  } }
   .register-now a.button {
     display: inline-block;
     font-size: 1.5em; }
@@ -294,7 +296,8 @@ a {
         text-align: center;
         font-size: 1.33333em;
         padding: 0 26px;
-        line-height: 50px; } }
+        line-height: 50px;
+		 } }
 
 .button {
   background: #C00;
@@ -319,12 +322,15 @@ a {
 
 /* 6. Topics */
 .topics {
-  margin-top: -338px;
+  margin-top: -398px;
   position: relative;
   z-index: 10; }
   .topics .container div.my h4 {
         color: #59cbe3;
      }
+	 .my .fa img {
+		 width:150px;
+	 }
   @media all and (max-width: 940px) {
     .topics {
       margin-top: 0; } }
@@ -345,7 +351,7 @@ a {
         margin-bottom: 10px;
     display:block;
     overflow:hidden;
-    height:268px;
+    height:150px;
      }
         @media all and (max-width: 780px) {
           .topics .container div.my h4, .topics .container div.my .fa {
@@ -364,6 +370,9 @@ a {
   margin-bottom: 60px; }
 .why.spons {
   margin-bottom: 0; }
+  
+.why.spons .container {
+  padding-bottom: 0; }
 
 .speakers h2, .speakers .subtitle, .schedule h2, .schedule .subtitle {
   margin-bottom: 0; }
@@ -625,7 +634,7 @@ a {
 .testimonials {
   background-color: #fff;
   color: #888888;
-  padding: 70px 110px;
+  padding: 70px 70px;
   text-align: center;
   margin-bottom: 0;
   position: relative; }
@@ -636,7 +645,7 @@ a {
     font-weight: 300;
     margin-bottom: 45px;
     background: url("images/quote.png") top center no-repeat;
-    padding: 25px 0 10px; }
+    padding: 15px 0 10px; }
   .testimonials blockquote {
     font-size: 1.28571em;
     font-style: italic; }
@@ -655,7 +664,7 @@ a {
     .container cite  {
     display: block;
     font-style: normal;
-    font-size: 0.77778em;
+    font-size: 1em;
     margin-top: 0px;
   margin-bottom:10px;
     color: #59cbe3;
@@ -1222,17 +1231,8 @@ a {
   margin-left:30px;
 }
  .verh {
-   width:95%;
    display:block;
    clear:both;
-   /*text-align:center;
-   border-top:1px solid #112948;*/
-   padding-top:10px;
-   margin-top:30px;
- }
-  .verh p {
-   color:#112948;
-   font-size:12px;
  }
  
 .langen {
