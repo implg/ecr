@@ -24,8 +24,6 @@ ini_set("display_errors", 0);
 		$company = $this->fields['company']['value'];
 	}else{
 		$company = $this->fields['member']['values'][$this->fields['member']['value']]['title'];
+		$this->email = array();
 	}
-	$this->fields['company']['value'] = $company;
-	if ($this->fields['member']['value']  && $this->fields['member']['value'] == $company){
-		$this->email = false;
-	}
+	
