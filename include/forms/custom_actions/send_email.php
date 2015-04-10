@@ -26,6 +26,6 @@ ini_set("display_errors", 0);
 		$company = $this->fields['member']['values'][$this->fields['member']['value']]['title'];
 	}
 	$this->fields['company']['value'] = $company;
-	if ($this->fields['company_in_forum']['value'] > 0){
+	if ($this->fields['member']['value']  && $this->fields['member']['value'] == $company){
 		$this->email = false;
 	}
