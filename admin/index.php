@@ -60,7 +60,7 @@
 					<th class="table-header-repeat line-left"><a href="?sort=email<?php echo $get; ?>&order=<?php if($sort == 'email'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">E-mail</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow">Телефон</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=company<?php echo $get; ?>&order=<?php if($sort == 'company'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Компания</a></th>
-					<th class="table-header-repeat line-left"><a href="?sort=company_in_forum<?php echo $get; ?>&order=<?php if($sort == 'company_in_forum'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">ECR</a></th>
+					<th class="table-header-repeat line-left"><a href="?sort=company_in_forum<?php echo $get; ?>&order=<?php if($sort == 'company_in_forum'):?><?php if ($order == 'DESC'): ?>ASC<?php else: ?>DESC<?php endif; ?><?php else: ?>DESC<?php endif; ?>">ECR</a></th>
 					<th class="table-header-repeat line-left"><a href="?sort=translate<?php echo $get; ?>&order=<?php if($sort == 'translate'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Перевод</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Сайт</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Должность</a></th>

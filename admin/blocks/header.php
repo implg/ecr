@@ -193,7 +193,10 @@ $(document).pngFix( );
 		<td><input placeholder="Компания" name="search_company" type="text" value="<?php echo $_REQUEST['search_company'];?>"  class="top-search-inp" /></td>
 		<td>
 		 	<label style="color:#fff; font-size:12px; margin-right:5px;"><input <?php if ($_REQUEST['search_company_in_forum']):?>checked<?php endif;?>  type="checkbox" name="search_company_in_forum"> ECR </label>
-		 	<label style="color:#fff; font-size:12px; margin-right:5px;"><input <?php if ($_REQUEST['search_no_company_in_forum']):?>checked<?php endif;?>  type="checkbox" name="search_no_company_in_forum"> Не ECR </label>
+		 	
+		</td>
+		<td>
+			<label style="color:#fff; font-size:12px; margin-right:5px;"><input <?php if ($_REQUEST['search_no_company_in_forum']):?>checked<?php endif;?>  type="checkbox" name="search_no_company_in_forum"> Не ECR </label>
 		</td>
 		<td>
 			<select name="search_status">
