@@ -64,7 +64,7 @@
 					<th class="table-header-repeat line-left"><a href="?sort=translate<?php echo $get; ?>&order=<?php if($sort == 'translate'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Перевод</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Сайт</a></th>
 					<th class="table-header-repeat line-left"><a class="no_arrow" >Должность</a></th>
-					<th class="table-header-repeat line-left"><a href="?sort=status<?php echo $get; ?>&order=<?php if($sort == 'status'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>" >Статус</a></th>
+					<th class="table-header-repeat line-left"><a href="?sort=status<?php echo $get; ?>&order=<?php if($sort == 'status'):?><?php if ($order == 'DESC'): ?>ASC<?php else: ?>DESC<?php endif; ?><?php else: ?>ASC<?php endif; ?>" >Статус</a></th>
 					<th class="table-header-repeat"></th>
 					<th class="table-header-repeat"></th>
 				</tr>
