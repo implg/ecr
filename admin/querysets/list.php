@@ -7,7 +7,7 @@ $sql = "SELECT *
 FROM  `members` WHERE 1=1";
 
 if ($_REQUEST['search_company_in_forum']){
-	$sql .= " AND company_in_forum == '1'";
+	$sql .= " AND company_in_forum = '1'";
 }
 if ($_REQUEST['search_no_company_in_forum']){
 	$sql .= " AND company_in_forum <> '1'";
