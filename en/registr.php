@@ -21,9 +21,6 @@
 <body>
 
 <div class="page">
-
-  <!-- header -->  <div class="header second" >
-
     <!-- menu -->
     <div class="menu">
 
@@ -41,6 +38,9 @@
       </ul>
     </div>
     <!-- menu ends! -->
+
+  <!-- header -->  <div class="header second" >
+
 
     <!-- header container -->
     <div class="container">

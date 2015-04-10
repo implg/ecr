@@ -9,11 +9,11 @@
 <!-- start footer -->         
 <div id="footer">
 	<!--  start footer-left -->
-	<div id="footer-left">
+	<!--  div id="footer-left"></div -->
 	
 	
 	<!--  end footer-left -->
-	<div class="clear">&nbsp;</div>
+	<!--  div class="clear">&nbsp;</div -->
 </div>
 <!-- end footer -->
  

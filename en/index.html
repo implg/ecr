@@ -19,7 +19,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script>
   function initialize() {
-    var myLatlng = new google.maps.LatLng(55.755828,37.554992);
+    var myLatlng = new google.maps.LatLng(55.754883, 37.557283);
     var map_options = {
       zoom: 16,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -29,7 +29,7 @@
     }
 
     var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
-    var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
+    var myIcon = new google.maps.MarkerImage('../images/map_icon.png', null, null, null, new google.maps.Size(36,54));
 
     var marker = new google.maps.Marker({
       position: myLatlng,
@@ -60,10 +60,7 @@
 
 <body>
 
-<div class="page">
-
-  <!-- header -->
-  <div class="header">    
+<div class="page"> 
   <!-- menu -->
     <div class="menu">
 
@@ -81,6 +78,9 @@
       </ul>
     </div>
     <!-- menu ends! -->
+
+  <!-- header -->
+  <div class="header">
 
     <!-- header container -->
     <div class="container">

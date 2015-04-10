@@ -180,7 +180,7 @@ $(document).pngFix( );
 
 	<!-- start logo -->
 	<div id="logo">
-	
+	<a href="/admin/"><h1 style="color:#FFF; margin-left:10px;">ECR Forum Admin</h1></a>
 	</div>
 	<!-- end logo -->
 	
@@ -192,7 +192,7 @@ $(document).pngFix( );
 		<td><input placeholder="Фамилия" name="search_last_name" type="text" value="<?php echo $_REQUEST['search_last_name'];?>"  class="top-search-inp" /></td>
 		<td><input placeholder="Компания" name="search_company" type="text" value="<?php echo $_REQUEST['search_company'];?>"  class="top-search-inp" /></td>
 		<td>
-		 	<label style="color:#fff; font-size:12px;"><input <?php if ($_REQUEST['search_company_in_forum']):?>checked<?php endif;?>  type="checkbox" name="search_company_in_forum"> Участник форума</label>
+		 	<label style="color:#fff; font-size:12px; margin-right:5px;"><input <?php if ($_REQUEST['search_company_in_forum']):?>checked<?php endif;?>  type="checkbox" name="search_company_in_forum"> ECR </label>
 		</td>
 		<td>
 			<select name="search_status">
@@ -203,7 +203,7 @@ $(document).pngFix( );
 			</select>
 		</td>
 		<td>
-		<input type="image" src="images/shared/top_search_btn.gif"  />
+		<input type="image" src="images/shared/top_search_btn.gif" style="margin-left:5px;"  />
 		</td>
 		</tr>
 		</table>

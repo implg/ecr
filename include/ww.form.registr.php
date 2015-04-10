@@ -23,17 +23,17 @@
 
 						'sess' => array('type' => 'checkbox', 'required' => true, 'values' => 
 							array(
-								1 => array('value' => 1, 'title' => 'Пленарная сессия <span>ECR</span>'),
-								2 => array('value' => 2, 'title' => 'Лучшие практики <span>Supply Chain</span>'),
+								1 => array('value' => 1, 'title' => 'Пленарная сессия ECR'),
+								2 => array('value' => 2, 'title' => 'Лучшие практики Supply Chain'),
 								3 => array('value' => 3, 'title' => 'Борьба с потерями'),
 								4 => array('value' => 4, 'title' => 'Присутствие товара на полке'),
 								5 => array('value' => 5, 'title' => 'Категорийный менеджмент'),
 								6 => array('value' => 6, 'title' => 'Изучение потребителя'),
-								7 => array('value' => 7, 'title' => '<span>Omni Channel</span>'),
-								8 => array('value' => 8, 'title' => 'Электронный обмен данными (<span>EDI</span>)'),
+								7 => array('value' => 7, 'title' => 'Omni Channel'),
+								8 => array('value' => 8, 'title' => 'Электронный обмен данными (EDI)'),
 								9 => array('value' => 9, 'title' => 'Электронные бухгалтерские документы'),
 								10 => array('value' => 10, 'title' => 'Синхронизация мастер-данных'),
-								11 => array('value' => 11, 'title' => 'Лучшие практики <span>ECR</span>'),
+								11 => array('value' => 11, 'title' => 'Лучшие практики ECR'),
 								),
 
 							),
