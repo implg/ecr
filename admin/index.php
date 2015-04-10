@@ -42,7 +42,7 @@
 					$get = "";
 					$get_with_sort = "";
 					foreach ($_GET as $key=>$val){
-						if($key != 'sort' || $key != 'order'){
+						if($key != 'sort' && $key != 'order'){
 							$get .= "&$key=$val";	
 						}
 						$get_with_sort .= "&$key=$val";	
