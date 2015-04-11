@@ -28,7 +28,7 @@
       <ul>
         <li><a href="index.html#top">Главная</a></li>
         <li><a href="programm.html">программа</a></li>
-        <li><a href="speakers.html">спикеры</a></li>
+        <!-- li><a href="speakers.html">спикеры</a></li -->
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="registr.php">участие</a></li>
