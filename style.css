@@ -235,7 +235,9 @@ a {
   .header a, .menu a {
     text-decoration: none;
     color: white; }
-
+.topics .container p{
+  font-size: 1em;
+}
 .when, .where, .register-now {
   font-size: 1.28571em;
   font-weight: 300;
@@ -634,7 +636,7 @@ a {
 .testimonials {
   background-color: #fff;
   color: #888888;
-  padding: 70px 70px;
+  padding: 20px 70px;
   text-align: center;
   margin-bottom: 0;
   position: relative; }
