@@ -168,33 +168,57 @@ a {
 
 /* 5. Header */
 .header {
-  height: 1002px;
-  background: #888888 url("images/ecr-forum.jpg") 50% 0 no-repeat fixed;
-  background-size: cover;
+  height: 948px;
+  width:100%;
+  background: #888888 url("images/header2.png") left 50px no-repeat ;
+  background-size: contain;
   color: white;
   z-index: 1;
-  -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
-  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  /*-webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);*/
+  /*clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);*/
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   padding-top:50px;
   }
   .header.second{
+    background: #888888 url("images/ecr-forum.jpg") left 50px no-repeat ;
     height:260px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
-  
+  .header.en{
+    background: #888888 url("images/header.png") left 50px no-repeat ;
+     -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
   .header.second .container{
     min-height:100px;
   }
   @media all and (max-width: 940px) {
     .header {
-      height: auto; } }
+      height: 380px; } 
+      .header.second{
+        height: auto;
+      }
+
+      .register-now a.button {
+        text-align: center;
+        font-size: 1.33333em;
+        padding: 0 26px;
+        line-height: 50px;
+        top:0 !important;
+     } 
+    }
   .header .container {
     padding: 60px;
     position: relative;
-    min-height: 665px; }
+    min-height: 365px; }
   .menu {
     display:block;
     float:left;
@@ -292,13 +316,18 @@ a {
 	  } }
   .register-now a.button {
     display: inline-block;
-    font-size: 1.5em; }
+    font-size: 1.5em; 
+    position: absolute;
+    top:160px;
+    right:0px;
+  }
     @media all and (max-width: 480px) {
       .register-now a.button {
         text-align: center;
         font-size: 1.33333em;
         padding: 0 26px;
         line-height: 50px;
+        top:0;
 		 } }
 
 .button {
