@@ -24,6 +24,10 @@
   line-height: 0;
   overflow: hidden; }
 
+.clearfix {*zoom: 1;}
+.clearfix:before, .clearfix:after {display: table; content: "";line-height: 0;}
+.clearfix:after {clear: both;}
+
 /* all default colors
 
 #ea4c0f - orange, original color
@@ -170,29 +174,17 @@ a {
 .header {
   height: 948px;
   width:100%;
-  background: #888888 url("images/header2.png") left 50px no-repeat ;
-  background-size: contain;
+  background: #888888;
   color: white;
   z-index: 1;
   /*-webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);*/
   /*clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);*/
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
   padding-top:50px;
   }
   .header.second{
     background: #888888 url("images/ecr-forum.jpg") left 50px no-repeat ;
     height:260px;
     -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
-  .header.en{
-    background: #888888 url("images/header.png") left 50px no-repeat ;
-     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
@@ -216,9 +208,15 @@ a {
      } 
     }
   .header .container {
+    background: url("images/header2.jpg") 50% 0 no-repeat ;
+    background-size:100%;
     padding: 60px;
     position: relative;
-    min-height: 365px; }
+    min-height: 515px;
+  }
+  .header.en .container {
+    background-image: url("images/header.jpg");
+  }
   .menu {
     display:block;
     float:left;
@@ -304,16 +302,14 @@ a {
 
 .register-now  {
   position:relative;
-  right:20px;
-  top:-77px;
-  bottom: 90px;
-  right: 0;
+  right:-50px;
+  top:210px;
   text-align: right; }
   @media all and (max-width: 1180px) {
     .register-now {
       text-align: left;
-	  position:static; 
-	  } }
+    position:static; 
+    } }
   .register-now a.button {
     display: inline-block;
     font-size: 1.5em; 
@@ -328,7 +324,7 @@ a {
         padding: 0 26px;
         line-height: 50px;
         top:0;
-		 } }
+     } }
 
 .button {
   background: #C00;
@@ -353,15 +349,15 @@ a {
 
 /* 6. Topics */
 .topics {
-  margin-top: -398px;
+  margin-top: -365px;
   position: relative;
   z-index: 10; }
   .topics .container div.my h4 {
         color: #59cbe3;
      }
-	 .my .fa img {
-		 width:150px;
-	 }
+   .my .fa img {
+     width:150px;
+   }
   @media all and (max-width: 940px) {
     .topics {
       margin-top: 0; } }
@@ -1273,4 +1269,40 @@ a {
 .langru {
   position:absolute;
   right:30px;
+}
+
+/* Programm */
+
+.programm-wrap {
+  font-size: 12px;
+}
+
+.programm-wrap span {
+  font-size: 24px;
+}
+
+.programm-block {
+  margin-bottom: 30px;
+}
+
+.programm-block > div {
+  padding: 20px 30px;
+}
+
+.programm-parent > div {
+  float: left;
+  height: 150px;
+  width: 33%;
+}
+
+.programm-text {
+  margin-top: 30px;
+}
+
+.programm-gray {
+  background-color: #f1f1f1;
+}
+
+.programm-yellow {
+  background-color: #fde835;
 }
