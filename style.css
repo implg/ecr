@@ -181,6 +181,9 @@ a {
   /*clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);*/
   padding-top:50px;
   }
+  .header-s {
+    height: 600px;
+  }
   .header.second{
     background: #888888 url("images/ecr-forum.jpg") left 50px no-repeat ;
     height:260px;
@@ -305,6 +308,9 @@ a {
   right:-50px;
   top:210px;
   text-align: right;
+}
+.header-s .register-now  {
+  top:220px;
 }
   .register-now a.button {
     display: inline-block;

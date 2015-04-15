@@ -39,17 +39,16 @@
     </div>
     <!-- menu ends! -->
 
-  <!-- header -->  <div class="header second" >
-
+  <!-- header -->  
+  <div class="header en header-s main" >
 
     <!-- header container -->
     <div class="container">
-
-    <!-- logo container -->
-    <div class="logoforum"><img src="../images/ECR-Logo.png"></div>
-    <!-- logo ends! -->
-      
-      <!-- logo or main heading -->
+      <!-- register -->
+      <div class="register-now">
+        <a href="registr.php" class="button">Register now!</a>
+      </div>
+      <!-- register ends! -->
     </div>
   </div>
   <!-- header ends! -->
