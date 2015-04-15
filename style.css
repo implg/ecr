@@ -1273,6 +1273,8 @@ a {
   background: rgba(89, 203, 227, 1);
   font-size: 12px;
   padding: 30px;
+  position: relative;
+  z-index: 10;
 }
 
 .programm-wrap span {
@@ -1290,7 +1292,12 @@ a {
 .programm-parent > div {
   float: left;
   height: 150px;
-  width: 33%;
+  margin-right: 5%;
+  width: 30%;
+}
+
+.programm-parent > div:last-child {
+  margin-right: 0;
 }
 
 .programm-text {
@@ -1298,8 +1305,29 @@ a {
   margin-top: 20px;
 }
 
-.programm-yellow .programm-text {
+.programm-yellow .programm-text,
+.programm-yellow .pop-desc {
   background-color: #fde835;
+}
+
+.programm-blue .programm-text,
+.programm-blue .pop-desc {
+  background-color: #c0e3f9;
+}
+
+.programm-green .programm-text,
+.programm-green .pop-desc {
+  background-color: #d4f6d5;
+}
+
+.programm-orange .programm-text,
+.programm-orange .pop-desc {
+  background-color: #ffd200;
+}
+
+.programm-pink .programm-text,
+.programm-pink .pop-desc {
+  background-color: #f87afd;
 }
 
 .pop-show {
@@ -1307,10 +1335,29 @@ a {
 }
 
 .pop-block {
+  background-color: #fff;
+  border: 1px solid rgba(89, 203, 227, 1);
   display: none;
+  padding: 20px 50px;
+  position: absolute;
+  margin-left: -31px;
+  margin-top: 80px;
+  width: 500px;
+}
+
+.pop-block:before {
+  content: '';
+  border: 30px transparent solid;
+  border-bottom: 30px solid #fff;
+  border-top-width: 0;
+  margin-top: -50px;
   position: absolute;
 }
 
 .pop-show:hover .pop-block {
   display: block;
+}
+
+.pop-desc {
+  padding: 30px;
 }
