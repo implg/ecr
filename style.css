@@ -184,10 +184,7 @@ a {
   .header.second{
     background: #888888 url("images/ecr-forum.jpg") left 50px no-repeat ;
     height:260px;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    background-size: 100%;
   }
   .header.second .container{
     min-height:100px;
@@ -1297,10 +1294,15 @@ a {
 }
 
 .programm-text {
-  margin-top: 30px;
+  padding: 5px 10px;
+  margin-top: 20px;
 }
 
-.programm-yellow {
+.programm-yellow .programm-text {
+  background-color: #fde835;
+}
+
+.pop-show {
   background-color: #fff;
 }
 
