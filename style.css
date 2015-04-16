@@ -244,6 +244,11 @@ a {
         color: white;
         text-transform: uppercase;
         font-weight: 300; }
+@media all and (max-width: 940px) {
+  .menu ul li a {
+    font-size: 0.9em;
+  }
+}
         .menu ul li a:hover, .menu ul li a.active {
           color: black; }
   .header h1 {
