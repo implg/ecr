@@ -4,8 +4,7 @@
 <head>
 <meta charset="utf-8">
 <title>Register - 11 ECR Forum</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 <link href="../scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
