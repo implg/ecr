@@ -64,7 +64,7 @@ body {
   font: 14px "Open Sans", sans-serif;
   text-align: center;
   color: black;
-  min-width: 800px;
+  /*min-width: 800px;*/
 }
   @media all and (max-width: 640px) {
     body {
@@ -326,14 +326,14 @@ a {
     right:0px;
     top:160px;
   }
-    @media all and (max-width: 480px) {
+    /*@media all and (max-width: 480px) {
       .register-now a.button {
         text-align: center;
         font-size: 1.33333em;
         padding: 0 26px;
         line-height: 50px;
         top:0;
-     } }
+     } }*/
 
 .button {
   background: #C00;
