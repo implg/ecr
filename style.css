@@ -244,7 +244,7 @@ a {
         color: white;
         text-transform: uppercase;
         font-weight: 300; }
-@media all and (max-width: 500px) {
+@media all and (max-width: 768px) {
   .menu {
     height: 52px;
   }
@@ -1321,7 +1321,7 @@ a {
   position:absolute;
   right:30px;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 768px) {
   .menu ul li.langen {
     position: fixed;
     top: 15px;
