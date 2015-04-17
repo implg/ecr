@@ -244,6 +244,50 @@ a {
         color: white;
         text-transform: uppercase;
         font-weight: 300; }
+@media all and (max-width: 500px) {
+  .menu {
+    height: 52px;
+  }
+  .menu ul:before {
+    content: '';
+    background: rgba(89, 203, 227, 1);
+    display: block;
+    height: 52px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .menu ul:after {
+    content: '\2261';
+    color: #fff;
+    font-size: 60px;
+    overflow: visible;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+    z-index: 10;
+  }
+  .menu ul {
+    background: rgba(89, 203, 227, 1);
+    position: absolute;
+  }
+  .menu ul li {
+    float: none;
+    display: none;
+    position: relative;
+    z-index: 10;
+  }
+  .menu ul li.langru,
+  .menu ul li.langen {
+    display: block;
+  }
+  .menu:hover ul li {
+    display: block;
+  }
+  .menu:hover ul:after {
+    display: none;
+  }
+}
 @media all and (max-width: 940px) {
   .menu ul li a {
     font-size: 0.9em;
@@ -1276,6 +1320,16 @@ a {
 .langru {
   position:absolute;
   right:30px;
+}
+@media all and (max-width: 500px) {
+  .menu ul li.langen {
+    position: fixed;
+    top: 15px;
+  }
+  .menu ul li.langru {
+    position: fixed;
+    top: 15px;
+  } 
 }
 
 /* Programm */
