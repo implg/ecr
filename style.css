@@ -64,7 +64,7 @@ body {
   font: 14px "Open Sans", sans-serif;
   text-align: center;
   color: black;
-  min-width: 800px;
+  min-width: 960px;
 }
   @media all and (max-width: 640px) {
     body {
