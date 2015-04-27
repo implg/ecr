@@ -509,7 +509,6 @@ a {
   width: 20%;
   border: solid 50px #72d3e7;
   float: left;
-  height: 300px;
   position: relative;
   cursor: pointer; }
   @media all and (max-width: 980px) {
@@ -534,12 +533,14 @@ a {
   .single h3 {
     font-size: 1.37143em;
     font-weight: 300;
-    line-height: 1.1em; }
+    line-height: 1.1em;
+    margin-bottom: 10px; }
     @media all and (max-width: 780px) {
       .single h3 {
         font-size: 1.11429em; } }
   .single p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 13px; }
     .single p:last-child {
       margin-top: 3px; }
   .single strong {
