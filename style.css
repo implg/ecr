@@ -431,7 +431,7 @@ a {
         margin-bottom: 10px;
     display:block;
     overflow:hidden;
-    height:150px;
+    height:180px;
      }
         @media all and (max-width: 780px) {
           .topics .container div.my h4, .topics .container div.my .fa {
