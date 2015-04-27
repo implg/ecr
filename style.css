@@ -505,9 +505,11 @@ a {
     margin-left:30px;
   }
 .single {
+  background-color: #72d3e7;
   width: 20%;
   border: solid 50px #72d3e7;
   float: left;
+  height: 300px;
   position: relative;
   cursor: pointer; }
   @media all and (max-width: 980px) {
@@ -1358,6 +1360,7 @@ a {
   float: left;
   height: 150px;
   margin-right: 5%;
+  position: relative;
   width: 30%;
 }
 
@@ -1406,7 +1409,7 @@ a {
   padding: 20px 50px;
   position: absolute;
   margin-left: -31px;
-  margin-top: 80px;
+  top: 180px;
   width: 500px;
 }
 
@@ -1417,6 +1420,10 @@ a {
   border-top-width: 0;
   margin-top: -50px;
   position: absolute;
+}
+
+.pop-show:hover {
+  z-index: 2;
 }
 
 .pop-show:hover .pop-block {
