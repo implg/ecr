@@ -240,7 +240,7 @@
 
 
       
-      <?php require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/programms/list.php' ?>
+      <?php // require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/programms/list.php' ?>
       <?php $programms = $tickets; ?>
       <h2>В программе ECR форума</h2>
       <p class="subtitle"></p>
