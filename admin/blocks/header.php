@@ -3,18 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Администрирование</title>
-<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" title="default" />
+<link rel="stylesheet" href="/admin/css/screen.css" type="text/css" media="screen" title="default" />
 <!--[if IE]>
 <link rel="stylesheet" media="all" type="text/css" href="css/pro_dropline_ie.css" />
 <![endif]-->
 
 <!--  jquery core -->
-<script src="js/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="/admin/js/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
  
 <!--  checkbox styling script -->
-<script src="js/jquery/ui.core.js" type="text/javascript"></script>
-<script src="js/jquery/ui.checkbox.js" type="text/javascript"></script>
-<script src="js/jquery/jquery.bind.js" type="text/javascript"></script>
+<script src="/admin/js/jquery/ui.core.js" type="text/javascript"></script>
+<script src="/admin/js/jquery/ui.checkbox.js" type="text/javascript"></script>
+<script src="/admin/js/jquery/jquery.bind.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function(){
 	$('input').checkBox();
@@ -30,7 +30,7 @@ $(function(){
 <![if !IE 7]>
 
 <!--  styled select box script version 1 -->
-<script src="js/jquery/jquery.selectbox-0.5.js" type="text/javascript"></script>
+<script src="/admin/js/jquery/jquery.selectbox-0.5.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	$('.styledselect').selectbox({ inputClass: "selectbox_styled" });
