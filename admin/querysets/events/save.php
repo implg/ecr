@@ -42,10 +42,10 @@ if ($id){
 
 if($res){
 	$message =  "Заявка успешно изменена";
-	header('Location: /admin/speakers/index.php?message='.$message);	
+	header('Location: /admin/events/index.php?message='.$message);	
 }else{
 	$message =  "Заявка не изменена";
-	header('Location: /admin/speakers/edit.php?id='.$_REQUEST['id'].'&message='.$message);
+	header('Location: /admin/events/edit.php?id='.$_REQUEST['id'].'&message='.$message);
 }
 
 
