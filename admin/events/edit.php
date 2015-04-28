@@ -15,7 +15,7 @@
 				</div>
 	<?php endif; ?>
 
-<div id="page-heading"><h1><?php if (!$ticket):?>Добавить <?php else: ?>Редактировать <?php endif;?>программу</h1></div>
+<div id="page-heading"><h1><?php if (!$ticket):?>Добавить <?php else: ?>Редактировать <?php endif;?>событие</h1></div>
 
 
 <table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
@@ -82,7 +82,7 @@
 		</tr>
 		<tr>
 			<th width="50%" valign="top">Цвет</th>
-			<td><input type="color" name="color" value="<?php echo $ticket['color']; ?>" class="inp-form" /></td>
+			<td><input type="text" name="color" value="<?php echo $ticket['color']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		
