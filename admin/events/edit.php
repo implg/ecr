@@ -67,22 +67,22 @@
 		</tr>
 		<tr>
 			<th width="50%" valign="top">День</th>
-			<td><input type="date" name="day" value="<?php echo $ticket['title_en']; ?>" class="inp-form" /></td>
+			<td><input type="date" name="day" value="<?php echo $ticket['day']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th width="50%" valign="top">Время начала</th>
-			<td><input type="time" name="time_start" value="<?php echo $ticket['title_en']; ?>" class="inp-form" /></td>
+			<td><input type="time" name="time_start" value="<?php echo $ticket['time_start']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th width="50%" valign="top">Время окончания</th>
-			<td><input type="time" name="time_end" value="<?php echo $ticket['title_en']; ?>" class="inp-form" /></td>
+			<td><input type="time" name="time_end" value="<?php echo $ticket['time_end']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th width="50%" valign="top">Цвет</th>
-			<td><input type="color" name="color" value="<?php echo $ticket['title_en']; ?>" class="inp-form" /></td>
+			<td><input type="color" name="color" value="<?php echo $ticket['color']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		
