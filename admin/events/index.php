@@ -68,7 +68,7 @@
 					ini_set("display_errors", 1); 
 
 				?>
-				<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/querysets/programms/list.php'); ?>
+				<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/querysets/events/list.php'); ?>
 				<?php foreach ($tickets as $ticket){ ?>
 					<tr>
 						
@@ -76,7 +76,7 @@
 						<td><?php echo $ticket['title'];?></td>
 						<td><?php echo $ticket['day'];?></td>
 						<td><?php echo $ticket['time_start']?>-<?php echo $ticket['time_end']?></td>
-						s
+						
 						<td>
 						<a href="/admin/programms/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
 						

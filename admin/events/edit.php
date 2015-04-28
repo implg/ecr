@@ -2,7 +2,7 @@
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/blocks/header.php'); ?>
 <?php if ($_REQUEST['id']) :?>
-	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/querysets/programms/byid.php'); ?>
+	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/querysets/events/byid.php'); ?>
 <?php endif;?>
 	<?php if ($_REQUEST['message']): ?>
 				<div id="message-yellow">
