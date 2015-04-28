@@ -317,7 +317,7 @@ without additional investment.</b><br>
           </div>   
         
         </div>
-    <? endforeach; ?>
+    <?php endforeach; ?>
 
       
 
