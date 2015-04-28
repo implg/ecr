@@ -239,7 +239,7 @@
 
 
 <?php
-      ini_set("display_errors", 0); ?>
+      ini_set("display_errors", 1); ?>
       <?php // require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/programms/list.php' ?>
       <?php $programms = $tickets; ?>
       <h2>В программе ECR форума</h2>
