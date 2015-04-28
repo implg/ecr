@@ -256,7 +256,7 @@ without additional investment.</b><br>
         </div>
       </div> -->
 
-       <?php require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/programms/list.php' ?>
+       <?php require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/programms/list.php'; ?>
       <?php $programms = $tickets; ?>
       <h2>ECR Forum program</h2>
       <p class="subtitle"></p>
@@ -313,7 +313,7 @@ without additional investment.</b><br>
           </div>   
         
         </div>
-    <? endforeach; ?>
+    <?php endforeach; ?>
 
       </div>
 
