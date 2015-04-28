@@ -5,7 +5,7 @@ $mysql = new simple_query_builder();
 $mysql->devMode = 1;
 
 
-$res = $mysql->delete('programms', $_REQUEST['id']);
+$res = $mysql->delete('speakers', $_REQUEST['id']);
 
 if($res){
 	$message =  "Страница успешно удалена";
