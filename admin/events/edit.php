@@ -71,12 +71,12 @@
 			<td></td>
 		</tr>
 		<tr>
-			<th width="50%" valign="top">День</th>
+			<th width="50%" valign="top">Время начала</th>
 			<td><input type="time" name="time_start" value="<?php echo $ticket['title_en']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		<tr>
-			<th width="50%" valign="top">День</th>
+			<th width="50%" valign="top">Время окончания</th>
 			<td><input type="time" name="time_end" value="<?php echo $ticket['title_en']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
