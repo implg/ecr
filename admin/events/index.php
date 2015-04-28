@@ -78,12 +78,12 @@
 						<td><?php echo $ticket['time_start']?>-<?php echo $ticket['time_end']?></td>
 						
 						<td>
-						<a href="/admin/programms/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
+						<a href="/admin/events/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
 						
 						</td>
 						<td>
 						
-						<a href="/admin/querysets/programms/delete.php?id=<?php echo $ticket['id'];?>" title="delete" class="icon-2 info-tooltip"></a>
+						<a href="/admin/querysets/events/delete.php?id=<?php echo $ticket['id'];?>" title="delete" class="icon-2 info-tooltip"></a>
 						</td>
 					</tr>
 				<?php } ?>
