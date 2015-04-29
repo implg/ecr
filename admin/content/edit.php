@@ -62,12 +62,12 @@
 		</tr>
 		<tr>
 			<th valign="top">Текст:</th>
-			<td><textarea name="description"  class="form-textarea" ><?php echo $ticket['description']?></textarea></td>
+			<td><textarea name="text"  class="form-textarea" ><?php echo $ticket['text']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th valign="top">Текст (En):</th>
-			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
+			<td><textarea name="text_en"  class="form-textarea" ><?php echo $ticket['text_en']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
