@@ -69,7 +69,13 @@ ini_set("display_errors", 1); ?>
     	<h2>DAY <?php echo $day; ?>. <?php echo date('d.m.Y', strtotime($day[0]['day'])); ?></h2>
 
       <p class="subtitle"></p>
-            <?php foreach ($day as $item): ?>
+      <?php if ($day == 2):?>
+    		</div>
+    		<div class="programm-wrap">
+    	<?php elseif($day == 1): ?>
+    		<div class="programm-wrap">
+    	<?php endif;?>
+      <?php foreach ($day as $item): ?>
       	
       
   
@@ -90,7 +96,7 @@ ini_set("display_errors", 1); ?>
       </div> 
       
       
-
+<?php endforeach;  ?>
       </div>
 
     </div>
