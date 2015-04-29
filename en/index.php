@@ -14,6 +14,8 @@
 <link href="../animate.min.css" rel="stylesheet" />
 <link href="../style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="../jquery.countdown.css">
+<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
 
 <!-- Google Map -->
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -190,23 +192,19 @@
     </div>
 
 
-    <a id="sponsors" class="anchor"></a>
 
 
       <!-- testimonials -->
-        <div class="testimonials" style="display:none">
+        <div class="testimonials">
 
           
 
           <div class="slides">
 
-  <div><a href="#"><img src="images/metro.jpg" /></a></div>
-  <div><a href="#"><img src="images/pepsico.jpg" /></a></div>
-  <div><a href="#"><img src="images/giageo.png" /></a></div>
-  <div><a href="#"><img src="images/informatica.png" /></a></div>
-  <div><a href="#"><img src="images/deloitte.jpg" /></a></div>
-  <div><a href="#"><img src="images/ferrero.png" /></a></div>
-
+            <div><a href="#"><img src="../images/metro.jpg" /></a></div>
+            <div><a href="#"><img src="../images/pepsico.jpg" /></a></div>
+            <div><a href="#"><img src="../images/giageo.png" /></a></div>
+            <div><a href="#"><img src="../images/contur.jpg" /></a></div>
 
           </div>
 
@@ -388,6 +386,8 @@ E-mail: <a>office.ecr@gmail.com</a><br>
 <script src="../scripts/theme.js"></script>
 <script src="../jquery.plugin.js"></script>
 <script src="../jquery.countdown.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
 
 <!-- scripts ends! -->
 
@@ -398,5 +398,15 @@ $(function () {
 	$('#defaultCountdown').countdown({until: austDay, format: 'dHM'});
 });
 </script>
+ <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slides').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+      });
+    });
+  </script>
 </body>
 </html>
