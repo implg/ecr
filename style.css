@@ -1424,11 +1424,13 @@ a {
   position: absolute;
 }
 
-.pop-show:hover {
+.pop-show:hover,
+.pop-show.active {
   z-index: 2;
 }
 
-.pop-show:hover .pop-block {
+.pop-show:hover .pop-block,
+.pop-show.active .pop-block {
   display: block;
 }
 
