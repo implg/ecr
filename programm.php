@@ -40,6 +40,7 @@
 
     <!-- header container -->
     <div class="container">
+      <img src="images/clock_rus.png" width="40%" style="float: right; margin-top: -50px; margin-right: -50px;">
 
     <!-- logo container -->
     <!-- <div class="logoforum"><img src="images/ECR-Logo.png"></div> -->
@@ -293,64 +294,6 @@
       ini_set("display_errors", 1); ?>
       <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/programms/list.php'; ?>
       <?php $programms = $tickets; ?>
-      <h2>В программе ECR форума</h2>
-      <p class="subtitle"></p>
-
-      <div class="tabs">
-
-        <ul>
-        <?php $i=0; ?>
-        <?php foreach  ($programms as $item): ?>
-          <?php $i++; ?>
-          <li><a href="#tabs-<?php echo $i; ?>"><?php echo $item['title'];  ?></a></li>
-        <?php endforeach; ?>
-     
-        </ul>
-        <?php $i=0;?>
-        <?php foreach  ($programms as $item): ?>
-        <!-- day -->
-        <?php $i++; ?>
-        <div id="tabs-<?php echo $i; ?>" class="day">
-                  <!-- single event -->
-          <div class="event">
-            
-            <!-- event time -->
-            <div class="event-time">Сессии:  <span></span></div>
-            <!-- event time ends! -->
-
-            <!-- event details -->
-            <div class="event-info">
-
-              <div>
-        <?php echo $item['sessions']; ?>
-              </div>
-
-            </div>
-            <!-- event details ends! -->
-
-          </div>
-          <!-- single event ends! -->
-          <div class="event">
-            
-            <!-- event time -->
-            <div class="event-time">Описание:<span></span></div>
-            <!-- event time ends! -->
-
-            <!-- event details -->
-            <div class="event-info">
-              <div>
-              <?php echo $item['description']; ?>
-                   </div>
-
-            </div>
-            <!-- event details ends! -->
-
-          </div>   
-        
-        </div>
-    <?php endforeach; ?>
-
-      </div>
 
     </div>
   </div>

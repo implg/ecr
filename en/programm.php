@@ -41,6 +41,7 @@
 
     <!-- header container -->
     <div class="container">
+      <img src="../images/clock_eng.png" width="40%" style="float: right; margin-top: -50px; margin-right: -50px;">
       <!-- register -->
       <div class="register-now">
         <a href="registr.php" class="button">Register now!</a>
@@ -312,64 +313,7 @@ without additional investment.</b><br>
 
        <?php require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/programms/list.php'; ?>
       <?php $programms = $tickets; ?>
-      <h2>ECR Forum program</h2>
-      <p class="subtitle"></p>
 
-      <div class="tabs">
-
-        <ul>
-        <?php $i=0; ?>
-        <?php foreach  ($programms as $item): ?>
-          <?php $i++; ?>
-          <li><a href="#tabs-<?php echo $i; ?>"><?php echo $item['title_en'];  ?></a></li>
-        <?php endforeach; ?>
-     
-        </ul>
-        <?php $i=0;?>
-        <?php foreach  ($programms as $item): ?>
-        <!-- day -->
-        <?php $i++; ?>
-        <div id="tabs-<?php echo $i; ?>" class="day">
-                  <!-- single event -->
-          <div class="event">
-            
-            <!-- event time -->
-            <div class="event-time">sessions:  <span></span></div>
-            <!-- event time ends! -->
-
-            <!-- event details -->
-            <div class="event-info">
-
-              <div>
-        <?php echo $item['sessions_en']; ?>
-              </div>
-
-            </div>
-            <!-- event details ends! -->
-
-          </div>
-          <!-- single event ends! -->
-          <div class="event">
-            
-            <!-- event time -->
-            <div class="event-time">description:<span></span></div>
-            <!-- event time ends! -->
-
-            <!-- event details -->
-            <div class="event-info">
-              <div>
-              <?php echo $item['description_en']; ?>
-                   </div>
-
-            </div>
-            <!-- event details ends! -->
-
-          </div>   
-        
-        </div>
-    <?php endforeach; ?>
-
-      </div>
 
     </div>
   </div>

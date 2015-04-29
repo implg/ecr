@@ -89,6 +89,8 @@
     <!-- logo container -->
     <!--div class="logoforum"><img src="images/ECR-Logo.png"></div-->
     <!-- logo ends! -->
+
+      <img src="images/clock_rus.png" width="40%" style="float: right; margin-top: -50px; margin-right: -50px;">
       
       <!-- logo or main heading -->
       <!--h1><a href="/">ECR ФОРУМ 2015</a></h1-->
