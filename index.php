@@ -2,11 +2,13 @@
 <html lang="ru">
 
 <head>
+<?php $pagecode = 'main'; ?>
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>
 <meta charset="utf-8">
 <title>11-ый Ежегодный ECR форум</title>
 
-<meta name="keywords" content="" />
-<meta name="description" content="11 ECR форум - презентации о лучших достижениях ритейлеров и поставщиков в области совместного сокращения издержек, управления потребительским спросом и повышения эффективности поставок" />
+<meta name="keywords" content="<?php echo $page['meta_keywords']; ?>" />
+<meta name="description" content="<?php echo $page['meta_description']; ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=0">
 
 <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -145,8 +147,7 @@
   <!-- header ends! -->
 
   <!-- topics -->
-  <?php $pagecode = 'main'; ?>
-  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>
+  
   <div class="topics">
     <div class="container" style="padding-bottom:0px">
 
@@ -156,38 +157,20 @@
 
 <a id="sopred" class="anchor"></a>
 <div id="mytop">
+<?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>
+<?php foreach ($speakers as $item): ?>
       <!-- single topic -->
       <div class="my">
-        <i class="fa"><img src="images/piter1.jpg" alt="Питер Бооне" /></i>
-        <h4>Питер Бооне</h4>
-        <cite><span>Со-председатель ECR Russia, Генеральный директор, "МЕТРО Кэш энд Керри Россия"</span></cite>
+        <i class="fa"><img src="<?php echo $item['photo']; ?>" alt="<?php echo $item['name'];?>" /></i>
+        <h4><?php echo  $item['name'];?></h4>
+        <cite><span><?php echo $item['position']; ?></span></cite>
         <p>
-        Добро пожаловать на 11-ый Ежегодный ECR Форум - площадку, где поставщики и ритейлеры встречаются для формирования взаимной выгоды и удовлетворения потребностей покупателя. Ключевые слова: лучше, быстрее, с большей эффективностью. Такой результат достигается благодаря слаженному партнерскому взаимодействию разных сторон, в котором происходит обмен и обсуждение лучшими практиками.
+        <?php echo $item['interview']; ?>
         </p>
       </div>
       <!-- single topic ends! -->
-
-      <!-- single topic -->
-      <div class="my">
-        <i class="fa"><img src="images/maksimilyan.jpg" alt="Максимилиан Мусселиус" /></i>
-        <h4>Максимилиан Мусселиус</h4>
-       <cite><span>Исполнительный директор, ECR Russia</span></cite>
-        
-        <p>ECR - это лаборатория для разработки и тиражирования инновационных партнерских проектов. Сотрудничая, ритейлеры и поставщики объединяют свои знания, мотивацию и стремление успеху, что вместе дает синергию, рождающую настоящий успех.  </p> 
-        
-      </div>
-      <!-- single topic ends! -->
-
-      <!-- single topic -->
-      <div class="my">
-        <i class="fa"><img src="images/silviu.jpg" alt="Сильвиу Поповичи" /></i>
-        <h4>Сильвиу Попович</h4>
-        <cite><span>Со-председатель ECR Russia, Президент, <br>"Пепсико Россия"</span></cite>
-        <p>
-        ECR Форум - это одна из наиболее эффективных платформ взаимодействия, которая выводит партнерство между поставщиками и ритейлерами на новый высокий уровень. Результатом эффективного сотрудничества станет выгода для всех трех вовлеченных сторон: ритейлеров, поставщиков и, что наиболее важно, наших потребителей.
-        </p>
-      </div>
-      <!-- single topic ends! -->
+<?php endforeach; ?>
+    
 
 </div>
     </div>
