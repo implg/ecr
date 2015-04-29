@@ -5,7 +5,7 @@
 				<table border="0" width="100%" cellpadding="0" cellspacing="0">
 				<tr>
 					<td class="green-left"><?php echo $_REQUEST['message']; ?></td>
-					<td class="green-right"><a class="close-green"><img src="images/table/icon_close_green.gif"   alt="" /></a></td>
+					<td class="green-right"><a class="close-green"><img src="/admin/images/table/icon_close_green.gif"   alt="" /></a></td>
 				</tr>
 				</table>
 				</div>
@@ -18,11 +18,11 @@
 
 	<table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
 	<tr>
-		<th rowspan="3" class="sized"><img src="images/shared/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
+		<th rowspan="3" class="sized"><img src="/admin/images/shared/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
 		<th class="topleft"></th>
 		<td id="tbl-border-top">&nbsp;</td>
 		<th class="topright"></th>
-		<th rowspan="3" class="sized"><img src="images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
+		<th rowspan="3" class="sized"><img src="/admin/images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
 	</tr>
 	<tr>
 		<td id="tbl-border-left"></td>
@@ -49,15 +49,15 @@
 						
 					}
 				?>
-				<a style="display:block; text-align:right;font-size:12px;" href="/admin/speakers/edit.php">Экспорт в Excel</a>
+				<a style="display:block; text-align:right;font-size:12px;" href="/admin/speakers/edit.php">Добавить</a>
 				<form id="mainform" action="">
 				<table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table">
 				<tr>
 					<th class="table-header-repeat line-left"><a href="?sort=id<?php echo $get; ?>&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
 					
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Заголовок</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Keywords</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Description</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=name<?php echo $get; ?>&order=<?php if($sort == 'name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Заголовок</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=position<?php echo $get; ?>&order=<?php if($sort == 'position'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Keywords</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=interview<?php echo $get; ?>&order=<?php if($sort == 'interview'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Description</a>	</th>
 					
 
 					<th class="table-header-repeat"></th>

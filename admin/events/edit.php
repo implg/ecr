@@ -36,13 +36,13 @@
 	<tr valign="top">
 	<td>
 	
-		<a href="/admin/index.php"><< Назад таблицу</a>
+		<a href="/admin/events/index.php"><< Назад в таблицу</a>
 		<!--  start step-holder -->
 		
 		<!--  end step-holder -->
 	
 		<!-- start id-form -->
-		<form action="/admin/querysets/events/save.php" method="post">
+		<form action="/admin/querysets/events/save.php" enctype="multipart/form-data" method="post">
 		<input type="hidden" value="<?php echo $ticket['id']; ?>" name="id">
 		<table border="0" cellpadding="0" cellspacing="0"  width="100%" id="id-form">
 		<tr>
@@ -75,7 +75,7 @@
 			<td><input type="time" name="time_start" value="<?php echo $ticket['time_start']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
-		
+
 		<tr>
 			<th width="50%" valign="top">Время окончания</th>
 			<td><input type="time" name="time_end" value="<?php echo $ticket['time_end']; ?>" class="inp-form" /></td>
@@ -84,6 +84,11 @@
 		<tr>
 			<th width="50%" valign="top">Цвет</th>
 			<td><input type="text" name="color" value="<?php echo $ticket['color']; ?>" class="inp-form" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th width="50%" valign="top">Картинка</th>
+			<td><input type="file" name="photo"  class="inp-form" /></td>
 			<td></td>
 		</tr>
 		
@@ -101,7 +106,7 @@
 	</table>
 	</form>
 	<!-- end id-form  -->
-	<a href="/admin/index.php"><< Назад таблицу</a>
+	<a href="/admin/events/index.php"><< Назад в таблицу</a>
 	</td>
 	<td>
 

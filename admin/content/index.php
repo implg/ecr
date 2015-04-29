@@ -12,7 +12,7 @@
 	<?php endif; ?>
 	<!--  start page-heading -->
 	<div id="page-heading">
-		<h1>Все заявки</h1>
+		<h1>Все страницы</h1>
 	</div>
 	<!-- end page-heading -->
 
@@ -55,9 +55,9 @@
 				<tr>
 					<th class="table-header-repeat line-left"><a href="?sort=id<?php echo $get; ?>&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
 					
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Заголовок</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Keywords</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Description</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=title<?php echo $get; ?>&order=<?php if($sort == 'title'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Заголовок</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=meta_keywords<?php echo $get; ?>&order=<?php if($sort == 'meta_keywords'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Keywords</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=meta_description<?php echo $get; ?>&order=<?php if($sort == 'meta_description'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Description</a>	</th>
 					
 
 					<th class="table-header-repeat"></th>

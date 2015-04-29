@@ -5,24 +5,24 @@
 				<table border="0" width="100%" cellpadding="0" cellspacing="0">
 				<tr>
 					<td class="green-left"><?php echo $_REQUEST['message']; ?></td>
-					<td class="green-right"><a class="close-green"><img src="images/table/icon_close_green.gif"   alt="" /></a></td>
+					<td class="green-right"><a class="close-green"><img src="/admin/images/table/icon_close_green.gif"   alt="" /></a></td>
 				</tr>
 				</table>
 				</div>
 	<?php endif; ?>
 	<!--  start page-heading -->
 	<div id="page-heading">
-		<h1>Все заявки</h1>
+		<h1>Все программы</h1>
 	</div>
 	<!-- end page-heading -->
 
 	<table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
 	<tr>
-		<th rowspan="3" class="sized"><img src="images/shared/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
+		<th rowspan="3" class="sized"><img src="/admin/images/shared/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
 		<th class="topleft"></th>
 		<td id="tbl-border-top">&nbsp;</td>
 		<th class="topright"></th>
-		<th rowspan="3" class="sized"><img src="images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
+		<th rowspan="3" class="sized"><img src="/admin/images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
 	</tr>
 	<tr>
 		<td id="tbl-border-left"></td>
@@ -55,9 +55,9 @@
 				<tr>
 					<th class="table-header-repeat line-left"><a href="?sort=id<?php echo $get; ?>&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
 					
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Заголовок</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Сессии</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Описание</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=title<?php echo $get; ?>&order=<?php if($sort == 'title'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Заголовок</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=sessions<?php echo $get; ?>&order=<?php if($sort == 'sessions'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Сессии</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=description<?php echo $get; ?>&order=<?php if($sort == 'description'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Описание</a>	</th>
 					
 
 					<th class="table-header-repeat"></th>
@@ -75,7 +75,7 @@
 						<td><?php echo $ticket['id'];?></td>
 						<td><?php echo $ticket['title'];?></td>
 						<td><?php echo $ticket['sessions'];?></td>
-						<td><?php echo $ticket['descrion']?></td>
+						<td><?php echo $ticket['description']?></td>
 						
 						<td>
 						<a href="/admin/programms/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>

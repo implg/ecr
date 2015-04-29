@@ -36,7 +36,7 @@
 	<tr valign="top">
 	<td>
 	
-		<a href="/admin/index.php"><< Назад таблицу</a>
+		<a href="/admin/programms/index.php"><< Назад в таблицу</a>
 		<!--  start step-holder -->
 		
 		<!--  end step-holder -->
@@ -90,7 +90,7 @@
 	</table>
 	</form>
 	<!-- end id-form  -->
-	<a href="/admin/index.php"><< Назад таблицу</a>
+	<a href="/admin/programms/index.php"><< Назад в таблицу</a>
 	</td>
 	<td>
 

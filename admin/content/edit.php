@@ -1,7 +1,9 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/login_required.php');?>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/blocks/header.php'); ?>
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/querysets/byid.php'); ?>
+<?php if ($_REQUEST['id']) :?>
+	<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/byid.php'); ?>
+<?php endif;?>
 	<?php if ($_REQUEST['message']): ?>
 				<div id="message-yellow">
 				<table border="0" width="100%" cellpadding="0" cellspacing="0">
@@ -13,7 +15,7 @@
 				</div>
 	<?php endif; ?>
 
-<div id="page-heading"><h1>Редактирование заявки № <?php echo $ticket['id'];?></h1></div>
+<div id="page-heading"><h1><?php if (!$ticket):?>Добавить <?php else: ?>Редактировать <?php endif;?>страницу</h1></div>
 
 
 <table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
@@ -44,6 +46,11 @@
 		<input type="hidden" value="<?php echo $ticket['id']; ?>" name="id">
 		<table border="0" cellpadding="0" cellspacing="0"  width="100%" id="id-form">
 		<tr>
+			<th width="50%" valign="top">Символьный код</th>
+			<td><input type="text" name="alias" value="<?php echo $ticket['alias']; ?>" class="inp-form" /></td>
+			<td></td>
+		</tr>
+		<tr>
 			<th width="50%" valign="top">Заголовок</th>
 			<td><input type="text" name="title" value="<?php echo $ticket['title']; ?>" class="inp-form" /></td>
 			<td></td>
@@ -64,25 +71,31 @@
 			<td></td>
 		</tr>
 		<tr>
+			<th width="50%" valign="top">Картинка</th>
+			<td><input type="file" name="photo"  class="inp-form" /></td>
+			<td></td>
+		</tr>
+		<tr>
 			<th valign="top">Meta Keywords:</th>
-			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
+			<td><textarea name="description_en"  class="form-textarea noed" ><?php echo $ticket['description_en']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th valign="top">Meta Keywords (En):</th>
-			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
+			<td><textarea name="description_en"  class="form-textarea noed" ><?php echo $ticket['description_en']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th valign="top">Meta Description (En):</th>
-			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
+			<td><textarea name="description_en"  class="form-textarea noed" ><?php echo $ticket['description_en']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th valign="top">Meta Description (En):</th>
-			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
+			<td><textarea name="description_en"  class="form-textarea noed" ><?php echo $ticket['description_en']?></textarea></td>
 			<td></td>
 		</tr>
+
 
 
 		

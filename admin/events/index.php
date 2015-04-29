@@ -12,7 +12,7 @@
 	<?php endif; ?>
 	<!--  start page-heading -->
 	<div id="page-heading">
-		<h1>Все заявки</h1>
+		<h1>Все события</h1>
 	</div>
 	<!-- end page-heading -->
 
@@ -55,9 +55,9 @@
 				<tr>
 					<th class="table-header-repeat line-left"><a href="?sort=id<?php echo $get; ?>&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
 					
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Заголовок</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">День</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=first_name<?php echo $get; ?>&order=<?php if($sort == 'first_name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Время</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=title<?php echo $get; ?>&order=<?php if($sort == 'title'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Заголовок</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=day<?php echo $get; ?>&order=<?php if($sort == 'day'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">День</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=time_start<?php echo $get; ?>&order=<?php if($sort == 'time_start'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Время</a>	</th>
 					
 
 					<th class="table-header-repeat"></th>
