@@ -72,12 +72,13 @@ ini_set("display_errors", 1); ?>
       <div class="programm-wrap">
     		
     		
-    	
-      <?php foreach ($day as $item): ?>
+    <?php foreach ($day as $time):  ?>
+    	<div class="programm-block programm-parent clearfix">	
+      <?php foreach ($time as $item): ?>
       	
       
   
-        <div class="programm-block programm-parent clearfix">
+        
           <div class="programm-yellow pop-show">
             <span><?php echo $item['time_start']; ?>-<?php echo $item['time_end']; ?></span>
             <div class="programm-text"><?php echo $item['title']; ?></div>
@@ -88,8 +89,10 @@ ini_set("display_errors", 1); ?>
               </div>
             </div>
           </div>
-        </div>
+        
     <?php endforeach; ?>
+    </div>
+<?php endforeach; ?>
       
       </div> 
       

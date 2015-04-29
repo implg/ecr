@@ -21,8 +21,12 @@ $tickets = $mysql->select($sql);
 $byday = array();
 foreach ($tickets as $item) {
 	$day = date('d', strtotime($item['day']));
+	$time_start = str_replace(':', '_', $item['time_start']);
 	if (!$byday[$day]){
 		$byday[$day] = array();
+	}
+	if (!$byday[$day][$time_start]){
+		$byday[$day][$time_start] = array();
 	}
 	$byday[$day][] = $item;
 
