@@ -57,16 +57,16 @@ ini_set("display_errors", 1); ?>
   <!-- schedule -->
   <?php
   require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/events/getevents.php';
-  $day = 0;
+  $dayn = 0;
   $date = '';
   ?>
   <div class="schedule">
 
     <div class="container">
     <?php foreach($byday as $key=>$day): ?>
-    	<?php $day++; ?>
+    	<?php $dayn++; ?>
 
-    	<h2>DAY <?php echo $day; ?>. <?php echo date('d.m.Y', strtotime($day[0]['day'])); ?></h2>
+    	<h2>DAY <?php echo $dayn; ?>. <?php echo date('d.m.Y', strtotime($day[0]['day'])); ?></h2>
 
       <p class="subtitle"></p>
       <div class="programm-wrap">
