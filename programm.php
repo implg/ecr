@@ -60,6 +60,7 @@
   <!-- schedule -->
   <div class="schedule">
     <div class="container">
+    <p class="subtitle" style="margin-top: 50px;"><a href="files/ECR-program-draft-RUS.pdf">Скачать программу на русском</a></p>
       <!-- <h2>Программа первого дня</h2>
       <p class="subtitle"></p>
       <div class="programm-wrap">
