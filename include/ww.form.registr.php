@@ -79,7 +79,7 @@
 							'extends' => true,
 							'to' => array('wikedwolf@yandex.ru', 'abrunov@loyaltylabs.ru', 'elena.tkachenko@ecr-rus.ru
 ', 'tatiana.zemskova@ecr-rus.ru'), // or string or fieldKey 
-							'from' => 'no-reply@'.$_SERVER['SERVER_NAME'],
+							'from' => 'no-reply@ecr-forum.com',
 							//'message' => 'text %NAME%',
 							'message_template' => 'admin_mail',
 							'subject' => 'ECR ФОРУМ 2015 - Регистрация',
@@ -87,7 +87,7 @@
 					'email_client' => array(
 							'extends' => true,
 							'to' => 'email', // or string or fieldKey 
-							'from' => 'no-reply@'.$_SERVER['SERVER_NAME'],
+							'from' => 'no-reply@ecr-forum.com',
 							//'message' => 'text %NAME%',
 							'message_template' => 'client_mail',
 							'subject' => 'ECR ФОРУМ 2015 - Вы заполнили форму регистрации',
