@@ -56,7 +56,7 @@ ini_set("display_errors", 1); ?>
  <a id="programm" class="anchor"></a>
   <!-- schedule -->
   <?php
-  //require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/events/getevents.php';
+  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/events/getevents.php';
   $day = 0;
   $date = '';
   ?>
