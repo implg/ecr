@@ -28,7 +28,7 @@ foreach ($tickets as $item) {
 	if (!$byday[$day][$time_start]){
 		$byday[$day][$time_start] = array();
 	}
-	$byday[$day][] = $item;
+	$byday[$day][$time_start][] = $item;
 
 }
 ?>
