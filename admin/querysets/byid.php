@@ -102,5 +102,5 @@ foreach ($whos[$ticket['language'] == 'English' ? $ticket['language'] : 'Рус�
 
 $ticket['who_array'] = $sess;
 if ($ticket['member'] && !$ticket['company'] ){
-$ticket['company'] = $companies[$item['member']]['title'];
+$ticket['company'] = $companies[$ticket['member']]['title'];
 }
