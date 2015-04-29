@@ -244,7 +244,7 @@ a {
         color: white;
         text-transform: uppercase;
         font-weight: 300; }
-@media all and (max-width: 768px) {
+/*@media all and (max-width: 768px) {
   .menu {
     height: 52px;
     float: none;
@@ -282,14 +282,13 @@ a {
   .menu ul li.langen {
     display: block;
   }
-  /*.menu:hover ul li,*/
-  .menu ul:hover li {
+  .menu:hover ul li {
     display: block;
   }
   .menu:hover ul:after {
     display: none;
   }
-}
+}*/
 @media all and (max-width: 940px) {
   .menu ul li a {
     font-size: 0.9em;
