@@ -25,7 +25,7 @@
         
         <li><a href="index.php#top">home</a></li>
         <li><a href="programm.php">program</a></li>
-        <li><a href="speakers.html">speakers</a></li>
+        <li><a href="speakers.php">speakers</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="registr.php">registration</a></li>
