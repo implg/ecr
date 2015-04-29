@@ -38,5 +38,5 @@ if ($_REQUEST['order']){
 }
 $tickets = $mysql->select($sql);
 
-
+print 123;
 print_r($tickets); die;
