@@ -70,7 +70,7 @@ ini_set("display_errors", 1); ?>
     <?php foreach($byday as $key=>$day): ?>
     	<?php $dayn++; ?>
 
-    	<h2>DAY <?php echo $dayn; ?>. <?php echo date('d.m.Y', strtotime($dates[$key])); ?></h2>
+    	<h2>DAY <?php echo $dayn; ?>. <?php echo date('d.m.Y', strtotime($dates[$dayn])); ?></h2>
 
       <p class="subtitle"></p>
       <div class="programm-wrap">
