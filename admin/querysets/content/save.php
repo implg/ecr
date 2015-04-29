@@ -43,7 +43,7 @@ if ($id){
 	$res = $mysql->insert('pages');
 
 }
-
+print_r($res); die;
 
 if($res){
 	$message =  "Страница успешно изменена";
