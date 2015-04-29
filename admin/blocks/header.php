@@ -247,7 +247,7 @@ $(document).pngFix( );
 		                    
 		<ul class="current"><li><a href="/admin/content/"><b>Страницы</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
-		<div class="select_sub show">
+		<div class="select_sub ">
 			<ul class="sub">
 				<li><a href="/admin/content/">Все страницы</a></li>
 				<li class="sub_show"><a href="/admin/content/edit.php">Добавить страницу</a></li>
@@ -260,9 +260,9 @@ $(document).pngFix( );
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="current"><li><a href="/admin/speakers/"><b>Спикеры</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="/admin/speakers/"><b>Спикеры</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
-		<div class="select_sub show">
+		<div class="select_sub ">
 			<ul class="sub">
 				<li><a href="/admin/speakers/">Все спикеры</a></li>
 				<li class="sub_show"><a href="/admin/speakers/edit.php">Добавить спикера</a></li>
@@ -275,9 +275,9 @@ $(document).pngFix( );
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="current"><li><a href="/admin/programms/"><b>Программы</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="/admin/programms/"><b>Программы</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
-		<div class="select_sub show">
+		<div class="select_sub ">
 			<ul class="sub">
 				<li><a href="/admin/programms/">Все программы</a></li>
 				<li class="sub_show"><a href="/admin/programms/edit.php">Добавить программу</a></li>
@@ -290,9 +290,9 @@ $(document).pngFix( );
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="current"><li><a href="/admin/events/"><b>Расписание</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="/admin/events/"><b>Расписание</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
-		<div class="select_sub show">
+		<div class="select_sub ">
 			<ul class="sub">
 				<li><a href="/admin/events/">Все мероприятия</a></li>
 				<li class="sub_show"><a href="/admin/events/edit.php">Добавить мероприятие</a></li>
