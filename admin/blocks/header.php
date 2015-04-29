@@ -247,7 +247,7 @@ $(document).pngFix( );
 		
 		<div class="nav-divider">&nbsp;</div>
 		                    
-		<ul class="current"><li><a href="/admin/content/"><b>Страницы</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="/admin/content/"><b>Страницы</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub ">
 			<ul class="sub">

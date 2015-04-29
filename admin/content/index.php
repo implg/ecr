@@ -49,7 +49,7 @@
 						
 					}
 				?>
-				<a style="display:block; text-align:right;font-size:12px;" href="/admin/excel.php?<?php echo $get_with_sort;?>">Экспорт в Excel</a>
+				<a style="display:block; text-align:right;font-size:12px;" href="/admin/content/edit.php">Добавить</a>
 				<form id="mainform" action="">
 				<table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table">
 				<tr>
@@ -68,7 +68,7 @@
 					ini_set("display_errors", 1); 
 
 				?>
-				<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/querysets/list.php'); ?>
+				<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/list.php'); ?>
 				<?php foreach ($tickets as $ticket){ ?>
 					<tr>
 						
