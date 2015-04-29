@@ -8,4 +8,4 @@ $sql = "SELECT *
 FROM  `pages` WHERE alias={$pagecode};";
 
 $tickets = $mysql->select($sql);
-$ticket = $tickets[0];
+$page = $tickets[0];

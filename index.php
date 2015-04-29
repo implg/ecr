@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="utf-8">
+<title>11-ый Ежегодный ECR форум</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="11 ECR форум - презентации о лучших достижениях ритейлеров и поставщиков в области совместного сокращения издержек, управления потребительским спросом и повышения эффективности поставок" />
+<meta name="viewport" content="width=device-width, initial-scale=0">
+
+<link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+<link href="animate.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="jquery.countdown.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(55.733177, 37.646731);
+    var map_options = {
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: myLatlng,
+      scrollwheel: false,
+      disableDefaultUI: true
+    }
+
+    var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+    var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      icon: myIcon
+    });
+
+    /* Remove if you dont want B/W Google Map */
+    /*
+    var styles = [
+      {
+        featureType: "all",
+        stylers: [
+          { saturation: -100 }
+        ]
+      }
+    ];
+
+    map.setOptions({styles: styles});
+    */
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!-- Google Map Ends! -->
+
+</head>
+
+<body>
+
+<div class="page">
+  <!-- menu -->
+    <div class="menu">
+
+      <ul>
+        
+        <li><a href="index.html#top">Главная</a></li>
+        <li><a href="programm.php">программа</a></li>
+        <li><a href="speakers.html">спикеры</a></li>
+        <!-- li><a href="sponsors.html">спонсоры</a></li -->
+        <li><a href="award.html">ECR Award</a></li>
+        <li><a href="registr.php">участие</a></li>
+        <li><a href="index.html#location">контакты</a></li>
+        <li class="langru"><a href="/"><img src="images/ru.png"></a></li>
+        <li class="langen"><a href="en/"><img src="images/en.png"></a></li>
+      </ul>
+    </div>
+    <!-- menu ends! -->
+
+  <!-- header -->
+  <div class="header main">
+
+    <!-- header container -->
+    <div class="container">
+
+    <!-- logo container -->
+    <!--div class="logoforum"><img src="images/ECR-Logo.png"></div-->
+    <!-- logo ends! -->
+      
+      <!-- logo or main heading -->
+      <!--h1><a href="/">ECR ФОРУМ 2015</a></h1-->
+      <!-- logo or main heading ends! -->
+
+      <!-- subtitle -->
+      <!--p class="subtitle">50+ лучших экспертов, <strong><a href="registr.php">1200+ участников</a></strong></p-->
+      <!-- subtitle ends! -->
+
+      <!-- when -->
+      <!--div class="when">
+
+        <div class="icon-holder">
+          <i class="fa fa-calendar"></i>
+        </div>
+
+        <div-->
+          <!--p><strong>Когда</strong></p>
+          <p><span>2 - 3 июня 2015</span><br />Начало в 10:00</p-->
+          
+        <!--/div>
+
+      </div-->
+      <!-- when ends!-->
+
+      <!-- where -->
+      <!--div class="where">
+
+        <div class="icon-holder">
+          <i class="fa fa-map-marker"></i>
+        </div>
+
+        <div-->
+          <!--p><strong>Где</strong></p>
+          <p><span>Москва</span><br /><a href="http://www.wtcmoscow.ru/contacts/plan.aspx" target="_blank">Центр Международной Торговли</a></p-->
+        <!--/div>
+
+      </div-->
+      <!-- where ends! -->
+
+      <!-- register -->
+      <div class="register-now">
+<p><!-- a href="http://ecr-all.org/ecrforum2014/program_Rus_files/ECR_program_booklet_final_light.pdf" target="_blank">10й ECR ФОРУМ - PDF буклет >></a --></p>      
+        <a href="registr.php" class="button">Регистрация</a>
+      </div>
+      <!-- register ends! -->
+
+    </div>
+    <!-- header container ends! -->
+
+  </div>
+  <!-- header ends! -->
+
+  <!-- topics -->
+  <?php $pagecode = 'main'; ?>
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>
+  <div class="topics">
+    <div class="container" style="padding-bottom:0px">
+
+      <img src="images/ECR-Logo-forum.png" style="float:left; margin-right:10px;"><h3><?php echo $page['title']; ?></h3>
+
+      <?php echo $page['text']; ?>
+
+<a id="sopred" class="anchor"></a>
+<div id="mytop">
+      <!-- single topic -->
+      <div class="my">
+        <i class="fa"><img src="images/piter1.jpg" alt="Питер Бооне" /></i>
+        <h4>Питер Бооне</h4>
+        <cite><span>Со-председатель ECR Russia, Генеральный директор, "МЕТРО Кэш энд Керри Россия"</span></cite>
+        <p>
+        Добро пожаловать на 11-ый Ежегодный ECR Форум - площадку, где поставщики и ритейлеры встречаются для формирования взаимной выгоды и удовлетворения потребностей покупателя. Ключевые слова: лучше, быстрее, с большей эффективностью. Такой результат достигается благодаря слаженному партнерскому взаимодействию разных сторон, в котором происходит обмен и обсуждение лучшими практиками.
+        </p>
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div class="my">
+        <i class="fa"><img src="images/maksimilyan.jpg" alt="Максимилиан Мусселиус" /></i>
+        <h4>Максимилиан Мусселиус</h4>
+       <cite><span>Исполнительный директор, ECR Russia</span></cite>
+        
+        <p>ECR - это лаборатория для разработки и тиражирования инновационных партнерских проектов. Сотрудничая, ритейлеры и поставщики объединяют свои знания, мотивацию и стремление успеху, что вместе дает синергию, рождающую настоящий успех.  </p> 
+        
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div class="my">
+        <i class="fa"><img src="images/silviu.jpg" alt="Сильвиу Поповичи" /></i>
+        <h4>Сильвиу Попович</h4>
+        <cite><span>Со-председатель ECR Russia, Президент, <br>"Пепсико Россия"</span></cite>
+        <p>
+        ECR Форум - это одна из наиболее эффективных платформ взаимодействия, которая выводит партнерство между поставщиками и ритейлерами на новый высокий уровень. Результатом эффективного сотрудничества станет выгода для всех трех вовлеченных сторон: ритейлеров, поставщиков и, что наиболее важно, наших потребителей.
+        </p>
+      </div>
+      <!-- single topic ends! -->
+
+</div>
+    </div>
+    
+
+
+
+<a id="sponsors" class="anchor"></a>
+
+
+      <!-- testimonials -->
+        <div class="testimonials" style="display:none">
+
+          
+
+          <div class="slides">
+
+  <div><a href="#"><img src="images/metro.jpg" /></a></div>
+  <div><a href="#"><img src="images/pepsico.jpg" /></a></div>
+  <div><a href="#"><img src="images/giageo.png" /></a></div>
+  <div><a href="#"><img src="images/informatica.png" /></a></div>
+  <div><a href="#"><img src="images/deloitte.jpg" /></a></div>
+  <div><a href="#"><img src="images/ferrero.png" /></a></div>
+
+
+          </div>
+
+        </div>
+        <!-- testimonials ends! -->
+
+    
+  </div>
+  <!-- topics ends! -->
+        
+        
+  
+
+ <!-- why -->
+  <div class="why spons" style="display:block;">
+    
+  </div>
+  <!-- why ends! -->
+
+
+  <a id="location" class="anchor"></a>
+  <!-- location -->
+  <div class="location">
+    <div class="container">
+
+      <h2>Контакты</h2>
+      <p class="subtitle">Карта проезда</p>
+
+      <!-- info -->
+      <div class="info">
+
+        <div class="maps">
+
+
+          <!-- do not remove, needed for Google Map -->
+          <div id="map_canvas"></div>
+          <!-- do not remove ends! -->
+
+        </div>
+
+        <div class="address">
+
+          <h4>Контакты</h4>
+
+          <!-- <h5><i class="fa fa-chevron-right"></i> Организационные вопросы:</h5>
+
+          <div class="venue">
+            <p><span>Елена Ткаченко</span></p>
+            
+            <p>+7 (903) 964 91 84</p>
+             <a>elena.tkachenko@ecr-rus.ru</a>
+          </div> -->
+
+
+          <h5><i class="fa fa-chevron-right"></i> МЕСТО ПРОВЕДЕНИЯ:</h5>
+
+          <p>
+Московский Международный Дом Музыки<br>
+Москва, Космодамианская наб., д. 52/8<br>
+Тел.:       +7 (495) 735 4378<br>
+E-mail: <a>office.ecr@gmail.com</a><br>
+<a href="http://www.ecr-all.org/russia" target="_blank">www.ecr-all.org/russia</a><br>
+</p>
+
+        </div>
+
+      </div>
+      <!-- info ends! -->
+    
+    </div>
+  </div>
+  <!-- location ends! -->
+
+  <!-- social -->
+  <div class="social">
+    <div class="container">
+
+    </div>
+  </div>
+  <!-- social ends! -->
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+
+      <p>Copyright 2014, ECR-Forum.com</p>
+
+    </div>
+  </div>
+  <!-- footer ends! -->
+
+</div>
+
+<!-- back to top -->
+<div class="back">
+  <div class="container">
+
+    <a href="#top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+  </div>
+</div>
+<!-- back to top ends! -->
+
+<!-- contact form overlay popup -->
+<div class="overlay" style="display: none;">
+
+  <div class="contact-form">
+    
+    <h3>Контакт с нами</h3>
+    <p>Мы ответим в течение суток</p>
+
+    <!-- contact form -->
+    <div class="form">
+      <form action="contact.php" method="post">
+        <input type="text" name="name" placeholder="Name"/>
+        <input type="text" name="email" placeholder="Email"/>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button name="submit" type="submit">Отправить</button>
+
+      </form>
+    </div>
+    <!-- contact form ends! -->
+
+    <!-- Do Not Remove! -->
+    <p class="error"></p>
+    <p class="message"></p>
+    <!-- Do Not Remove! Ends! -->
+
+    <a href="#" class="close-contact-form"><i class="fa fa-times fa-lg"></i></a>
+  </div>
+
+</div>
+<!-- contact form overlay popup ends! -->
+
+<!-- scripts -->
+<script src="scripts/jquery-1.11.0.min.js"></script>
+<script src="scripts/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+<script src="scripts/flexslider/jquery.flexslider-min.js"></script>
+<script src="scripts/jquery.parallax-1.1.3.js"></script>
+<script src="scripts/jquery.inview.min.js"></script>
+<script src="scripts/form.js"></script>
+<script src="scripts/theme.js"></script>
+<script src="jquery.plugin.js"></script>
+<script src="jquery.countdown.js"></script>
+<script src="jquery.countdown-ru.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<!-- scripts ends! -->
+
+<script>
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear(2015) + 0, 6 - 1, 2,10);
+	$('#defaultCountdown').countdown({until: austDay, format: 'dHM'});
+});
+</script>
+ <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slides').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
+      });
+    });
+  </script>
+</body>
+</html>

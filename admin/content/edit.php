@@ -72,7 +72,7 @@
 		</tr>
 		<tr>
 			<th width="50%" valign="top">Картинка</th>
-			<td><input type="file" name="photo"  class="inp-form" /></td>
+			<td><input type="file" name="photo"  class="inp-form" /><br><?php if ($ticket['photo']):?><img width="200" src="<?php echo $ticket['photo']; ?>" /><?php endif; ?></td>
 			<td></td>
 		</tr>
 		<tr>
