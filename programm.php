@@ -60,7 +60,7 @@
   <!-- schedule -->
   <div class="schedule">
     <div class="container">
-    <p class="subtitle" style="margin-top: 50px;"><a href="files/ECR-program-draft-RUS.pdf">Скачать программу на русском</a></p>
+    <!-- <p class="subtitle" style="margin-top: 50px;"><a href="files/ECR-program-draft-RUS.pdf">Скачать программу на русском</a></p> -->
       <!-- <h2>Программа первого дня</h2>
       <p class="subtitle"></p>
       <div class="programm-wrap">
@@ -341,6 +341,11 @@ $(function () {
 	var austDay = new Date();
 	austDay = new Date(austDay.getFullYear(2015) + 0, 6 - 1, 2,10);
 	$('#defaultCountdown').countdown({until: austDay, format: 'dHM'});
+});
+$(document).ready(function() {
+    $('.pop-show').on('click', function() {
+      $(this).toggleClass('active');
+    });
 });
 </script>
 </body>

@@ -55,7 +55,7 @@
   <!-- schedule -->
   <div class="schedule">
     <div class="container">
-    <p class="subtitle" style="margin-top: 50px;"><a href="../files/ECR-program-draft-ENG.pdf">Download the program in English</a></p>
+    <!-- <p class="subtitle" style="margin-top: 50px;"><a href="../files/ECR-program-draft-ENG.pdf">Download the program in English</a></p> -->
     <!-- <h2>DAY 1. JUNE 2, 2015</h2>
       <p class="subtitle"></p>
       <div class="programm-wrap">
@@ -361,6 +361,11 @@ $(function () {
 	var austDay = new Date();
 	austDay = new Date(austDay.getFullYear(2015) + 0, 6 - 1, 2,10);
 	$('#defaultCountdown').countdown({until: austDay, format: 'dHM'});
+});
+$(document).ready(function() {
+    $('.pop-show').on('click', function() {
+      $(this).toggleClass('active');
+    });
 });
 </script>
 </body>
