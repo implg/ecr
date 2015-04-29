@@ -39,4 +39,4 @@ if ($_REQUEST['order']){
 $tickets = $mysql->select($sql);
 
 
-print_r($tickets);
+print_r($tickets); die;
