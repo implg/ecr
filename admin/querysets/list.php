@@ -3,6 +3,8 @@ ini_set("display_errors", 1);
 
 require_once($_SERVER['DOCUMENT_ROOT'].'/include/forms/utils/mysql/query_builder.php');
 
+require_once($_SERVER['DOCUMENT_ROOT'].'/include/forms/companies.php');
+
 $mysql = new simple_query_builder();
 $mysql->devMode = 1;
 $sql = "SELECT * 
@@ -34,6 +36,12 @@ if ($_REQUEST['sort']){
 if ($_REQUEST['order']){
 	$sql .= " ".$_REQUEST['order'];
 }
-
-
 $tickets = $mysql->select($sql);
+$newtickets = array();
+foreach ($tickets as $item){
+	if ($item['member']){
+		$item['company'] = $companies[$item['member']];
+	}
+	$newtickets[] = $item;
+}
+$tickets = $newtickets;
