@@ -2,6 +2,7 @@
 ini_set("display_errors", 1);
 $id = $_REQUEST['id']; 
 require_once($_SERVER['DOCUMENT_ROOT'].'/include/forms/utils/mysql/query_builder.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/include/companies.php');
 $mysql = new simple_query_builder();
 $mysql->devMode = 1;
 $sql = "SELECT * 
@@ -100,3 +101,6 @@ foreach ($whos[$ticket['language'] == 'English' ? $ticket['language'] : 'Рус�
 }
 
 $ticket['who_array'] = $sess;
+if ($ticket['member'] && !$ticket['company'] ){
+$ticket['company'] = $companies[$item['member']]['title'];
+}
