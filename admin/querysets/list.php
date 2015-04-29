@@ -37,6 +37,6 @@ if ($_REQUEST['order']){
 	$sql .= " ".$_REQUEST['order'];
 }
 $tickets = $mysql->select($sql);
-$newtickets = array();
 
 
+print_r($tickets);
