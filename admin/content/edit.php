@@ -42,7 +42,7 @@
 		<!--  end step-holder -->
 	
 		<!-- start id-form -->
-		<form action="/admin/querysets/save.php" method="post">
+		<form action="/admin/querysets/content/save.php" method="post">
 		<input type="hidden" value="<?php echo $ticket['id']; ?>" name="id">
 		<table border="0" cellpadding="0" cellspacing="0"  width="100%" id="id-form">
 		<tr>

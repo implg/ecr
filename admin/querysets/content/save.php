@@ -51,10 +51,10 @@ if ($id){
 
 if($res){
 	$message =  "Страница успешно изменена";
-	header('Location: /admin/events/index.php?message='.$message);	
+	header('Location: /admin/content/index.php?message='.$message);	
 }else{
 	$message =  "Страница не изменена";
-	header('Location: /admin/events/edit.php?id='.$_REQUEST['id'].'&message='.$message);
+	header('Location: /admin/content/edit.php?id='.$_REQUEST['id'].'&message='.$message);
 }
 
 
