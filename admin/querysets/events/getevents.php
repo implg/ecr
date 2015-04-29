@@ -27,3 +27,4 @@ foreach ($tickets as $item) {
 	$byday[$day][] = $item;
 
 }
+?>
