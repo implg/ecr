@@ -1,4 +1,5 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/login_required.php');?>
+<?php $show_search = true;?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/blocks/header.php'); ?>
 	<?php if ($_REQUEST['message']): ?>
 				<div id="message-green">

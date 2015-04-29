@@ -187,7 +187,7 @@ $(document).pngFix( );
 	<!-- end logo -->
 	
 	<div id="top-search">
-
+	<?php if ($show_search): ?>
 		<form action="/admin/index.php" method="get">
 		<table border="0" cellpadding="0" cellspacing="0">
 		<tr>
@@ -209,12 +209,12 @@ $(document).pngFix( );
 			</select>
 		</td>
 		<td>
-		<input type="image" src="images/shared/top_search_btn.gif" style="margin-left:5px;"  />
+		<input type="image" src="/admin/images/shared/top_search_btn.gif" style="margin-left:5px;"  />
 		</td>
 		</tr>
 		</table>
 		</form>
-
+	<?php endif; ?>
 		
 	</div>
  	<!--  end top-search -->

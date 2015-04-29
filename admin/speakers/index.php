@@ -55,9 +55,9 @@
 				<tr>
 					<th class="table-header-repeat line-left"><a href="?sort=id<?php echo $get; ?>&order=<?php if($sort == 'id'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">№</a>	</th>
 					
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=name<?php echo $get; ?>&order=<?php if($sort == 'name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Заголовок</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=position<?php echo $get; ?>&order=<?php if($sort == 'position'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Keywords</a>	</th>
-					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=interview<?php echo $get; ?>&order=<?php if($sort == 'interview'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Meta Description</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=name<?php echo $get; ?>&order=<?php if($sort == 'name'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Имя</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=position<?php echo $get; ?>&order=<?php if($sort == 'position'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Должность</a>	</th>
+					<th class="table-header-repeat line-left minwidth-1"><a href="?sort=interview<?php echo $get; ?>&order=<?php if($sort == 'interview'):?><?php if ($order == 'ASC'): ?>DESC<?php else: ?>ASC<?php endif; ?><?php else: ?>ASC<?php endif; ?>">Интервью</a>	</th>
 					
 
 					<th class="table-header-repeat"></th>
@@ -76,7 +76,7 @@
 						<td><?php echo $ticket['name'];?></td>
 						<td><?php echo $ticket['position'];?></td>
 						<td><?php echo $ticket['interview']?></td>
-						s
+						
 						<td>
 						<a href="/admin/speakers/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
 						

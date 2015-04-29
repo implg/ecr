@@ -36,7 +36,7 @@
 	<tr valign="top">
 	<td>
 	
-		<a href="/admin/index.php"><< Назад таблицу</a>
+		<a href="/admin/content/index.php"><< Назад в таблицу</a>
 		<!--  start step-holder -->
 		
 		<!--  end step-holder -->
@@ -112,7 +112,7 @@
 	</table>
 	</form>
 	<!-- end id-form  -->
-	<a href="/admin/index.php"><< Назад таблицу</a>
+	<a href="/admin/content/index.php"><< Назад в таблицу</a>
 	</td>
 	<td>
 
@@ -121,7 +121,7 @@
 </td>
 </tr>
 <tr>
-<td><img src="images/shared/blank.gif" width="695" height="1" alt="blank" /></td>
+<td><img src="/admin/images/shared/blank.gif" width="695" height="1" alt="blank" /></td>
 <td></td>
 </tr>
 </table>
