@@ -247,7 +247,7 @@ a {
 @media all and (max-width: 768px) {
   .menu {
     height: 52px;
-    position: absolute;
+    float: none;
   }
   .menu ul:before {
     content: '';
