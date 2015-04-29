@@ -39,7 +39,7 @@ $tickets = $mysql->select($sql);
 $newtickets = array();
 foreach ($tickets as $item){
 	if ($item['member']){
-		$item['company'] = $companies[$item['member']];
+		$item['company'] = $companies[$item['member']]['title'];
 	}
 	$newtickets[] = $item;
 }
