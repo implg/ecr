@@ -77,22 +77,22 @@
 		</tr>
 		<tr>
 			<th valign="top">Meta Keywords:</th>
-			<td><textarea name="description_en"  class="form-textarea noed" ><?php echo $ticket['description_en']?></textarea></td>
+			<td><textarea name="meta_keywords"  class="form-textarea noed" ><?php echo $ticket['meta_keywords']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th valign="top">Meta Keywords (En):</th>
-			<td><textarea name="description_en"  class="form-textarea noed" ><?php echo $ticket['description_en']?></textarea></td>
+			<td><textarea name="meta_keywords_en"  class="form-textarea noed" ><?php echo $ticket['meta_keywords_en']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th valign="top">Meta Description (En):</th>
-			<td><textarea name="description_en"  class="form-textarea noed" ><?php echo $ticket['description_en']?></textarea></td>
+			<td><textarea name="meta_description"  class="form-textarea noed" ><?php echo $ticket['meta_description']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th valign="top">Meta Description (En):</th>
-			<td><textarea name="description_en"  class="form-textarea noed" ><?php echo $ticket['description_en']?></textarea></td>
+			<td><textarea name="meta_description_en"  class="form-textarea noed" ><?php echo $ticket['meta_description_en']?></textarea></td>
 			<td></td>
 		</tr>
 
