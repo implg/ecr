@@ -84,6 +84,7 @@
 
     <!-- header container -->
     <div class="container">
+      <img src="../images/clock_eng.png" width="40%" style="float: right; margin-top: -50px; margin-right: -50px;">
 
     <!-- logo container -->
     <!-- <div class="logoforum"><img src="../images/ECR-Logo.png"></div> -->

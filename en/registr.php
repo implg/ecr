@@ -43,6 +43,7 @@
 
     <!-- header container -->
     <div class="container">
+      <img src="../images/clock_eng.png" width="40%" style="float: right; margin-top: -50px; margin-right: -50px;">
       <!-- register -->
       <div class="register-now">
         <a href="registr.php" class="button">Register now!</a>
