@@ -76,7 +76,7 @@
 						<td><?php echo $ticket['title'];?></td>
 						<td><?php echo $ticket['sessions'];?></td>
 						<td><?php echo $ticket['descrion']?></td>
-						s
+						
 						<td>
 						<a href="/admin/programms/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
 						
