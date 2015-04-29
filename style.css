@@ -282,7 +282,8 @@ a {
   .menu ul li.langen {
     display: block;
   }
-  .menu:hover ul li {
+  /*.menu:hover ul li,*/
+  .menu ul:hover li {
     display: block;
   }
   .menu:hover ul:after {
