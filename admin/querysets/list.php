@@ -38,11 +38,5 @@ if ($_REQUEST['order']){
 }
 $tickets = $mysql->select($sql);
 $newtickets = array();
-foreach ($tickets as $item){
-	if ($item['member']){
-		$item['company'] = $companies[$item['member']];
-	}
-	$newtickets[] = $item;
-}
-$tickets = $newtickets;
+
 
