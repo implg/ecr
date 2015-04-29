@@ -148,7 +148,7 @@
   <div class="topics">
     <div class="container" style="padding-bottom:0px">
 
-      <img src="images/ECR-Logo-forum.png" style="float:left; margin-right:10px;"><h3><?php echo $page['title_en']; ?></h3>
+      <img src="../images/ECR-Logo-forum.png" style="float:left; margin-right:10px;"><h3><?php echo $page['title_en']; ?></h3>
 
       <?php echo $page['text_en']; ?>
 <br clear="all">
