@@ -16,7 +16,7 @@
 <script src="/admin/js/jquery/ui.checkbox.js" type="text/javascript"></script>
 <script src="/admin/js/jquery/jquery.bind.js" type="text/javascript"></script>
 <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
-<script>tinymce.init({selector:'textarea:not(.noed)', plugins:  {"image","code"}});</script>
+<script>tinymce.init({selector:'textarea:not(.noed)', plugins:  "code"});</script>
 <script type="text/javascript">
 $(function(){
 	$('input').checkBox();

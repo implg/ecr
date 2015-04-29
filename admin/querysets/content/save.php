@@ -19,11 +19,7 @@ foreach ($_POST as $key => $value) {
 		}
 
 		$value = serialize($vals);
-		if($key == 'date'){
-			//print_r($value); die;
-			$mysql->add($key, date('Y-m-d', strtotime($value)));
-		}
-		
+	
 	}
 
 	$mysql->add($key, $value);
