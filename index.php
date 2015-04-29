@@ -193,6 +193,8 @@
     </div>
 
 
+    <div class="container">
+      <h2>Спонсоры</h2>
       <!-- testimonials -->
         <div class="testimonials">
 
@@ -212,6 +214,7 @@
         <!-- testimonials ends! -->
 
     
+    </div>
   </div>
   <!-- topics ends! -->
         
