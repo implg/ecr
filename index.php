@@ -71,7 +71,7 @@
         
         <li><a href="index.php#top">Главная</a></li>
         <li><a href="programm.php">программа</a></li>
-        <li><a href="speakers.html">спикеры</a></li>
+        <li><a href="speakers.php">спикеры</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="registr.php">участие</a></li>
