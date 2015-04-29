@@ -60,8 +60,8 @@ ini_set("display_errors", 1); ?>
   $dayn = 0;
   $date = '';
   $dates = array(
-  	1 => '02.06.2015',
-  	2 => '03.06.2015',
+  	1 => '2015-06-02',
+  	2 => '2015-06-03',
   	);
   ?>
   <div class="schedule">
