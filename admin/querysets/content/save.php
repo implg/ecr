@@ -30,7 +30,15 @@ foreach ($_POST as $key => $value) {
 
 }
 
+if ($_FILES['photo']){
+	$uploaddir = $_SERVER['DOCUMENT_ROOT'].'/admin/uploads/';
+	$uploadfile = $uploaddir . basename(md5(date('d.m.Y H:i:s')).$_FILES['photo']['name']);
 
+	if (move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)) {
+
+		$mysql->add('photo', str_replace($_SERVER['DOCUMENT_ROOT'], '', $uploadfile));
+	}
+}s
 
 if ($id){
 	$res = $mysql->update('pages', 'id='.$_REQUEST['id']);
