@@ -16,7 +16,7 @@
 
 <body>
 
-<div class="page">
+<div class="page" style="overflow: visible;">
     <!-- menu -->
     <div class="menu">
 
