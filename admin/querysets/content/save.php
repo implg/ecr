@@ -38,7 +38,7 @@ if ($_FILES['photo']){
 
 		$mysql->add('photo', str_replace($_SERVER['DOCUMENT_ROOT'], '', $uploadfile));
 	}
-}s
+}
 
 if ($id){
 	$res = $mysql->update('pages', 'id='.$_REQUEST['id']);
