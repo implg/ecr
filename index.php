@@ -174,26 +174,21 @@
 
 </div>
     </div>
-    
 
 
-
-<a id="sponsors" class="anchor"></a>
-
-
+    <div class="container">
+      <h2>Спонсоры</h2>
       <!-- testimonials -->
-        <div class="testimonials" style="display:none">
+        <div class="testimonials">
 
           
 
           <div class="slides">
 
-  <div><a href="#"><img src="images/metro.jpg" /></a></div>
-  <div><a href="#"><img src="images/pepsico.jpg" /></a></div>
-  <div><a href="#"><img src="images/giageo.png" /></a></div>
-  <div><a href="#"><img src="images/informatica.png" /></a></div>
-  <div><a href="#"><img src="images/deloitte.jpg" /></a></div>
-  <div><a href="#"><img src="images/ferrero.png" /></a></div>
+            <div><a href="#"><img src="images/metro.jpg" /></a></div>
+            <div><a href="#"><img src="images/pepsico.jpg" /></a></div>
+            <div><a href="#"><img src="images/giageo.png" /></a></div>
+            <div><a href="#"><img src="images/contur.jpg" /></a></div>
 
 
           </div>
@@ -202,6 +197,7 @@
         <!-- testimonials ends! -->
 
     
+    </div>
   </div>
   <!-- topics ends! -->
         
