@@ -157,7 +157,7 @@
 
 <a id="sopred" class="anchor"></a>
 <div id="mytop">
-<?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>
+<?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/speakers/main.php'; ?>
 <?php foreach ($speakers as $item): ?>
       <!-- single topic -->
       <div class="my">
