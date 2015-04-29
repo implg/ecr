@@ -229,7 +229,9 @@ $(document).pngFix( );
 <div class="clear">&nbsp;</div>
  
  <div class="clear"></div>
- 
+ <div class="nav-outer-repeat"> 
+<!--  start nav-outer -->
+<div class="nav-outer"> 
 
 
 
@@ -309,8 +311,8 @@ $(document).pngFix( );
 		</div>
 
 
-
-
+</div>
+</div>
 <!-- start content-outer -->
 <div id="content-outer">
 <!-- start content -->

@@ -75,6 +75,7 @@
 			<td><input type="time" name="time_start" value="<?php echo $ticket['time_start']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
+		
 		<tr>
 			<th width="50%" valign="top">Время окончания</th>
 			<td><input type="time" name="time_end" value="<?php echo $ticket['time_end']; ?>" class="inp-form" /></td>

@@ -44,126 +44,47 @@
 		<input type="hidden" value="<?php echo $ticket['id']; ?>" name="id">
 		<table border="0" cellpadding="0" cellspacing="0"  width="100%" id="id-form">
 		<tr>
-			<th width="50%" valign="top">Компания является членом ECR Russia?</th>
-			<td><input type="checkbox" name="company_in_forum" value="1" <?php if ($ticket['company_in_forum']): ?>checked<?php endif; ?> class="inp-form" /></td>
+			<th width="50%" valign="top">Заголовок</th>
+			<td><input type="text" name="title" value="<?php echo $ticket['title']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		<tr>
-			<th width="50%" valign="top">Требуется перевод</th>
-			<td><input type="checkbox" name="translate" value="1" <?php if ($ticket['translate']): ?>checked<?php endif; ?> class="inp-form" /></td>
+			<th width="50%" valign="top">Заголовок (En)</th>
+			<td><input type="text" name="title_en" value="<?php echo $ticket['title_en']; ?>" class="inp-form" /></td>
 			<td></td>
 		</tr>
 		<tr>
-			<th valign="top">Язык страницы:</th>
-			<td><input type="text" name="language" value="<?php echo $ticket['language'];?>" class="inp-form" /></td>
+			<th valign="top">Текст:</th>
+			<td><textarea name="description"  class="form-textarea" ><?php echo $ticket['description']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
-			<th valign="top">Компания:</th>
-			<td><input type="text" name="company" value="<?php echo $ticket['company'];?>" class="inp-form" /></td>
+			<th valign="top">Текст (En):</th>
+			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
-			<th valign="top">Сайт:</th>
-			<td><input type="text" name="site_company" value="<?php echo $ticket['site_company'];?>" class="inp-form" /></td>
+			<th valign="top">Meta Keywords:</th>
+			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
-			<th valign="top">Имя:</th>
-			<td><input type="text" name="first_name" value="<?php echo $ticket['first_name'];?>" class="inp-form" /></td>
+			<th valign="top">Meta Keywords (En):</th>
+			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
-			<th valign="top">Фамилия:</th>
-			<td><input type="text" name="last_name" value="<?php echo $ticket['last_name'];?>" class="inp-form" /></td>
+			<th valign="top">Meta Description (En):</th>
+			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
 			<td></td>
 		</tr>
 		<tr>
-			<th valign="top">Телефон:</th>
-			<td><input type="text" name="phone" value="<?php echo $ticket['phone'];?>" class="inp-form" /></td>
+			<th valign="top">Meta Description (En):</th>
+			<td><textarea name="description_en"  class="form-textarea" ><?php echo $ticket['description_en']?></textarea></td>
 			<td></td>
 		</tr>
-		<tr>
-			<th valign="top">Email:</th>
-			<td><input type="text" name="email" value="<?php echo $ticket['email'];?>" class="inp-form" /></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">Должность:</th>
-			<td><input type="text" name="position" value="<?php echo $ticket['position'];?>" class="inp-form" /></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">Купон:</th>
-			<td><input type="text" name="cupon" value="<?php echo $ticket['cupon'];?>" class="inp-form" /></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">Количество участников:</th>
-			<td><input type="text" name="count" value="<?php echo $ticket['count'];?>" class="inp-form" /></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">Какие сессии планируете посетить?:</th>
-			<td>
-				
-				<?php foreach ($ticket['sess_array'] as $sess): ?>
-					<label><input name="sess[]" type="checkbox" <?php echo $sess['selected'];?>  value="<?php echo $sess['id']; ?>"><?php echo $sess['title']; ?></label><br>
-				<?php endforeach; ?>
-			</td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">Дополнительная информация:</th>
-			<td>
-				
-				<?php foreach ($ticket['who_array'] as $sess): ?>
-					<label><input name="who[]" type="checkbox" <?php echo $sess['selected'];?>  value="<?php echo $sess['id']; ?>"><?php echo $sess['title']; ?></label><br>
-				<?php endforeach; ?>
-				
-			</td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">БИК:</th>
-			<td><input type="text" name="bik" value="<?php echo $ticket['bik'];?>" class="inp-form" /></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">Название банка:</th>
-			<td><input type="text" name="bankname" value="<?php echo $ticket['bankname'];?>" class="inp-form" /></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">КС:</th>
-			<td><input type="text" name="ks" value="<?php echo $ticket['ks'];?>" class="inp-form" /></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">РС:</th>
-			<td><input type="text" name="rs" value="<?php echo $ticket['rs'];?>" class="inp-form" /></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">Юридическое название:</th>
-			<td><input type="text" name="urname" value="<?php echo $ticket['urname'];?>" class="inp-form" /></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th valign="top">Статус:</th>
-			<td>
-				<select name="status">
-					<option <?php if ($ticket['status'] == 'Registered'):?>selected<?php endif; ?> value="Registered">Registered</option>
-					<option <?php if ($ticket['status'] == 'Participant'):?>selected<?php endif; ?> value="Participant">Participant</option>
-					<option <?php if ($ticket['status'] == 'Ticket'):?>selected<?php endif; ?> value="Ticket">Ticket</option>
-				</select>
-				
-				
-				
-				
-			</td>
-			<td></td>
-		</tr>
+
+
 		
 	
 	
