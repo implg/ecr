@@ -59,6 +59,10 @@ ini_set("display_errors", 1); ?>
   require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/events/getevents.php';
   $dayn = 0;
   $date = '';
+  $dates = array(
+  	1 => '02.06.2015',
+  	2 => '03.06.2015',
+  	);
   ?>
   <div class="schedule">
 
@@ -66,7 +70,7 @@ ini_set("display_errors", 1); ?>
     <?php foreach($byday as $key=>$day): ?>
     	<?php $dayn++; ?>
 
-    	<h2>DAY <?php echo $dayn; ?>. <?php echo date('d.m.Y', strtotime($day[0]['day'])); ?></h2>
+    	<h2>DAY <?php echo $dayn; ?>. <?php echo date('d.m.Y', strtotime($dates[$key])); ?></h2>
 
       <p class="subtitle"></p>
       <div class="programm-wrap">
