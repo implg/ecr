@@ -9,7 +9,7 @@ FROM  `events` WHERE 1=1";
 
 
 
-$sql .= " ORDER BY day time_start time_end";
+$sql .= " ORDER BY day, time_start, time_end";
 
 if ($_REQUEST['order']){
 	$sql .= " ".$_REQUEST['order'];
