@@ -1,9 +1,9 @@
 <?php
 // Author: Linmic, email: linmicya@gmail.com
-$host = "mysql.ecr-forum.com"; // your db host (ip/dn)
-$user = "ecrforum"; // your db's privileged user account
-$password = "RR56dkF89"; // and it's password
-$db_name = "ecrforum"; // db name
+$host = "localhost"; // your db host (ip/dn)
+$user = "forum"; // your db's privileged user account
+$password = "jvK3pwI8Dt"; // and it's password
+$db_name = "forum"; // db name
 // $host = "localhost";
 // $user = "root";
 // $password = "1";
