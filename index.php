@@ -67,13 +67,13 @@
 
       <ul>
         
-        <li><a href="index.html#top">Главная</a></li>
+        <li><a href="index.php#top">Главная</a></li>
         <li><a href="programm.php">программа</a></li>
         <li><a href="speakers.html">спикеры</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="registr.php">участие</a></li>
-        <li><a href="index.html#location">контакты</a></li>
+        <li><a href="index.php#location">контакты</a></li>
         <li class="langru"><a href="/"><img src="images/ru.png"></a></li>
         <li class="langen"><a href="en/"><img src="images/en.png"></a></li>
       </ul>

@@ -19,7 +19,7 @@ ini_set("display_errors", 1); ?>
 
 <body>
 
-<div class="page">
+<div class="page" style="overflow:visible">
 
     <!-- menu -->
     <div class="menu">

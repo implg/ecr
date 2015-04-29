@@ -22,13 +22,13 @@
 
       <ul>
         
-        <li><a href="index.html#top">Главная</a></li>
+        <li><a href="index.php#top">Главная</a></li>
         <li><a href="programm.php">программа</a></li>
         <li><a href="speakers.html">спикеры</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="registr.php">участие</a></li>
-        <li><a href="index.html#location">контакты</a></li>
+        <li><a href="index.php#location">контакты</a></li>
         <li class="langru"><a href="/programm.php"><img src="images/ru.png"></a></li>
         <li class="langen"><a href="en/programm.php"><img src="images/en.png"></a></li>
       </ul>
@@ -236,7 +236,58 @@
           </div>
         </div>
       </div> -->
+ <a id="programm" class="anchor"></a>
+  <!-- schedule -->
+  <?php
+  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/events/getevents.php';
+  $dayn = 0;
+  $date = '';
+  $dates = array(
+    1 => '2015-06-02',
+    2 => '2015-06-03',
+    );
+  ?>
+  <div class="schedule">
 
+    <div class="container">
+    <?php foreach($byday as $key=>$day): ?>
+      <?php $dayn++; ?>
+
+      <h2>День <?php echo $dayn; ?>. <?php echo date('d.m.Y', strtotime($dates[$dayn])); ?></h2>
+
+      <p class="subtitle"></p>
+      <div class="programm-wrap">
+        
+        
+    <?php foreach ($day as $time):  ?>
+      <div class="programm-block programm-parent clearfix"> 
+      <?php foreach ($time as $item): ?>
+        
+      
+  
+        
+          <div class="<?php echo $item['color'];?> pop-show">
+            <span><?php echo $item['time_start']; ?>-<?php echo $item['time_end']; ?></span>
+            <div class="programm-text"><?php echo $item['title']; ?></div>
+            <div class="pop-block">
+              <p></p>
+              <div class="pop-desc">
+                <?php echo $item['description']; ?>
+              </div>
+            </div>
+          </div>
+        
+    <?php endforeach; ?>
+    </div>
+<?php endforeach; ?>
+      
+      </div> 
+      
+      
+<?php endforeach;  ?>
+      </div>
+
+    </div>
 
 <?php
       ini_set("display_errors", 1); ?>
