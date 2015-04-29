@@ -2,11 +2,13 @@
 <html lang="ru">
 
 <head>
+<?php $pagecode = 'main'; ?>
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>
 <meta charset="utf-8">
 <title>11 ECR Forum</title>
 
-<meta name="keywords" content="" />
-<meta name="description" content="11 ECR форум - 1200+ delegates including representatives of ECR Russia Nonprofit Partnership company members – 60 biggest companies, leaders in FMCG and Retail industry" />
+<meta name="keywords" content="<?php echo $page['meta_keywords_en']; ?>" />
+<meta name="description" content="<?php echo $page['meta_description_en']; ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=0">
 
 <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -70,7 +72,7 @@
         
         <li><a href="index.php#top">home</a></li>
         <li><a href="programm.php">program</a></li>
-        <li><a href="speakers.html">speakers</a></li>
+        <li><a href="speakers.php">speakers</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="registr.php">registration</a></li>
@@ -146,8 +148,7 @@
 
   </div>
   <!-- header ends! -->
- <?php $pagecode = 'main'; ?>
-  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>
+ 
   <div class="topics">
     <div class="container" style="padding-bottom:0px">
 
@@ -158,35 +159,19 @@
 <a id="sopred" class="anchor"></a>
 <div id="mytop">
       <!-- single topic -->
-      <div class="my">
-        <i class="fa"><img src="../images/piter1.jpg" alt="Pieter Boone" /></i>
-        <h4>Pieter Boone</h4>
-        <cite><span>ECR Russia Board of Directors Co-Chairman, Chief Executive Officer, Metro Cash&Carry Russia</span></cite>
-        <p>Welcome to the 11th Annual ECR Forum – the platform where the Industry and Trade Sector meet with the objective to create sustainable value and relevance for consumers. The Key buzz words are: Better, Faster with more Efficiency as an end result. This is accomplished via a joint collaborative approach between different stakeholders involved, whereby best practices are shared and discussed.</p>
-      </div>
-      <!-- single topic ends! -->
-
+      <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/speakers/main.php'; ?>
+<?php foreach ($speakers as $item): ?>
       <!-- single topic -->
       <div class="my">
-        <i class="fa"><img src="../images/maksimilyan.jpg" alt="Maximilian Musselius" /></i>
-        <h4>Maximilian Musselius</h4>
-       <cite><span>ECR Russia Executive Director</span></cite>
+        <i class="fa"><img src="<?php echo $item['photo']; ?>" alt="<?php echo $item['name_en'];?>" /></i>
+        <h4><?php echo  $item['name_en'];?></h4>
+        <cite><span><?php echo $item['position_en']; ?></span></cite>
         <p>
-        ECR is a laboratory for the development and distribution of innovative partnership projects. Working together, retailers and suppliers combine their knowledge , motivation and desire to succeed, which gives synergy and brings birth to a real success. </p> 
-        
-      </div>
-      <!-- single topic ends! -->
-
-      <!-- single topic -->
-      <div class="my">
-        <i class="fa"><img src="../images/silviu.jpg" alt="Сильвиу Поповичи" /></i>
-        <h4>Silviu Popovici</h4>
-        <cite><span>ECR Russia Board of Directors Co-Chairman, President, PepsiCo Russia</span></cite>
-        <p>
-        ECR Forum is one of the most effective interaction platforms that takes partnership between suppliers and retailers to new heights. Effective collaboration will yield benefits for all three parts involved: retailers, suppliers and, most important, our consumers.
+        <?php echo $item['interview_en']; ?>
         </p>
       </div>
       <!-- single topic ends! -->
+<?php endforeach; ?>
 
 </div>
     </div>

@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 
 <head>
 <meta charset="utf-8">
-<title>Стань победителем ECR Award - 11-ый Ежегодный ECR форум</title>
+<title>Спикеры - 11-ый Ежегодный ECR форум</title>
 <meta name="viewport" content="width=device-width, initial-scale=0">
 
 <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -23,15 +23,15 @@
 
       <ul>
         
-        <li><a href="index.php#top">Главная</a></li>
-        <li><a href="programm.html">программа</a></li>
+        <li><a href="index.html#top">Главная</a></li>
+        <li><a href="programm.php">программа</a></li>
         <li><a href="speakers.php">спикеры</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
         <li><a href="registr.php">участие</a></li>
-        <li><a href="index.php#location">контакты</a></li>
-        <li class="langru"><a href="/award.html"><img src="images/ru.png"></a></li>
-        <li class="langen"><a href="en/award.html"><img src="images/en.png"></a></li>
+        <li><a href="index.html#location">контакты</a></li>
+        <li class="langru"><a href="/speakers.php"><img src="images/ru.png"></a></li>
+        <li class="langen"><a href="en/speakers.php"><img src="images/en.png"></a></li>
       </ul>
     </div>
     <!-- menu ends! -->
@@ -56,41 +56,39 @@
     </div>
   </div>
   <!-- header ends! -->
-<a id="award" class="anchor"></a>
-  <!-- speakers -->
+<a id="speakers" class="anchor"></a>
+  <!-- why -->
   <div class="speakers">
     <div class="container">
 
-        <h2>ECR Award</h2>
-        <p class="subtitle">Стать победителем ECR Award – большая честь для номинантов!</p>
-        <!-- featured -->
-        <div class="featured">
+  <h2>Спикеры ECR форума 2014</h2>
+  <p class="subtitle"></p>
 
-          <div class="image">
-            <img src="images/award.jpg" alt="" />
-          </div>
+  <!-- why ends! -->
+      
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/speakers/list.php'; ?>
+<?php foreach ($tickets as $item): ?>
+ 
+      <!-- single topic ends! -->
+    
+        <!-- speaker -->
+        <div class="single">
+          <img src="<?php echo $item['photo']; ?>" alt="" />
 
           <div>
- <p>ECR Award – ежегодная церемония награждения лучших кейсов индустрии FMCG и ритейла. Самые лучшие в России практики совместной работы соревнуются за звание лучшего кейса в индустрии.</p>
-            <h3>Номинации ECR Award:</h3>
-<ul>
-<li>Лучший кейс в категории изучения покупателей и управления спросом</li>
-<li>Лучший кейс в области оптимизации цепи поставок</li>
-<li>Лучший кейс в области технологического обеспечения и внедрения электронного документооборота </li>
-</ul>
-<p></p>
-<p>Подать заявку на участие в конкурсе может любая компания.</p>
-<p>Победитель выбирается путем широкого online-голосования. Профессионалы индустрии отдают свои голоса лучшим кейсам, а награждение победителей традиционно проходит в рамках вечернего приема Форума ECR.</p>
-
-<p>Хотите получить признание коллег и с гордостью демонстрировать награду победителя ECR Award? Заявляйте свои кейсы на ECR Award 2015, прием заявок открыт по адресу: <a href="mailto:office.ecr@gmail.com">office.ecr@gmail.com</a></p>
+            <h3><?php echo str_replace(' ', ' <br>', $item['name']); ?></h3>
+            <p><?php echo $item['position']; ?></p>
           </div>
-
         </div>
-        <!-- featured ends! -->
+        <!-- speaker ends! -->
+<?php endforeach; ?> 
+  </div>   </div>
 
-  <!-- speakers ends! -->
-
+  <!-- schedule -->
  
+  <!-- schedule ends! -->
+
+    </div>
 
   <!-- footer -->
   <div class="footer">
