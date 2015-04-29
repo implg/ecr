@@ -21,7 +21,7 @@ $sessions = array(
 								7 => array('value' => 7, 'title' => '<span>Omni Channel Marketing</span>'),
 								8 => array('value' => 8, 'title' => 'Electronic Data Interchange (<span>EDI</span>)'),
 								9 => array('value' => 9, 'title' => 'E-invoices'),
-								10 => array('value' => 10, 'title' => 'Source e-documents'),
+								10 => array('value' => 10, 'title' => 'Plenary session with commercial directors'),
 								11 => array('value' => 11, 'title' => 'Master Data Synchronisation'),
 								12 => array('value' => 12, 'title' => 'ECR Best practices'),
 								),
@@ -37,7 +37,7 @@ $sessions = array(
 								7 => array('value' => 7, 'title' => '<span>Omni Channel</span>'),
 								8 => array('value' => 8, 'title' => 'Электронный обмен данными (<span>EDI</span>)'),
 								9 => array('value' => 9, 'title' => 'Электронные бухгалтерские документы'),
-								10 => array('value' => 10, 'title' => 'Синхронизация мастер-данных'),
+								10 => array('value' => 10, 'title' => 'Пленарная сессия с коммерческими директорами'),
 								11 => array('value' => 11, 'title' => 'Лучшие практики <span>ECR</span>'),
 								),
 
