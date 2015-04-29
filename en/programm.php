@@ -55,6 +55,7 @@
   <!-- schedule -->
   <div class="schedule">
     <div class="container">
+    <p class="subtitle" style="margin-top: 50px;"><a href="../files/ECR-program-draft-ENG.pdf">Download the program in English</a></p>
     <!-- <h2>DAY 1. JUNE 2, 2015</h2>
       <p class="subtitle"></p>
       <div class="programm-wrap">
