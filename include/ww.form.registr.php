@@ -38,7 +38,7 @@
 
 							),
 						
-						'company_in_forum' => array('type' => 'checkbox', 'title' => 'Ваша компания является членом ECR Russia?',  'required' => false),
+						'company_in_forum' => array('type' => 'checkbox', 'title' => 'Ваша компания является членом ECR Russia',  'required' => false),
 						'member' => array('type' => 'select', 'title' => 'Выберите компанию', 'values' => $companies, 'attrs' => array('style' => 'display:none;'),),
 						'language' => array('type' => 'hidden', 'value' => 'Русский'),
 						'company' => array('type' => 'text', 'required' => false, 'attrs'=>array('placeholder' => 'Компания', 'class' => 'latine') ),

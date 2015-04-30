@@ -39,7 +39,7 @@ The request will be processed during the next 5 working days.</p>",
 
 							),
 						
-						'company_in_forum' => array('type' => 'checkbox', 'title' => 'Is you company a member of ECR Russia?',  'required' => false),
+						'company_in_forum' => array('type' => 'checkbox', 'title' => 'Is you company a member of ECR Russia',  'required' => false),
 						'member' => array('type' => 'select', 'title' => 'Select company', 'values' => $companies, 'attrs' => array('style' => 'display:none;'),),
 						'language' => array('type' => 'hidden', 'value' => 'English'),
 						'company' => array('type' => 'text', 'required' => false, 'attrs'=>array('placeholder' => 'Company', 'class' => 'latine') ),
