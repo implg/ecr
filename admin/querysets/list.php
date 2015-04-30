@@ -1,7 +1,8 @@
 <?php
-ini_set("display_errors", 1); 
+ini_set("display_errors", 0); 
 require_once($_SERVER['DOCUMENT_ROOT'].'/include/forms/utils/mysql/query_builder.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/include/companies.php');
+
+require_once($_SERVER['DOCUMENT_ROOT'].'/include/companies.php' );
 $mysql = new simple_query_builder();
 $mysql->devMode = 1;
 $sql = "SELECT * 
