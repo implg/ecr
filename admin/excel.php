@@ -9,6 +9,7 @@ $db_name = "forum"; // db name
 // $password = "1";
 // $db_name = "forum";
 $tbl_name = "members"; // table name of the selected db
+require($_SERVER['DOCUMENT_ROOT'].'/include/companies.php');
 $array = array(
 	'sess' => array(
 		'English' => array(
@@ -95,7 +96,9 @@ $lang = "";
 while($row = mysql_fetch_assoc($export)) {
 $line = '';
 
-
+if (!$row['company']){
+	$row['company'] = $companies[$row['member']];
+}
 foreach($row as $key=>$value) {
 	$res = '';
 if ($key == 'language' && $language == 'English'){
@@ -103,6 +106,7 @@ if ($key == 'language' && $language == 'English'){
 }else{
 	$lang = 'Русский';
 }
+
 if ((!isset($value)) OR ($value == "")) {
 $value = '<Cell ss:StyleID="1"><Data ss:Type="String"></Data></Cell>\t';
 } else {
