@@ -23,7 +23,7 @@
 
       <ul>
         
-        <li><a href="index.html#top">Главная</a></li>
+        <li><a href="index.php#top">Главная</a></li>
         <li><a href="programm.php">программа</a></li>
         <li><a href="speakers.php">спикеры</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
