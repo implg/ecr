@@ -10,10 +10,10 @@ $sql = "SELECT *
 FROM  `members` WHERE 1=1";
 
 if ($_REQUEST['search_company_in_forum']){
-	$sql .= " AND company_in_forum = '1'";
+	$sql .= " AND (company_in_forum = '1' OR company_in_forum IS NOT NULL)";
 }
 if ($_REQUEST['search_no_company_in_forum']){
-	$sql .= " AND company_in_forum < '1'";
+	$sql .= " AND (company_in_forum < '1' OR company_in_forum IS NULL)";
 }
 
 if ($_REQUEST['search_last_name']){

@@ -97,7 +97,7 @@ while($row = mysql_fetch_assoc($export)) {
 $line = '';
 
 if (!$row['company']){
-	$row['company'] = $companies[$row['member']];
+	$row['company'] = $companies[$row['member']]['title'];
 }
 foreach($row as $key=>$value) {
 	$res = '';
