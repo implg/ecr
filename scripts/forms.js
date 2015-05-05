@@ -1,5 +1,5 @@
 var ajax_send = false;
-var ie_8 = false;
+var ie_8 = true;
 var timer_seconds;
 var slider_timer;
 var slider_timer_delay = 9000;
