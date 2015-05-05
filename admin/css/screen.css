@@ -655,7 +655,7 @@ a:hover.action-delete	{
 	height: 25px;
  
 	padding: 6px 6px 0 6px;
-	width: 350px;
+	width: 100%;
 	}
 	
 .inp-form-error	{

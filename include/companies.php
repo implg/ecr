@@ -1,5 +1,6 @@
 <?php
 $companies = array(
+'' => array('value' => '', 'title' => '* Выберите компанию'),
 1 => array('value' => 1, 'title' => 'AKORT'),
 2 => array('value' => 2, 'title' => 'Auchan'),
 3 => array('value' => 3, 'title' => 'Avoska'),

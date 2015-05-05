@@ -241,6 +241,7 @@ $(document).ready(
 			if($(this).is(':checked')){
 				$('input[name=company]').hide();
 				$('select[name=member]').show();
+				$('select[name=member]').attr('required', 'required');
 				$('input[name=bik]').hide();
 				$('input[name=bankname]').hide();
 				$('input[name=ks]').hide();
@@ -249,7 +250,8 @@ $(document).ready(
 				$('h3.requisit').hide();
 			}else{
 				$('input[name=company]').show();
-				$('select[name=member]').hide();				
+				$('select[name=member]').hide();
+				$('select[name=member]').removeAttr('required');				
 				$('input[name=bik]').show();
 				$('input[name=bankname]').show();
 				$('input[name=ks]').show();
