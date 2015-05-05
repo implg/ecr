@@ -839,6 +839,7 @@ a {
 }
 .form {
   padding-right: 15px;
+  opacity: 1\9 !important;
 }
   @media all and (max-width: 1180px) {
     .form {
