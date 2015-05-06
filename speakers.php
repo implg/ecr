@@ -61,7 +61,7 @@
   <div class="speakers">
     <div class="container">
 
-  <h2>Спикеры ECR форума 2014</h2>
+  <h2>Спикеры ECR форума</h2>
   <p class="subtitle"></p>
 
   <!-- why ends! -->
