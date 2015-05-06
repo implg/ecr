@@ -269,7 +269,7 @@
   
         
           <div class="<?php echo $item['color'];?> pop-show">
-            <span><?php echo preg_replace('#00$#', '', $item['time_start']); ?>-<?php echo preg_replace('#00$#', '', $item['time_end']); ?></span>
+            <span><?php echo preg_replace('#:00$#', '', $item['time_start']); ?>-<?php echo preg_replace('#:00$#', '', $item['time_end']); ?></span>
             <div class="programm-text"><?php echo $item['title']; ?></div>
             <div class="pop-block">
               <p></p>
