@@ -56,7 +56,7 @@
     <div class="container">
 
 
-  <h2>Speakers - ECR Forum 2014</h2>
+  <h2>Speakers - ECR Forum</h2>
   <p class="subtitle"></p>
 
   <!-- why ends! -->
