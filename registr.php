@@ -61,9 +61,10 @@
       <h2>Регистрация</h2>
      
 
-    
+<?php $pagecode = 'main'; ?>
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>    
       
-      
+    <?php echo $page['text'];?>
       <!-- register form -->
       <?php require_once($_SERVER['DOCUMENT_ROOT'].'/include/ww.form.registr.php'); ?>
   </div>
