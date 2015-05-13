@@ -15,7 +15,7 @@
     Prices do not include VAT. <br>
     Participation of 2 and more delegates gives a 5% discount. 
     <br>
-    For more information on registration procedure please contact: +7 (905) 732 25 39, E-mail: <a href="mailto:tatiana.zemskova@ecr-rus.ru">tatiana.zemskova@ecr-rus.ru</a><br>
+    Please note that the quota for participants from ECR is three tickets per one company. We recommend you to register in advance. In case of any queries please contact Tatiana Zemskova +7 (905) 732 25 39, E-mail: <a href="mailto:tatiana.zemskova@ecr-rus.ru">tatiana.zemskova@ecr-rus.ru</a><br>
 <br>      
         	#hiddens#
          
