@@ -57,6 +57,7 @@
   <div class="registration">
     <div class="container">
 
+
     
       <h2>Регистрация</h2>
      
