@@ -232,7 +232,8 @@
         </div>
 
         <div class="address">
-
+<?php $pagecode = 'contacts'; ?>
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>
           <h4>Контакты</h4>
 
           <!-- <h5><i class="fa fa-chevron-right"></i> Организационные вопросы:</h5>
@@ -245,15 +246,9 @@
           </div> -->
 
 
-          <h5><i class="fa fa-chevron-right"></i> МЕСТО ПРОВЕДЕНИЯ:</h5>
+          <h5><i class="fa fa-chevron-right"></i> <?php echo $page['title']; ?>:</h5>
 
-          <p>
-Московский Международный Дом Музыки<br>
-Москва, Космодамианская наб., д. 52/8<br>
-Тел.:       +7 (495) 735 4378<br>
-E-mail: <a>office.ecr@gmail.com</a><br>
-<a href="http://www.ecr-all.org/russia" target="_blank">www.ecr-all.org/russia</a><br>
-</p>
+          <?php echo $page['text']; ?>
 
         </div>
 
