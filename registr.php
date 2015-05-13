@@ -61,7 +61,7 @@
       <h2>Регистрация</h2>
      
 
-<?php $pagecode = 'main'; ?>
+<?php $pagecode = 'registr'; ?>
   <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>    
       
     <?php echo $page['text'];?>
