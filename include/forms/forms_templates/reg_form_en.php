@@ -1,22 +1,7 @@
       
       <form action="#action_url#" method="post" class="on_ajax">
  
-      <p class="subtitle"></p>
-    <div class="counter">THE FORUM STARTS IN:<br>
-    <div id="defaultCountdown" class="myhome"></div></div>
-    <p><a href="http://www.ecr-all.org/russia/members/Members.php" target="_blank">ECR MEMBERS</a> PARTICIPATE FOR FREE</p>
-        <p>Participation fee:
-          <ul style="list-style:circle; margin-left:30px;"> 
-          <li>45 000 rub - Before May 15, 2015.</li>
-          <li>50 000 rub - Before June 1, 2015.</li>
-          <li>55 000 rub - After June 1, 2015 (with guarantee letter provided).</li>
-          </ul>
-          </p> 
-    Prices do not include VAT. <br>
-    Participation of 2 and more delegates gives a 5% discount. 
-    <br>
-    Please note that the quota for participants from ECR is three tickets per one company. We recommend you to register in advance. In case of any queries please contact Tatiana Zemskova +7 (905) 732 25 39, E-mail: <a href="mailto:tatiana.zemskova@ecr-rus.ru">tatiana.zemskova@ecr-rus.ru</a><br>
-<br>      
+  
         	#hiddens#
          
       <div class="form"> 

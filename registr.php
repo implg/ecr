@@ -59,11 +59,11 @@
 
 
     
-      <h2>Регистрация</h2>
-     
-
 <?php $pagecode = 'registr'; ?>
-  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>    
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>   
+      <h2><?php echo $page['title'];?></h2>
+     
+ 
       
     <?php echo $page['text'];?>
       <!-- register form -->

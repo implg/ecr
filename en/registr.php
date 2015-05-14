@@ -56,10 +56,13 @@
     <!-- registration -->
   <div class="registration">
     <div class="container">
-
-    
-     <h2>Register</h2>
+<?php $pagecode = 'registr'; ?>
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>    
       
+    
+    
+     <h2><?php echo $page['title_en'];?></h2>
+      <?php echo $page['text_en'];?>
       <!-- register form -->
       <?php require_once($_SERVER['DOCUMENT_ROOT'].'/include/ww.form.registr.en.php'); ?>
   </div>
