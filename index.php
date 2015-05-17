@@ -189,6 +189,8 @@
             <div><a href="#"><img src="images/pepsico.jpg" /></a></div>
             <div><a href="#"><img src="images/giageo.png" /></a></div>
             <div><a href="#"><img src="images/contur.jpg" /></a></div>
+			<div><a href="#"><img src="images/sfera.jpg" /></a></div>
+			<div><a href="#"><img src="images/comarch.jpg" /></a></div>
 
 
           </div>
