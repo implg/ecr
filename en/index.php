@@ -74,7 +74,7 @@
         <li><a href="programm.php">program</a></li>
         <li><a href="speakers.php">speakers</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
-        <li><a href="award.html">ECR Award</a></li>
+        <li><a href="award.php">ECR Award</a></li>
         <li><a href="registr.php">registration</a></li>
         <li><a href="index.php#location">contacts</a></li>
         <li class="langru"><a href="/"><img src="../images/ru.png"></a></li>
@@ -192,6 +192,8 @@
             <div><a href="#"><img src="../images/pepsico.jpg" /></a></div>
             <div><a href="#"><img src="../images/giageo.png" /></a></div>
             <div><a href="#"><img src="../images/contur.jpg" /></a></div>
+			<div><a href="#"><img src="../images/sfera.jpg" /></a></div>
+			<div><a href="#"><img src="../images/comarch.jpg" /></a></div>
 
           </div>
 

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
+    
+<?php $pagecode = 'award'; ?>
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>  
 <head>
 <meta charset="utf-8">
 <title>Стань победителем ECR Award - 11-ый Ежегодный ECR форум</title>
 <meta name="viewport" content="width=device-width, initial-scale=0">
-
+<meta name="keywords" content="<?php echo $page['meta_keywords']; ?>" />
+<meta name="description" content="<?php echo $page['meta_description']; ?>" />
 <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 <link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
 <link href="animate.min.css" rel="stylesheet" />
@@ -27,11 +30,11 @@
         <li><a href="programm.html">программа</a></li>
         <li><a href="speakers.php">спикеры</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
-        <li><a href="award.html">ECR Award</a></li>
+        <li><a href="award.php">ECR Award</a></li>
         <li><a href="registr.php">участие</a></li>
         <li><a href="index.php#location">контакты</a></li>
-        <li class="langru"><a href="/award.html"><img src="images/ru.png"></a></li>
-        <li class="langen"><a href="en/award.html"><img src="images/en.png"></a></li>
+        <li class="langru"><a href="/award.php"><img src="images/ru.png"></a></li>
+        <li class="langen"><a href="en/award.php"><img src="images/en.png"></a></li>
       </ul>
     </div>
     <!-- menu ends! -->
@@ -61,31 +64,8 @@
   <div class="speakers">
     <div class="container">
 
-        <h2>ECR Award</h2>
-        <p class="subtitle">Стать победителем ECR Award – большая честь для номинантов!</p>
-        <!-- featured -->
-        <div class="featured">
-
-          <div class="image">
-            <img src="images/award.jpg" alt="" />
-          </div>
-
-          <div>
- <p>ECR Award – ежегодная церемония награждения лучших кейсов индустрии FMCG и ритейла. Самые лучшие в России практики совместной работы соревнуются за звание лучшего кейса в индустрии.</p>
-            <h3>Номинации ECR Award:</h3>
-<ul>
-<li>Лучший кейс в категории изучения покупателей и управления спросом</li>
-<li>Лучший кейс в области оптимизации цепи поставок</li>
-<li>Лучший кейс в области технологического обеспечения и внедрения электронного документооборота </li>
-</ul>
-<p></p>
-<p>Подать заявку на участие в конкурсе может любая компания.</p>
-<p>Победитель выбирается путем широкого online-голосования. Профессионалы индустрии отдают свои голоса лучшим кейсам, а награждение победителей традиционно проходит в рамках вечернего приема Форума ECR.</p>
-
-<p>Хотите получить признание коллег и с гордостью демонстрировать награду победителя ECR Award? Заявляйте свои кейсы на ECR Award 2015, прием заявок открыт по адресу: <a href="mailto:office.ecr@gmail.com">office.ecr@gmail.com</a></p>
-          </div>
-
-        </div>
+        <h2><?php echo $page['title']; ?></h2>
+        <?php echo $page['text']; ?>
         <!-- featured ends! -->
 
   <!-- speakers ends! -->

@@ -29,7 +29,7 @@
         <li><a href="programm.html">program</a></li>
         <li><a href="speakers.php">speakers</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
-        <li><a href="award.html">ECR Award</a></li>
+        <li><a href="award.php">ECR Award</a></li>
         <li><a href="registr.php">registration</a></li>
         <li><a href="index.php#location">contacts</a></li>
         <li class="langru"><a href="/registr.php"><img src="../images/ru.png"></a></li>
