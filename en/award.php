@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-
+<?php $pagecode = 'award'; ?>
+  <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>  
 <head>
 <meta charset="utf-8">
 <title>ECR Award - 11 ECR Forum</title>
-
+<meta name="keywords" content="<?php echo $page['meta_keywords_en']; ?>" />
+<meta name="description" content="<?php echo $page['meta_description_en']; ?>" />
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=0">
@@ -31,12 +33,12 @@
         <li><a href="index.php#top">home</a></li>
         <li><a href="programm.php">program</a></li>
         <li><a href="speakers.php">speakers</a></li>
-        <!-- li><a href="sponsors.html">спонсоры</a></li -->
-        <li><a href="award.html">ECR Award</a></li>
+        <!-- li><a href="sponsors.html">спонсоры</a></li -->ss
+        <li><a href="award.php">ECR Award</a></li>
         <li><a href="registr.php">registration</a></li>
         <li><a href="index.php#location">contacts</a></li>
-        <li class="langru"><a href="../award.html"><img src="../images/ru.png"></a></li>
-        <li class="langen"><a href="../en/award.html"><img src="../images/en.png"></a></li>
+        <li class="langru"><a href="../award.php"><img src="../images/ru.png"></a></li>
+        <li class="langen"><a href="../en/award.php"><img src="../images/en.png"></a></li>
       </ul>
     </div>
     <!-- menu ends! -->
@@ -60,31 +62,8 @@
   <div class="speakers">
     <div class="container">
 
-        <h2>ECR Award</h2>
-        <p class="subtitle">To become ECR Award winner is a great honor for the nominees!</p>
-        <!-- featured -->
-        <div class="featured">
-
-          <div class="image">
-            <img src="../images/award.jpg" alt="" />
-          </div>
-
-          <div>
- <p>ECR Award is the annual ceremony where best FMCG and Retail industry cases are awarded. Best Russian practices of joint work compete to win the best case in the industry.</p>
-            <h3>ECR Award nominations:</h3>
-<ul>
-<li>Best case in the domain of customer research and demand management</li>
-<li>Best case in the domain of optimizing supply chains</li>
-<li>Best case in the domain of technological support and application of non-legible document circulation</li>
-</ul>
-
-<p>Any company can apply for participation.</p>
-<p>The winner is chosen via large on-line vote. Professionals of the industry vote for the best cases, winners are traditionally awarded within ECR Forum evening reception.</p>
-
-<p>Dou you want to win your colleagues’ recognition and proudly show ECR Award winning prize? Apply your cases for ECR Award 2015. Submit application at <a href="mailto:office.ecr@gmail.com">office.ecr@gmail.com</a></p>
-          </div>
-
-        </div>
+        <h2><?php echo $page['title_en']; ?></h2>
+        <?php echo $page['text_en']; ?>
         <!-- featured ends! -->
 
   <!-- speakers ends! -->
