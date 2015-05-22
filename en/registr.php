@@ -26,7 +26,7 @@
       <ul>
         
         <li><a href="index.php#top">home</a></li>
-        <li><a href="programm.html">program</a></li>
+        <li><a href="programm.php">program</a></li>
         <li><a href="speakers.php">speakers</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.php">ECR Award</a></li>
