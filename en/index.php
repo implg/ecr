@@ -194,6 +194,9 @@
             <div><a href="#"><img src="../images/contur.jpg" /></a></div>
 			<div><a href="#"><img src="../images/sfera.jpg" /></a></div>
 			<div><a href="#"><img src="../images/comarch.jpg" /></a></div>
+			<div><a href="#"><img src="../images/iri.jpg" /></a></div>
+			<div><a href="#"><img src="../images/gg.jpg" /></a></div>
+			<div><a href="#"><img src="../images/ow.jpg" /></a></div>
 
           </div>
 
