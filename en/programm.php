@@ -258,6 +258,7 @@ without additional investment.</b><br>
         </div>
       </div> -->
  <a id="programm" class="anchor"></a>
+ <p class="subtitle"><a href="http://www.ecr-all.org/ECR_Forum_2015_program.pdf" target="_blank">ECR FORUM - 2015 PROGRAM. DOWNLOAD PDF</a></p>
   <!-- schedule -->
   <?php
   require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/events/getevents.php';

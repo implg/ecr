@@ -239,6 +239,7 @@
         </div>
       </div> -->
  <a id="programm" class="anchor"></a>
+ <p class="subtitle"><a href="http://www.ecr-all.org/ECR_Forum_2015_program.pdf" target="_blank">ПРОГРАММА ECR ФОРУМА - 2015. СКАЧАТЬ В PDF</a></p>
   <!-- schedule -->
   <?php
   require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/events/getevents.php';
