@@ -252,6 +252,8 @@
   <div class="schedule">
 
     <div class="container">
+<p class="subtitle"><a href="http://www.ecr-all.org/ECR_Forum_2015_program.pdf" target="_blank">ПРОГРАММА ECR ФОРУМА - 2015. СКАЧАТЬ В PDF</a></p>
+
     <?php foreach($byday as $key=>$day): ?>
       <?php $dayn++; ?>
 

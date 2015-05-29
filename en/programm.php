@@ -271,6 +271,8 @@ without additional investment.</b><br>
   <div class="schedule">
 
     <div class="container">
+<p class="subtitle"><a href="http://www.ecr-all.org/ECR_Forum_2015_program.pdf" target="_blank">ECR FORUM - 2015 PROGRAM. DOWNLOAD PDF</a></p>
+
     <?php foreach($byday as $key=>$day): ?>
       <?php $dayn++; ?>
 
