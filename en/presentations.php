@@ -4,7 +4,7 @@
   <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>  
 <head>
 <meta charset="utf-8">
-<title>ECR Award - 11 ECR Forum</title>
+<title>Presentations - 11 ECR Forum</title>
 <meta name="keywords" content="<?php echo $page['meta_keywords_en']; ?>" />
 <meta name="description" content="<?php echo $page['meta_description_en']; ?>" />
 <meta name="keywords" content="" />

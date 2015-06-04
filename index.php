@@ -74,7 +74,7 @@
         <li><a href="speakers.php">спикеры</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.php">ECR Award</a></li>
-        <li><a href="registr.php">участие</a></li>
+        <!-- li><a href="registr.php">участие</a></li -->
         <li><a href="index.php#location">контакты</a></li>
         <li class="langru"><a href="/"><img src="images/ru.png"></a></li>
         <li class="langen"><a href="en/"><img src="images/en.png"></a></li>
