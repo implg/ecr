@@ -37,8 +37,8 @@
         <li><a href="award.php">ECR Award</a></li>
         <li><a href="registr.php">registration</a></li>
         <li><a href="index.php#location">contacts</a></li>
-        <li class="langru"><a href="../award.php"><img src="../images/ru.png"></a></li>
-        <li class="langen"><a href="../en/award.php"><img src="../images/en.png"></a></li>
+        <li class="langru"><a href="../presentations.php"><img src="../images/ru.png"></a></li>
+        <li class="langen"><a href="../en/presentations.php"><img src="../images/en.png"></a></li>
       </ul>
     </div>
     <!-- menu ends! -->
