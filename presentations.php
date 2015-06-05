@@ -5,7 +5,7 @@
   <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>  
 <head>
 <meta charset="utf-8">
-<title>Стань победителем ECR Award - 11-ый Ежегодный ECR форум</title>
+<title>Презентации - 11-ый Ежегодный ECR форум</title>
 <meta name="viewport" content="width=device-width, initial-scale=0">
 <meta name="keywords" content="<?php echo $page['meta_keywords']; ?>" />
 <meta name="description" content="<?php echo $page['meta_description']; ?>" />
@@ -31,10 +31,10 @@
         <li><a href="speakers.php">спикеры</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.php">ECR Award</a></li>
-        <li><a href="registr.php">участие</a></li>
+        <!-- li><a href="registr.php">участие</a></li -->
         <li><a href="index.php#location">контакты</a></li>
-        <li class="langru"><a href="/award.php"><img src="images/ru.png"></a></li>
-        <li class="langen"><a href="en/award.php"><img src="images/en.png"></a></li>
+        <li class="langru"><a href="/"><img src="images/ru.png"></a></li>
+        <li class="langen"><a href="/en/"><img src="images/en.png"></a></li>
       </ul>
     </div>
     <!-- menu ends! -->
