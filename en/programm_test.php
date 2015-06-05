@@ -31,7 +31,7 @@ ini_set("display_errors", 1); ?>
         <li><a href="speakers.html">speakers</a></li>
         <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.html">ECR Award</a></li>
-        <li><a href="registr.php">registration</a></li>
+        <!-- li><a href="registr.php">registration</a></li -->
         <li><a href="index.html#location">contacts</a></li>
         <li class="langru"><a href="/programm.html"><img src="../images/ru.png"></a></li>
         <li class="langen"><a href="/en/programm.html"><img src="../images/en.png"></a></li>
