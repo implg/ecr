@@ -36,7 +36,7 @@
 							'to' => array('wikedwolf@yandex.ru'),// 'abrunov@loyaltylabs.ru'),// 'elena.tkachenko@ecr-rus.ru', 'tatiana.zemskova@ecr-rus.ru'), // or string or fieldKey 
 							'from' => 'no-reply@ecr-forum.com',
 							//'message' => 'text %NAME%',
-							'message_template' => 'admin_showlink_mail',
+							'message_template' => 'admin_showlink',
 							'subject' => 'ECR ФОРУМ 2015 - запрошен пароль просмотра материалов',
 						),
 					'email_client' => array(
@@ -44,7 +44,7 @@
 							'to' => 'email', // or string or fieldKey 
 							'from' => 'no-reply@ecr-forum.com',
 							//'message' => 'text %NAME%',
-							'message_template' => 'client_showlink_mail',
+							'message_template' => 'client_showlink',
 							'subject' => 'ECR ФОРУМ 2015 - Вы запросили пароль просмотра материалов',
 						),
 					// 'sms' => array(
