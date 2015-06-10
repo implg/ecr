@@ -70,7 +70,7 @@
           if (!$_REQUEST['key'] || $_REQUEST['key'] != md5('ecr_forum_key')){
             //die;
             $replace = "Для просмотра ссылок, заполните эту <a href='/form.php' class='fancybox'>форму</a>";
-            $page['text'] = preg_replace('#\<a (.*) \<\/a\>#', $replace, $page['text']);
+            $page['text'] = preg_replace('#<a(.*)\\/a>#', $replace, $page['text']);
           }
         ?>
         <?php echo $page['text']; ?>
