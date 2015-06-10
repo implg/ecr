@@ -1,5 +1,5 @@
 ﻿      <div style="display:none;" id="fancybox_form">
-      <h2>Получить пароль</h2>
+      <h2 nobr>Получить пароль</h2>
       <form style="width:400px" action="#action_url#" method="post"  class="on_ajax">
 
         	#hiddens#
