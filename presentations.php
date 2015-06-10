@@ -14,6 +14,13 @@
 <link href="animate.min.css" rel="stylesheet" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="jquery.countdown.css">
+<link rel="stylesheet" href="/scripts/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script>
+$(document).ready(function(){
+  $('a.fancybox').fancybox();
+});
+</script>
 
 </head>
 
@@ -67,7 +74,7 @@
         <h2><?php echo $page['title']; ?></h2>
 
         <?php
-          if (!$_REQUEST['key'] || $_REQUEST['key'] != md5('ecr_forum_key')){
+          if (!$_REQUEST['key'] || $_REQUEST['key'] != md5($_REQUEST['email'].'_ecr_forum_key')){
             //die;
             $replace = "Для просмотра ссылок, заполните эту <a href='/form.php' class='fancybox'>форму</a>";
             $page['text'] = preg_replace('#<a(.*)\\/a>#', $replace, $page['text']);
