@@ -67,7 +67,8 @@
         <h2><?php echo $page['title']; ?></h2>
 
         <?php
-          if (!$_REQUEST['key'] || $key != md5('ecr_forum_key')){
+          if (!$_REQUEST['key'] || $_REQUEST['key'] != md5('ecr_forum_key')){
+            die;
             $replace = "Для просмотра ссылок, заполните эту <a href='/form.php' class='fancybox'>форму</a>";
             $page['text'] = preg_replace('#\<a (.*) \<\/a\>#', $replace, $page['text']);
           }
