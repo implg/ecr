@@ -4,7 +4,7 @@
   <?php  require $_SERVER['DOCUMENT_ROOT'].'/admin/querysets/content/bycode.php'; ?>  
 <head>
 <meta charset="utf-8">
-<title>ECR Award - 11 ECR Forum</title>
+<title>Presentations - 11 ECR Forum</title>
 <meta name="keywords" content="<?php echo $page['meta_keywords_en']; ?>" />
 <meta name="description" content="<?php echo $page['meta_description_en']; ?>" />
 <meta name="keywords" content="" />
@@ -33,12 +33,12 @@
         <li><a href="index.php#top">home</a></li>
         <li><a href="programm.php">program</a></li>
         <li><a href="speakers.php">speakers</a></li>
-        <!-- li><a href="sponsors.html">спонсоры</a></li -->ss
+        <!-- li><a href="sponsors.html">спонсоры</a></li -->
         <li><a href="award.php">ECR Award</a></li>
-        <li><a href="registr.php">registration</a></li>
+        <!-- li><a href="registr.php">registration</a></li -->
         <li><a href="index.php#location">contacts</a></li>
-        <li class="langru"><a href="../award.php"><img src="../images/ru.png"></a></li>
-        <li class="langen"><a href="../en/award.php"><img src="../images/en.png"></a></li>
+        <li class="langru"><a href="../presentations.php"><img src="../images/ru.png"></a></li>
+        <li class="langen"><a href="../en/presentations.php"><img src="../images/en.png"></a></li>
       </ul>
     </div>
     <!-- menu ends! -->
