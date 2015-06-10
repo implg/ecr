@@ -14,7 +14,7 @@
 <link href="animate.min.css" rel="stylesheet" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="jquery.countdown.css">
-<link rel="stylesheet" href="/scripts/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<link rel="stylesheet" href="/scripts/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
 </head>
 
@@ -126,7 +126,7 @@ $(function () {
 </script>
 
 
-<script type="text/javascript" src="/scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="/scripts/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 <script>
 $(document).ready(function(){
   $('a.fancybox').fancybox();
