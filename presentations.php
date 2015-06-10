@@ -70,7 +70,7 @@
         <?php
           if (!$_REQUEST['key'] || $_REQUEST['key'] != md5($_REQUEST['email'].'_ecr_forum_key')){
             //die;
-            $replace = "Для просмотра ссылок, заполните эту <a href='/form.php' class='fancybox'>форму</a>";
+            $replace = "Для просмотра ссылок, заполните эту <a href='#fancybox_form' class='fancybox'>форму</a>";
             $page['text'] = preg_replace('#<a(.*)\\/a>#', $replace, $page['text']);
           }
         ?>
@@ -92,7 +92,7 @@
   <!-- footer ends! -->
 
 </div>
-
+<?php  require $_SERVER['DOCUMENT_ROOT'].'/include/ww.form.showlink.php'; ?>
 <!-- back to top -->
 <div class="back">
   <div class="container">
