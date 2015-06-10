@@ -129,10 +129,9 @@ $(function () {
 <script type="text/javascript" src="/scripts/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 <script>
 $(document).ready(function(){
-  $('a.fancybox').fancybox({
-    width:400,
-    height:400
-  });
+  $('a.fancybox').on('click', function(){
+    $("#fancybox_form").show();
+  })
 });
 </script>
 </body>
