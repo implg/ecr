@@ -6,7 +6,7 @@
 				$params_form =  array(
 					'form_id' => 'showlink_form_ru',
 					'form_title' => 'Получить ссылки на материалы',
-					'template' => 'registr_form',
+					'template' => 'showlink_form',
 					'db_table' => 'showlink',
 					'post_submit_message' => '<p class="align_center">На указанный вами email было отправлено письмо с паролем</p>',
 					'action_before' => 'send_email_showlink',
