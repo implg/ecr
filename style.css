@@ -1440,3 +1440,9 @@ a {
 .pop-desc {
   padding: 30px;
 }
+#fancybox_form{
+  width:400px;
+  position: fixed;
+  top:40px;
+  left: 10%;
+}
