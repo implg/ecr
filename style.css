@@ -1441,8 +1441,11 @@ a {
   padding: 30px;
 }
 #fancybox_form{
-  width:400px;
+  width:500px;
   position: fixed;
   top:40px;
   left: 10%;
+}
+#fancybox_form input{
+  display: inline-block;
 }
