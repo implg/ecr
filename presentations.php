@@ -15,12 +15,6 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="jquery.countdown.css">
 <link rel="stylesheet" href="/scripts/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="/scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-<script>
-$(document).ready(function(){
-  $('a.fancybox').fancybox();
-});
-</script>
 
 </head>
 
@@ -130,5 +124,14 @@ $(function () {
 	$('#defaultCountdown').countdown({until: austDay, format: 'dHM'});
 });
 </script>
+
+
+<script type="text/javascript" src="/scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script>
+$(document).ready(function(){
+  $('a.fancybox').fancybox();
+});
+</script>
 </body>
+
 </html>
