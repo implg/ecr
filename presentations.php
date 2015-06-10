@@ -15,7 +15,7 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="jquery.countdown.css">
 <link rel="stylesheet" href="/scripts/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-
+<link href="/forms.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -115,6 +115,9 @@
 <script src="jquery.plugin.js"></script>
 <script src="jquery.countdown.js"></script>
 <script src="jquery.countdown-ru.js"></script>
+<script src="/scripts/spin.min.js"></script>
+<script src="/scripts/forms.js"></script>
+
 <!-- scripts ends! -->
 
 <script>
