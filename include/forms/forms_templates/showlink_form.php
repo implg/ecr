@@ -1,10 +1,10 @@
 ﻿      <div style="display:none;" id="fancybox_form">
       <h2 nobr>Получить пароль</h2>
-      <form style="width:400px" action="#action_url#" method="post"  class="on_ajax">
+      <form  action="#action_url#" method="post"  class="on_ajax">
 
         	#hiddens#
          
-      <div class="form"> 
+      <div class="form showlink"> 
       
           #name#
           #surname#
