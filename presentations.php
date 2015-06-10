@@ -70,8 +70,8 @@
         <?php
           if (!$_REQUEST['key'] || $_REQUEST['key'] != md5($_REQUEST['email'].'_ecr_forum_key')){
             //die;
-            $replace = "Для просмотра ссылок, заполните эту <a href='#fancybox_form' class='fancybox'>форму</a>";
-            $page['text'] = preg_replace('#<a(.*)\\/a>#', $replace, $page['text']);
+            $replace = "href='#fancybox_form'";
+            $page['text'] = preg_replace('#href=\\"(.*)\\"#', $replace, $page['text']);
           }
         ?>
         <?php echo $page['text']; ?>
