@@ -37,16 +37,16 @@
 ', 'tatiana.zemskova@ecr-rus.ru'), // or string or fieldKey 
 							'from' => 'no-reply@ecr-forum.com',
 							//'message' => 'text %NAME%',
-							'message_template' => 'admin_mail',
-							'subject' => 'ECR ФОРУМ 2015 - Регистрация',
+							'message_template' => 'admin_showlink_mail',
+							'subject' => 'ECR ФОРУМ 2015 - запрошен пароль просмотра материалов',
 						),
 					'email_client' => array(
 							'extends' => true,
 							'to' => 'email', // or string or fieldKey 
 							'from' => 'no-reply@ecr-forum.com',
 							//'message' => 'text %NAME%',
-							'message_template' => 'client_mail',
-							'subject' => 'ECR ФОРУМ 2015 - Вы заполнили форму регистрации',
+							'message_template' => 'client_showlink_mail',
+							'subject' => 'ECR ФОРУМ 2015 - Вы запросили пароль просмотра материалов',
 						),
 					// 'sms' => array(
 					// 		'to' => array('89236388381'), // or fieldKey 
