@@ -33,8 +33,7 @@
 			
 					'email' => array(
 							'extends' => true,
-							'to' => array('wikedwolf@yandex.ru', 'abrunov@loyaltylabs.ru'),// 'elena.tkachenko@ecr-rus.ru
-', 'tatiana.zemskova@ecr-rus.ru'), // or string or fieldKey 
+							'to' => array('wikedwolf@yandex.ru', 'abrunov@loyaltylabs.ru'),// 'elena.tkachenko@ecr-rus.ru', 'tatiana.zemskova@ecr-rus.ru'), // or string or fieldKey 
 							'from' => 'no-reply@ecr-forum.com',
 							//'message' => 'text %NAME%',
 							'message_template' => 'admin_showlink_mail',
