@@ -8,7 +8,7 @@
 					'form_title' => 'Получить ссылки на материалы',
 					'template' => 'showlink_form',
 					'db_table' => 'showlink',
-					'post_submit_message' => '<p class="align_center">На указанный вами email было отправлено письмо с паролем</p>',
+					'post_submit_message' => '<p class="align_center">Спасибо за запрос. В ближайшее время на указанный вами email вы получите ссылку на скачивание материалов</p>',
 					'action_before' => 'send_email_showlink',
 					'action' => 'write_db',
 					'fields' => array(
