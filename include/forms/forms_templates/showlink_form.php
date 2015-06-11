@@ -7,7 +7,6 @@
         #name#
         #surname#
         #company#
-       
         #site_company#
         #position#
         #email#
