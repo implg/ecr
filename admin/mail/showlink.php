@@ -13,5 +13,5 @@
 
 You may download the presentations of the Forum following the link
 
-<a href="http://ecr-forum.com/presentations.php?email=%email%&key=%password%">http://ecr-forum.com/presentations.php?email=%email%&key=%password%</a></p>
+<a href="http://ecr-forum.com/en/presentations.php?email=%email%&key=%password%">http://ecr-forum.com/presentations.php?email=%email%&key=%password%</a></p>
 <br>
