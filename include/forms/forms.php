@@ -609,6 +609,7 @@ class Forms extends FormsSettings{
 				//preprint($to);
 				$mail = new PHPMailer(true);
 				$mail->Subjectss = encodeSubject($email['subject'], 'utf-8');
+				$mail->Subject = encodeSubject($email['subject'], 'utf-8');
 				$mail->AddAddress($to);
 				$mail->From = $email['from'];
                 $mail->FromName = isset($email['from_name']) ? mb_convert_encoding($email['from_name'], 'KOI8-R', 'UTF-8') : '';
