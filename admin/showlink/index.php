@@ -6,24 +6,24 @@
 				<table border="0" width="100%" cellpadding="0" cellspacing="0">
 				<tr>
 					<td class="green-left"><?php echo $_REQUEST['message']; ?></td>
-					<td class="green-right"><a class="close-green"><img src="images/table/icon_close_green.gif"   alt="" /></a></td>
+					<td class="green-right"><a class="close-green"><img src="/admin/images/table/icon_close_green.gif"   alt="" /></a></td>
 				</tr>
 				</table>
 				</div>
 	<?php endif; ?>
 	<!--  start page-heading -->
 	<div id="page-heading">
-		<h1>Все заявки</h1>
+		<h1>Все запросы</h1>
 	</div>
 	<!-- end page-heading -->
 
 	<table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
 	<tr>
-		<th rowspan="3" class="sized"><img src="images/shared/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
+		<th rowspan="3" class="sized"><img src="/admin/images/shared/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
 		<th class="topleft"></th>
 		<td id="tbl-border-top">&nbsp;</td>
 		<th class="topright"></th>
-		<th rowspan="3" class="sized"><img src="images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
+		<th rowspan="3" class="sized"><img src="/admin/images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
 	</tr>
 	<tr>
 		<td id="tbl-border-left"></td>
@@ -50,7 +50,7 @@
 						
 					}
 				?>
-				<a style="display:block; text-align:right;font-size:12px;" href="/admin/excel.php?<?php echo $get_with_sort;?>">Экспорт в Excel</a>
+				
 				<form id="mainform" action="">
 				<table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table">
 				<tr>
@@ -88,12 +88,12 @@
 						<td><?php echo $ticket['position'];?></td>
 						
 						<td>
-						<a href="/admin/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
+						<a href="/admin/showlink/edit.php?id=<?php echo $ticket['id'];?>" title="Edit" class="icon-1 info-tooltip"></a>
 						
 						</td>
 						<td>
 						
-						<a href="/admin/querysets/delete.php?id=<?php echo $ticket['id'];?>" title="delete" class="icon-2 info-tooltip"></a>
+						<a href="/admin/querysets/showlink/delete.php?id=<?php echo $ticket['id'];?>" title="delete" class="icon-2 info-tooltip"></a>
 						</td>
 					</tr>
 				<?php } ?>

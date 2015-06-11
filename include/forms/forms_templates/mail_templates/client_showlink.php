@@ -1,15 +1,17 @@
-<p><b>Уважаемый участник ECR Форума 2015!</b>,</p>
+<p><b>Добрый день!</b></p>
 <p>
 
-Скачать презентации мероприятия вы можете на сайте по ссылке
+Cпасибо за регистрацию для получения доступа к материалам ECR Форума 2015.
+Скачать презентации мероприятия вы можете по ссылке
 
 
 <a href="http://ecr-forum.com/presentations.php?email=%email%&key=%password%">http://ecr-forum.com/presentations.php?email=%email%&key=%password%</a></p>
 <br>
 
-<p><b>Dear delegate of ECR Forum 2015!</b>,</p>
+<p><b>Thank you for registration to get access to the presentations of the ECR Forum 2015!</b>,</p>
 <p>
-You may download the presentations of the Forum following the link
+
+You may download the files following the link
 
 <a href="http://ecr-forum.com/presentations.php?email=%email%&key=%password%">http://ecr-forum.com/presentations.php?email=%email%&key=%password%</a></p>
 <br>
