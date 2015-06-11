@@ -246,7 +246,14 @@ $(document).pngFix( );
 		</ul>
 		
 		<div class="nav-divider">&nbsp;</div>
-		                    
+		 <ul class="select"><li><a href="/admin/showlink/"><b>Получение информации</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<!--[if lte IE 6]><table><tr><td><![endif]-->
+
+		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+		</ul>
+		
+		<div class="nav-divider">&nbsp;</div>                  
 		<ul class="select"><li><a href="/admin/content/"><b>Страницы</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub ">
