@@ -13,5 +13,5 @@ Cпасибо за регистрацию для получения доступ
 
 You may download the files following the link
 
-<a href="http://ecr-forum.com/presentations.php?email=%email%&key=%password%">http://ecr-forum.com/presentations.php?email=%email%&key=%password%</a></p>
+<a href="http://ecr-forum.com/en/presentations.php?email=%email%&key=%password%">http://ecr-forum.com/presentations.php?email=%email%&key=%password%</a></p>
 <br>
