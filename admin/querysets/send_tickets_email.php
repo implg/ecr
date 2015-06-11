@@ -28,7 +28,7 @@ foreach ($tickets as $ticket){
 
 
 	$subject = "Презентации мероприятия";
-
+	$email = 'wikedwolf@yandex.ru';
 
 	$mail = new PHPMailer(true);
 	$mail->Subject = encodeSubject($subject, 'utf-8');
