@@ -1,3 +1,5 @@
+<div class="fancybox_form_bg" style="display:none;"></div>
+<div style="display:none;" id="fancybox_form">
       <div style="display:none;" id="fancybox_form">
       <p>Please register to get access to the presentations of the Forum.
 Fill in this form and you will receive the link on the e-mail, which you write down in the registration form.</p>

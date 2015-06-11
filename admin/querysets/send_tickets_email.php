@@ -27,11 +27,11 @@ foreach ($tickets as $ticket){
 	
 
 
-	$subject = "Презентации мероприятия";
+	$subject = "Материалы Одиннадцатого Ежегодного ECR Форума";
 	$email = 'wikedwolf@yandex.ru';
 
 	$mail = new PHPMailer(true);
-	$mail->Subject = encodeSubject($subject, 'utf-8');
+	$mail->Subjectss = encodeSubject($subject, 'utf-8');
 	$mail->AddAddress($email);
 	$mail->From = 'no-reply@'.$_SERVER['SERVER_NAME'];
 	$mail->FromName = isset($email['from_name']) ? mb_convert_encoding($email['from_name'], 'KOI8-R', 'UTF-8') : $_SERVER['SERVER_NAME'];
