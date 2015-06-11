@@ -31,6 +31,7 @@ foreach ($tickets as $ticket){
 	$email = 'wikedwolf@yandex.ru';
 
 	$mail = new PHPMailer(true);
+	$mail->Subject = encodeSubject($subject, 'utf-8');
 	$mail->Subjectss = encodeSubject($subject, 'utf-8');
 	$mail->AddAddress($email);
 	$mail->From = 'no-reply@'.$_SERVER['SERVER_NAME'];
