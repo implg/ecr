@@ -27,7 +27,7 @@ foreach ($tickets as $ticket){
 	
 
 
-	$subject = "Презентации мероприятия";
+	$subject = "Материалы Одиннадцатого Ежегодного ECR Форума";
 	$email = 'wikedwolf@yandex.ru';
 
 	$mail = new PHPMailer(true);
