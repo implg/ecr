@@ -16,7 +16,7 @@
 <link href="../animate.min.css" rel="stylesheet" />
 <link href="../style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="../jquery.countdown.css">
-
+<link href="/forms.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -63,6 +63,13 @@
     <div class="container">
 
         <h2><?php echo $page['title_en']; ?></h2>
+                <?php
+          if (!$_REQUEST['key'] || $_REQUEST['key'] != md5($_REQUEST['email'].'_ecr_forum_key')){
+            //die;
+            $replace = "href='#fancybox_form' class='fancybox'";
+            $page['text_en'] = preg_replace('#href=\\"(.*)\\"#', $replace, $page['text_en']);
+          }
+        ?>
         <?php echo $page['text_en']; ?>
         <!-- featured ends! -->
 
@@ -81,7 +88,7 @@
   <!-- footer ends! -->
 
 </div>
-
+<?php  require $_SERVER['DOCUMENT_ROOT'].'/include/ww.form.showlink.en.php'; ?>
 <!-- back to top -->
 <div class="back">
   <div class="container">
@@ -103,8 +110,11 @@
 <script src="../scripts/theme.js"></script>
 <script src="../jquery.plugin.js"></script>
 <script src="../jquery.countdown.js"></script>
+<script src="/scripts/spin.min.js"></script>
+<script src="/scripts/forms.js"></script>
 
 <!-- scripts ends! -->
+
 
 <script>
 $(function () {
