@@ -1442,10 +1442,33 @@ a {
 }
 #fancybox_form{
   width:500px;
+  height: 450px;
+  padding: 20px;
   position: fixed;
-  top:40px;
-  left: 30%;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   background: #fff;
+}
+#fancybox_form .butsub {
+  padding-top: 20px;
+}
+.speakers #fancybox_form h2 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.fancybox_form_bg {
+  background-color: rgba(0, 0, 0, .4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#fancybox_form .form {
+  padding-right: 5px;
 }
 #fancybox_form input{
   display: inline-block;
