@@ -112,7 +112,16 @@
 <script src="../jquery.countdown.js"></script>
 <script src="/scripts/spin.min.js"></script>
 <script src="/scripts/forms.js"></script>
-
+<script>
+$(document).ready(function(){
+  $('a.fancybox').on('click', function(){
+    $("#fancybox_form, .fancybox_form_bg").show();
+  });
+  $('.fancybox_form_bg').on('click', function(){
+    $("#fancybox_form, .fancybox_form_bg").hide();
+  });
+});
+</script>
 <!-- scripts ends! -->
 
 
